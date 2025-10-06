@@ -5,13 +5,16 @@ Configuration settings for EduTheo application
 from pydantic_settings import BaseSettings
 from typing import Optional
 import os
+from pathlib import Path
 
+# Project root directory
+PROJECT_ROOT = Path(__file__).parent.parent.parent.parent
 
 class Settings(BaseSettings):
     """Application settings"""
     
-    # Database - Use absolute path to ensure it works from any directory
-    database_url: str = "sqlite:////home/ufuq_kamal/Opus/Opus_v0/backend/data/edutheo.db"
+    # Database
+    database_url: str = f"sqlite:///{PROJECT_ROOT / 'backend' / 'data' / 'edutheo.db'}"
     
     # Security
     secret_key: str = "your-secret-key-change-in-production"

@@ -1,0 +1,14 @@
+{
+  "import_timestamp": "2025-10-06T07:00:02.125733",
+  "database_url": "sqlite:////home/ufuq_kamal/Opus/Opus_v0/backend/../edutheo.db",
+  "statistics": {
+    "total_records": 80,
+    "imported_questions": 80,
+    "updated_questions": 0,
+    "skipped_records": 0,
+    "errors": []
+  },
+  "summary": {
+    "success_rate": 100.0
+  }
+}

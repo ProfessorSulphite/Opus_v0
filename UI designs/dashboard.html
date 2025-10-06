@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>EduTheo - Dashboard</title>
+    <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;700;900&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#52d411",
+                        "background-light": "#f6f8f6",
+                        "background-dark": "#162210",
+                    },
+                    fontFamily: {
+                        "display": ["Lexend"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200">
+    <div class="flex min-h-screen w-full flex-col">
+        <header
+            class="sticky top-0 z-10 flex h-16 items-center justify-between whitespace-nowrap border-b border-primary/20 bg-background-light/80 px-10 backdrop-blur-sm dark:border-primary/30 dark:bg-background-dark/80">
+            <div class="flex items-center gap-3">
+                <svg class="h-8 w-8 text-primary" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M25.464 4.142c-1.042-.602-2.886-.602-3.928 0C13.23 8.89 8.89 13.23 4.142 21.536c-.602 1.042-.602 2.886 0 3.928C8.89 33.77 13.23 38.11 21.536 42.858c1.042.602 2.886.602 3.928 0C33.77 38.11 38.11 33.77 42.858 25.464c.602-1.042.602-2.886 0-3.928C38.11 13.23 33.77 8.89 25.464 4.142z"
+                        fill="currentColor" opacity="0.3"></path>
+                    <path
+                        d="M24 6c-1.077 0-2.13.15-3.14.436.574 1.52.99 3.097 1.223 4.675.297 1.996.297 4.04 0 6.036-.233 1.578-.649 3.155-1.223 4.675 1.01.285 2.063.435 3.14.435 6.627 0 12-5.373 12-12s-5.373-12-12-12z"
+                        fill="currentColor"></path>
+                </svg>
+                <h1 class="text-xl font-bold text-gray-900 dark:text-white">EduTheo</h1>
+            </div>
+            <nav class="hidden items-center gap-8 md:flex">
+                <a class="text-sm font-medium text-gray-600 transition-colors hover:text-primary dark:text-gray-300 dark:hover:text-primary"
+                    href="#">Home</a>
+                <a class="text-sm font-medium text-primary dark:text-primary" href="#">Dashboard</a>
+                <a class="text-sm font-medium text-gray-600 transition-colors hover:text-primary dark:text-gray-300 dark:hover:text-primary"
+                    href="#">Practice</a>
+                <a class="text-sm font-medium text-gray-600 transition-colors hover:text-primary dark:text-gray-300 dark:hover:text-primary"
+                    href="#">Analytics</a>
+                <a class="text-sm font-medium text-gray-600 transition-colors hover:text-primary dark:text-gray-300 dark:hover:text-primary"
+                    href="#">Browse</a>
+            </nav>
+            <div class="flex items-center gap-4">
+                <button
+                    class="flex h-10 w-10 items-center justify-center rounded-full bg-background-light transition-colors hover:bg-primary/10 dark:bg-background-dark dark:hover:bg-primary/20">
+                    <svg class="text-gray-600 dark:text-gray-300" fill="currentColor" height="20px"
+                        viewBox="0 0 256 256" width="20px" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M221.8,175.94C216.25,166.38,208,139.33,208,104a80,80,0,1,0-160,0c0,35.34-8.26,62.38-13.81,71.94A16,16,0,0,0,48,200H88.81a40,40,0,0,0,78.38,0H208a16,16,0,0,0,13.8-24.06ZM128,216a24,24,0,0,1-22.62-16h45.24A24,24,0,0,1,128,216ZM48,184c7.7-13.24,16-43.92,16-80a64,64,0,1,1,128,0c0,36.05,8.28,66.73,16,80Z">
+                        </path>
+                    </svg>
+                </button>
+                <div class="aspect-square h-10 w-10 rounded-full bg-cover bg-center bg-no-repeat"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCbk6AEWS5tDaLt_7TzgFPXXyWbWGEjQ9n5WifTUTTELJ-l3A-dXeTPgIq11YpKBS-4MQ45TwPy_Q4G4OIcMGVypFuiipYwqUEZLAQrXyeco70RWMVlp4U_ZFhpycKCHIQErMc4FOg0441jIouAAWW-Q8RkbOZLBQpR34oZJ-s4eyNO9AhBbmu59VckM8frzP0u6kSyMLvIZoNqMBnyHSxa8Y_PKp7YGphSZcJxRRewkp6X5YAVokjpuaKLEwuQN7bAyUn8XWLch2E");'>
+                </div>
+            </div>
+        </header>
+        <main class="flex-1">
+            <div class="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
+                <div class="mb-8">
+                    <h1 class="text-4xl font-bold text-gray-900 dark:text-white">Welcome back, Sarah!</h1>
+                    <p class="mt-2 text-base text-gray-600 dark:text-gray-400">Your learning journey continues. Keep up
+                        the great work!</p>
+                </div>
+                <div class="mb-10 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+                    <div
+                        class="rounded-xl border border-gray-200 bg-white p-6 shadow-sm dark:border-gray-700 dark:bg-background-dark">
+                        <p class="text-sm font-medium text-gray-500 dark:text-gray-400">Total Questions</p>
+                        <p class="mt-1 text-3xl font-bold text-gray-900 dark:text-white">1,250</p>
+                        <p class="mt-2 text-sm font-medium text-primary">+10% this month</p>
+                    </div>
+                    <div
+                        class="rounded-xl border border-gray-200 bg-white p-6 shadow-sm dark:border-gray-700 dark:bg-background-dark">
+                        <p class="text-sm font-medium text-gray-500 dark:text-gray-400">Average Score</p>
+                        <p class="mt-1 text-3xl font-bold text-gray-900 dark:text-white">85%</p>
+                        <p class="mt-2 text-sm font-medium text-primary">+5% this month</p>
+                    </div>
+                    <div
+                        class="rounded-xl border border-gray-200 bg-white p-6 shadow-sm dark:border-gray-700 dark:bg-background-dark">
+                        <p class="text-sm font-medium text-gray-500 dark:text-gray-400">Time Spent</p>
+                        <p class="mt-1 text-3xl font-bold text-gray-900 dark:text-white">45 hours</p>
+                        <p class="mt-2 text-sm font-medium text-primary">+15% this month</p>
+                    </div>
+                </div>
+                <div class="mb-10">
+                    <h2 class="text-2xl font-bold text-gray-900 dark:text-white">Recently Accessed</h2>
+                    <div class="mt-4 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+                        <div
+                            class="group overflow-hidden rounded-xl bg-white shadow-sm transition-all hover:shadow-lg dark:bg-background-dark">
+                            <div class="h-40 w-full bg-cover bg-center"
+                                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBfeJn0guclPVM8k-NFiM-yJbUlwzbbumdb1Q5rZyjAQo3JjQG57lA4q7tfmhlkBndvYVRlDB17XfmxEY8oR2g5tDkmybK3ESTJ63jdBXW3-rl-7chj2VyD43cn2j_797cmrq6YiiMp62iTtTSZ8JnJiNEdySWlsgL1GzQ5bN7oq91CaDtUfFpuArvMS47EIcUehAyyOY8KVNiRT9vTCIaljKbHdqJS665KAACOyhorlphRhSH95s8pfnFyeRL4Ouvl5uRJ4S2ligE");'>
+                            </div>
+                            <div class="p-4">
+                                <h3 class="font-bold text-gray-900 dark:text-white">Biology Flashcards</h3>
+                                <p class="text-sm text-gray-500 dark:text-gray-400">150 questions</p>
+                            </div>
+                        </div>
+                        <div
+                            class="group overflow-hidden rounded-xl bg-white shadow-sm transition-all hover:shadow-lg dark:bg-background-dark">
+                            <div class="h-40 w-full bg-cover bg-center"
+                                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDI_9dB1IBtjeq_HAn4hvkzpyOFUJEKFgez5ixHLzZfIzlDBP_9uUSFzFgbkfzCRqOnD6jwL7tY8SHiePcDvJYCkGbkKlIxyElwapxl0qYCGRpTrmHC5iiS8vOOokqrnKIMkCNivaVpaN74wk2uXqb5gSLPGkkDTxv7R9r-7XK1LeATIXXMDfgOj6bATILyqHt-RZ7Fh2OCS7BKSLRu50w2SxLjFwVbsa3WKdiXX64suaMtP_tPPnMXi1tMFqxPDdbMr0EEgvj8x1M");'>
+                            </div>
+                            <div class="p-4">
+                                <h3 class="font-bold text-gray-900 dark:text-white">History Practice Set</h3>
+                                <p class="text-sm text-gray-500 dark:text-gray-400">200 questions</p>
+                            </div>
+                        </div>
+                        <div
+                            class="group overflow-hidden rounded-xl bg-white shadow-sm transition-all hover:shadow-lg dark:bg-background-dark">
+                            <div class="h-40 w-full bg-cover bg-center"
+                                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA16HfxN03hlU-FUhHSu01JZRyEZUP3vX9lbqXVtr3WuJ_brr2LW6SeKc-zYXmjq9JAhwW8jBpIgwCjM2bmQbQeIuQWQ63RrXNdfYvBJM1YSeskoyU3l3lDfgvKRcfVcfrzD4V-prw_gRsE3JhHXyt5BY7wLeDYV0HDFHB78uCoioP_l_meK1Te5jStMgHzsWf0PY9poB5oud1wxItA-I85dmlh4xk7oq9yG5fe8GHwofjpK3-H6N664rPJevDJkgSh7OGN-Gbrxag");'>
+                            </div>
+                            <div class="p-4">
+                                <h3 class="font-bold text-gray-900 dark:text-white">Math Challenge</h3>
+                                <p class="text-sm text-gray-500 dark:text-gray-400">100 questions</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="text-2xl font-bold text-gray-900 dark:text-white">Quick Links</h2>
+                    <div class="mt-4 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+                        <a class="group flex flex-col justify-between rounded-xl border border-gray-200 bg-white p-6 shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg dark:border-gray-700 dark:bg-background-dark dark:hover:bg-primary/10"
+                            href="#">
+                            <div>
+                                <div
+                                    class="flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 text-primary">
+                                    <svg fill="currentColor" height="28px" viewBox="0 0 256 256" width="28px"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M224,48H160a40,40,0,0,0-32,16A40,40,0,0,0,96,48H32A16,16,0,0,0,16,64V192a16,16,0,0,0,16,16H96a24,24,0,0,1,24,24,8,8,0,0,0,16,0,24,24,0,0,1,24-24h64a16,16,0,0,0,16-16V64A16,16,0,0,0,224,48ZM96,192H32V64H96a24,24,0,0,1,24,24V200A39.81,39.81,0,0,0,96,192Zm128,0H160a39.81,39.81,0,0,0-24,8V88a24,24,0,0,1,24-24h64Z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <div class="mt-4">
+                                    <h3 class="text-lg font-bold text-gray-900 dark:text-white">Practice</h3>
+                                    <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">Start practicing with
+                                        flashcards</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="group flex flex-col justify-between rounded-xl border border-gray-200 bg-white p-6 shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg dark:border-gray-700 dark:bg-background-dark dark:hover:bg-primary/10"
+                            href="#">
+                            <div>
+                                <div
+                                    class="flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 text-primary">
+                                    <svg fill="currentColor" height="28px" viewBox="0 0 256 256" width="28px"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M232,208a8,8,0,0,1-8,8H32a8,8,0,0,1-8-8V48a8,8,0,0,1,16,0v94.37L90.73,98a8,8,0,0,1,10.07-.38l58.81,44.11L218.73,90a8,8,0,1,1,10.54,12l-64,56a8,8,0,0,1-10.07.38L96.39,114.29,40,163.63V200H224A8,8,0,0,1,232,208Z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <div class="mt-4">
+                                    <h3 class="text-lg font-bold text-gray-900 dark:text-white">Analytics</h3>
+                                    <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">View your learning
+                                        analytics</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="group flex flex-col justify-between rounded-xl border border-gray-200 bg-white p-6 shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg dark:border-gray-700 dark:bg-background-dark dark:hover:bg-primary/10"
+                            href="#">
+                            <div>
+                                <div
+                                    class="flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 text-primary">
+                                    <svg fill="currentColor" height="28px" viewBox="0 0 256 256" width="28px"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <div class="mt-4">
+                                    <h3 class="text-lg font-bold text-gray-900 dark:text-white">Browse Courses</h3>
+                                    <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">Explore new courses &amp;
+                                        sets</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+</body>
+
+</html>

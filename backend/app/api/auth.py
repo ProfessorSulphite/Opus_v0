@@ -3,7 +3,7 @@ Authentication endpoints
 """
 
 from datetime import timedelta
-from fastapi import APIRouter, Depends, HTTPException, status
+from fastapi import APIRouter, Depends, HTTPException, status, Form
 from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
 from sqlalchemy.orm import Session
 from loguru import logger
@@ -85,10 +85,10 @@ async def register(user: UserCreate, db: Session = Depends(get_db)):
 
 
 @router.post("/login", response_model=Token)
-async def login(user_credentials: UserLogin, db: Session = Depends(get_db)):
+async def login(username: str = Form(...), password: str = Form(...), db: Session = Depends(get_db)):
     """Authenticate user and return access token"""
     try:
-        user = authenticate_user(db, user_credentials.username, user_credentials.password)
+        user = authenticate_user(db, username, password)
         if not user:
             raise HTTPException(
                 status_code=status.HTTP_401_UNAUTHORIZED,

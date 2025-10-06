@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect" />
+    <link as="style"
+        href="https://fonts.googleapis.com/css2?display=swap&amp;family=Lexend%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+        onload="this.rel='stylesheet'" rel="stylesheet" />
+    <title>Stitch Design</title>
+    <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#52d411",
+                        "background-light": "#f6f8f6",
+                        "background-dark": "#162210",
+                    },
+                    fontFamily: {
+                        "display": ["Lexend"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+</head>
+
+<body class="font-display bg-background-light dark:bg-background-dark text-background-dark dark:text-background-light">
+    <div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+        <div class="layout-container flex h-full grow flex-col">
+            <header
+                class="flex items-center justify-between whitespace-nowrap border-b border-background-light/10 dark:border-background-dark/10 px-10 py-3">
+                <div class="flex items-center gap-4">
+                    <svg class="text-primary" fill="none" height="24" viewBox="0 0 24 24" width="24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M16.204 3.39329C16.5342 4.07973 17.0094 4.8872 17.6974 5.6985C18.3813 6.51586 19.3414 7.21489 20.6133 7.69614C20.4431 7.74381 20.2729 7.79148 20.1027 7.83915C18.8307 8.3204 17.8707 9.01943 17.1868 9.83679C16.4988 10.6481 16.0236 11.4556 15.6934 12.142C15.3631 11.4556 14.8879 10.6481 14.204 9.83679C13.516 9.01943 12.5559 8.3204 11.284 7.83915C11.4542 7.79148 11.6244 7.74381 11.7946 7.69614C13.0665 7.21489 14.0266 6.51586 14.7105 5.6985C15.3985 4.8872 15.8737 4.07973 16.204 3.39329Z"
+                            stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+                        </path>
+                        <path
+                            d="M12 21C14.0533 21 15.4286 18.0622 15.9333 16M12 21C9.94667 21 8.57143 18.0622 8.06667 16M12 21V16M8.06667 16C7.57143 14.6889 6.2 12 4 12C2.5 12 2 13.5 2 13.5M8.06667 16H4M15.9333 16C16.4286 14.6889 17.8 12 20 12C21.5 12 22 13.5 22 13.5M15.9333 16H20"
+                            stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+                        </path>
+                    </svg>
+                    <h2 class="text-lg font-bold leading-tight tracking-[-0.015em]">EduTheo</h2>
+                </div>
+                <div class="flex flex-1 justify-end gap-4">
+                    <div class="flex items-center gap-6">
+                        <a class="text-sm font-medium leading-normal hover:text-primary transition-colors"
+                            href="#">Practice</a>
+                        <a class="text-sm font-medium leading-normal hover:text-primary transition-colors"
+                            href="#">Flashcards</a>
+                        <a class="text-sm font-bold leading-normal text-primary" href="#">Analytics</a>
+                    </div>
+                    <button
+                        class="flex h-10 w-10 cursor-pointer items-center justify-center overflow-hidden rounded-full bg-background-light dark:bg-background-dark/50 text-background-dark dark:text-background-light hover:bg-primary/10 dark:hover:bg-primary/20 transition-colors">
+                        <span class="material-symbols-outlined">notifications</span>
+                    </button>
+                    <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
+                        style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCnqTXsCVByYjAjmppQmHg4rqOSaLsfXo0Yjn7bDt6ZHGi-nMQUtp1ttN_KaEcWJHrXagvGzuyx6ZdphwKoGWReN4JPnzCesGsT-o_rRuJbhUOJHskemf_CH9JVG1iH9mB6Xd_EzS5wsi615jzPUdzONzDr1GD_04ML1MlCEFNXauUQeqkfDj1HlZ7f9rFiUDxSv-Q7IUms9_KvZTM6qTcbOTQCtNY7WCjatRn1N76-bMQ9vUejp2cOOFv-tC-eC0gOvBm_-cwxLl0");'>
+                    </div>
+                </div>
+            </header>
+            <main class="px-40 flex flex-1 justify-center py-10">
+                <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+                    <div class="flex flex-wrap justify-between gap-3 p-4">
+                        <div class="flex flex-col gap-2">
+                            <h1 class="text-3xl font-bold leading-tight tracking-tight">Analytics</h1>
+                            <p class="text-sm font-normal text-background-dark/60 dark:text-background-light/60">Track
+                                your progress and identify areas for improvement.</p>
+                        </div>
+                    </div>
+                    <div class="pb-3">
+                        <div class="flex border-b border-background-dark/10 dark:border-background-light/10 px-4 gap-8">
+                            <a class="flex flex-col items-center justify-center border-b-2 border-primary text-primary pb-3 pt-4"
+                                href="#">
+                                <p class="text-sm font-bold leading-normal tracking-[0.015em]">Overall</p>
+                            </a>
+                            <a class="flex flex-col items-center justify-center border-b-2 border-transparent text-background-dark/60 dark:text-background-light/60 hover:text-primary pb-3 pt-4"
+                                href="#">
+                                <p class="text-sm font-bold leading-normal tracking-[0.015em]">By Topic</p>
+                            </a>
+                            <a class="flex flex-col items-center justify-center border-b-2 border-transparent text-background-dark/60 dark:text-background-light/60 hover:text-primary pb-3 pt-4"
+                                href="#">
+                                <p class="text-sm font-bold leading-normal tracking-[0.015em]">By Chapter</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 p-4">
+                        <div
+                            class="flex flex-col gap-4 rounded-xl border border-background-dark/10 dark:border-background-light/10 p-6 bg-background-light dark:bg-background-dark/50">
+                            <div class="flex flex-col gap-1">
+                                <p class="text-base font-medium leading-normal">Progress Over Time</p>
+                                <p class="text-background-dark/60 dark:text-background-light/60 text-sm">Last 30 Days
+                                </p>
+                            </div>
+                            <div class="flex items-baseline gap-2">
+                                <p class="text-4xl font-bold leading-tight">85%</p>
+                                <p class="text-green-500 text-sm font-medium leading-normal">+5%</p>
+                            </div>
+                            <div class="flex min-h-[180px] flex-1 flex-col justify-end gap-4 py-4">
+                                <svg fill="none" height="148" preserveAspectRatio="none" viewBox="-3 0 478 150"
+                                    width="100%" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0 109C18.1538 109 18.1538 21 36.3077 21C54.4615 21 54.4615 41 72.6154 41C90.7692 41 90.7692 93 108.923 93C127.077 93 127.077 33 145.231 33C163.385 33 163.385 101 181.538 101C199.692 101 199.692 61 217.846 61C236 61 236 45 254.154 45C272.308 45 272.308 121 290.462 121C308.615 121 308.615 149 326.769 149C344.923 149 344.923 1 363.077 1C381.231 1 381.231 81 399.385 81C417.538 81 417.538 129 435.692 129C453.846 129 453.846 25 472 25V149H0V109Z"
+                                        fill="url(#paint0_linear_1_2)"></path>
+                                    <path
+                                        d="M0 109C18.1538 109 18.1538 21 36.3077 21C54.4615 21 54.4615 41 72.6154 41C90.7692 41 90.7692 93 108.923 93C127.077 93 127.077 33 145.231 33C163.385 33 163.385 101 181.538 101C199.692 101 199.692 61 217.846 61C236 61 236 45 254.154 45C272.308 45 272.308 121 290.462 121C308.615 121 308.615 149 326.769 149C344.923 149 344.923 1 363.077 1C381.231 1 381.231 81 399.385 81C417.538 81 417.538 129 435.692 129C453.846 129 453.846 25 472 25"
+                                        stroke="#52d411" stroke-linecap="round" stroke-width="3"></path>
+                                    <defs>
+                                        <linearGradient gradientUnits="userSpaceOnUse" id="paint0_linear_1_2" x1="236"
+                                            x2="236" y1="1" y2="149">
+                                            <stop stop-color="#52d411" stop-opacity="0.2"></stop>
+                                            <stop offset="1" stop-color="#52d411" stop-opacity="0"></stop>
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                                <div class="flex justify-between">
+                                    <p class="text-xs font-bold text-background-dark/60 dark:text-background-light/60">
+                                        Week 1</p>
+                                    <p class="text-xs font-bold text-background-dark/60 dark:text-background-light/60">
+                                        Week 2</p>
+                                    <p class="text-xs font-bold text-background-dark/60 dark:text-background-light/60">
+                                        Week 3</p>
+                                    <p class="text-xs font-bold text-background-dark/60 dark:text-background-light/60">
+                                        Week 4</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="flex flex-col gap-4 rounded-xl border border-background-dark/10 dark:border-background-light/10 p-6 bg-background-light dark:bg-background-dark/50">
+                            <div class="flex flex-col gap-1">
+                                <p class="text-base font-medium leading-normal">Accuracy by Topic</p>
+                                <p class="text-background-dark/60 dark:text-background-light/60 text-sm">All Time</p>
+                            </div>
+                            <div class="flex items-baseline gap-2">
+                                <p class="text-4xl font-bold leading-tight">78%</p>
+                                <p class="text-red-500 text-sm font-medium leading-normal">-2%</p>
+                            </div>
+                            <div class="grid min-h-[180px] grid-cols-4 gap-6 items-end justify-items-center px-3 pt-10">
+                                <div class="flex flex-col items-center gap-2 w-full h-full justify-end">
+                                    <div class="bg-primary/20 dark:bg-primary/30 w-full rounded" style="height: 70%;">
+                                    </div>
+                                    <p class="text-xs font-bold text-background-dark/60 dark:text-background-light/60">
+                                        Math</p>
+                                </div>
+                                <div class="flex flex-col items-center gap-2 w-full h-full justify-end">
+                                    <div class="bg-primary/20 dark:bg-primary/30 w-full rounded" style="height: 50%;">
+                                    </div>
+                                    <p class="text-xs font-bold text-background-dark/60 dark:text-background-light/60">
+                                        Science</p>
+                                </div>
+                                <div class="flex flex-col items-center gap-2 w-full h-full justify-end">
+                                    <div class="bg-primary/20 dark:bg-primary/30 w-full rounded" style="height: 20%;">
+                                    </div>
+                                    <p class="text-xs font-bold text-background-dark/60 dark:text-background-light/60">
+                                        History</p>
+                                </div>
+                                <div class="flex flex-col items-center gap-2 w-full h-full justify-end">
+                                    <div class="bg-primary/20 dark:bg-primary/30 w-full rounded" style="height: 60%;">
+                                    </div>
+                                    <p class="text-xs font-bold text-background-dark/60 dark:text-background-light/60">
+                                        Literature</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h2 class="text-xl font-bold leading-tight tracking-tight px-4 pb-3 pt-5">Areas for Improvement</h2>
+                    <div class="px-4 py-3 @container">
+                        <div
+                            class="overflow-hidden rounded-xl border border-background-dark/10 dark:border-background-light/10 bg-background-light dark:bg-background-dark/50">
+                            <table class="w-full">
+                                <thead class="bg-background-light dark:bg-background-dark/50">
+                                    <tr>
+                                        <th
+                                            class="px-6 py-4 text-left text-xs font-medium uppercase tracking-wider text-background-dark/60 dark:text-background-light/60">
+                                            Topic</th>
+                                        <th
+                                            class="px-6 py-4 text-left text-xs font-medium uppercase tracking-wider text-background-dark/60 dark:text-background-light/60">
+                                            Accuracy</th>
+                                        <th
+                                            class="px-6 py-4 text-left text-xs font-medium uppercase tracking-wider text-background-dark/60 dark:text-background-light/60">
+                                            Time Spent</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="divide-y divide-background-dark/10 dark:divide-background-light/10">
+                                    <tr>
+                                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">Calculus</td>
+                                        <td class="px-6 py-4 whitespace-nowrap">
+                                            <div class="flex items-center gap-3">
+                                                <div
+                                                    class="w-24 overflow-hidden rounded-full bg-background-dark/10 dark:bg-background-light/10">
+                                                    <div class="h-2 rounded-full bg-primary" style="width: 65%;"></div>
+                                                </div>
+                                                <p class="text-sm font-medium">65%</p>
+                                            </div>
+                                        </td>
+                                        <td
+                                            class="px-6 py-4 whitespace-nowrap text-sm text-background-dark/60 dark:text-background-light/60">
+                                            2 hours</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">Physics</td>
+                                        <td class="px-6 py-4 whitespace-nowrap">
+                                            <div class="flex items-center gap-3">
+                                                <div
+                                                    class="w-24 overflow-hidden rounded-full bg-background-dark/10 dark:bg-background-light/10">
+                                                    <div class="h-2 rounded-full bg-primary" style="width: 72%;"></div>
+                                                </div>
+                                                <p class="text-sm font-medium">72%</p>
+                                            </div>
+                                        </td>
+                                        <td
+                                            class="px-6 py-4 whitespace-nowrap text-sm text-background-dark/60 dark:text-background-light/60">
+                                            1.5 hours</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">Chemistry</td>
+                                        <td class="px-6 py-4 whitespace-nowrap">
+                                            <div class="flex items-center gap-3">
+                                                <div
+                                                    class="w-24 overflow-hidden rounded-full bg-background-dark/10 dark:bg-background-light/10">
+                                                    <div class="h-2 rounded-full bg-primary" style="width: 80%;"></div>
+                                                </div>
+                                                <p class="text-sm font-medium">80%</p>
+                                            </div>
+                                        </td>
+                                        <td
+                                            class="px-6 py-4 whitespace-nowrap text-sm text-background-dark/60 dark:text-background-light/60">
+                                            1 hour</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <footer class="flex justify-center border-t border-background-dark/10 dark:border-background-light/10">
+                <div class="flex max-w-[960px] flex-1 flex-col">
+                    <footer class="flex flex-col gap-8 px-5 py-10 text-center">
+                        <div class="flex flex-wrap items-center justify-center gap-6">
+                            <a class="text-sm text-background-dark/60 dark:text-background-light/60 hover:text-primary transition-colors"
+                                href="#">About</a>
+                            <a class="text-sm text-background-dark/60 dark:text-background-light/60 hover:text-primary transition-colors"
+                                href="#">Contact</a>
+                            <a class="text-sm text-background-dark/60 dark:text-background-light/60 hover:text-primary transition-colors"
+                                href="#">Privacy Policy</a>
+                            <a class="text-sm text-background-dark/60 dark:text-background-light/60 hover:text-primary transition-colors"
+                                href="#">Terms of Service</a>
+                        </div>
+                        <div class="flex flex-wrap justify-center gap-4">
+                            <a class="text-background-dark/60 dark:text-background-light/60 hover:text-primary transition-colors"
+                                href="#">
+                                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        d="M22.46 6c-.77.35-1.6.58-2.46.67.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.22-1.95-.55v.05c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.94.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.01-.06C3.9 19.29 6.16 20 8.58 20c7.34 0 11.35-6.08 11.35-11.35 0-.17 0-.34-.01-.51.78-.57 1.45-1.29 1.99-2.09z">
+                                    </path>
+                                </svg>
+                            </a>
+                            <a class="text-background-dark/60 dark:text-background-light/60 hover:text-primary transition-colors"
+                                href="#">
+                                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.85s-.011 3.585-.069 4.85c-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07s-3.585-.012-4.85-.07c-3.252-.148-4.771-1.691-4.919-4.919-.058-1.265-.07-1.645-.07-4.85s.012-3.585.07-4.85c.148-3.225 1.664-4.771 4.919-4.919C8.415 2.175 8.796 2.163 12 2.163m0-2.163C8.74 0 8.333.011 7.053.072 2.695.272.273 2.69.073 7.052.012 8.333 0 8.74 0 12s.012 3.667.072 4.947c.2 4.358 2.618 6.78 6.98 6.98C8.333 23.988 8.74 24 12 24s3.667-.012 4.947-.072c4.354-.2 6.782-2.618 6.979-6.98.06-1.28.072-1.687.072-4.947s-.012-3.667-.072-4.947c-.196-4.358-2.62-6.78-6.979-6.98C15.667.012 15.26 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.88 1.44 1.44 0 0 0 0-2.88z">
+                                    </path>
+                                </svg>
+                            </a>
+                            <a class="text-background-dark/60 dark:text-background-light/60 hover:text-primary transition-colors"
+                                href="#">
+                                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10s10-4.48 10-10S17.52 2 12 2zm3.62 16.14V13.5h2.15l.32-2.5h-2.47v-1.6c0-.72.2-1.21 1.23-1.21h1.31v-2.24c-.23-.03-.99-.1-1.89-.1-1.87 0-3.15 1.14-3.15 3.23v1.83h-2.11v2.5h2.11v4.64h2.51z">
+                                    </path>
+                                </svg>
+                            </a>
+                        </div>
+                        <p class="text-sm text-background-dark/60 dark:text-background-light/60">@2024 EduTheo. All
+                            rights reserved.</p>
+                    </footer>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+</body>
+
+</html>

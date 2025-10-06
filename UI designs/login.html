@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>EduTheo - Login</title>
+    <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;700;900&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#52d411",
+                        "background-light": "#f6f8f6",
+                        "background-dark": "#162210",
+                    },
+                    fontFamily: {
+                        "display": ["Lexend"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        .markhor-logo {
+            transform: scaleX(-1);
+        }
+    </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200">
+    <div class="flex h-screen w-full items-center justify-center p-4">
+        <div class="w-full max-w-md">
+            <header class="mb-8 text-center">
+                <div class="inline-block p-3 rounded-full bg-primary/20 dark:bg-primary/30">
+                    <svg class="markhor-logo text-primary" fill="none" height="48" viewBox="0 0 24 24" width="48"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M16 3C16.892 5.253 18.07 6.452 19.5 7.5C18.601 7.82 17.585 8.016 16.5 8.5C16.184 9.453 15.632 10.871 15 12M16 3C15.228 5.426 13.91 6.817 12.5 8C13.255 8.163 14.285 8.243 15.5 8.5M16 3C15.5 3.5 15 4 14.5 4.5M14.5 4.5C13.593 4.29 12.634 4.093 11.5 4C9.5 4 8 5 7 6.5C5.5 8.5 5 11 5 14C5 15.892 5.467 17.568 6.5 19C7.456 20.323 8.784 21 10.5 21C12.5 21 13.5 20 14.5 18C15.5 16.5 16 15 16 13.5C16 11.5 15.5 9.5 14.5 8M14.5 4.5C14.73 5.485 14.881 6.58 14.5 8M14.5 8C13.786 7.424 13.064 6.788 12 6C11.5 5.5 11 5 10.5 4.5C10.75 4.157 11.116 3.886 11.5 4"
+                            stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+                        </path>
+                    </svg>
+                </div>
+                <h1 class="mt-4 text-3xl font-bold text-gray-900 dark:text-white">Welcome to EduTheo</h1>
+                <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">Login to continue your learning journey.</p>
+            </header>
+            <main>
+                <form action="#" class="space-y-6" method="POST">
+                    <div>
+                        <label class="sr-only" for="email">Username or Email</label>
+                        <input autocomplete="email"
+                            class="relative block w-full appearance-none rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 px-3 py-3 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:z-10 focus:border-primary focus:outline-none focus:ring-primary sm:text-sm"
+                            id="email" name="email" placeholder="Username or Email" required="" type="email" />
+                    </div>
+                    <div>
+                        <label class="sr-only" for="password">Password</label>
+                        <input autocomplete="current-password"
+                            class="relative block w-full appearance-none rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 px-3 py-3 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:z-10 focus:border-primary focus:outline-none focus:ring-primary sm:text-sm"
+                            id="password" name="password" placeholder="Password" required="" type="password" />
+                    </div>
+                    <div class="text-right text-sm">
+                        <a class="font-medium text-primary hover:text-primary/80" href="#">Forgot Password?</a>
+                    </div>
+                    <div>
+                        <button
+                            class="group relative flex w-full justify-center rounded-lg border border-transparent bg-primary px-4 py-3 text-sm font-semibold text-black hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 dark:focus:ring-offset-background-dark"
+                            type="submit">
+                            Login
+                        </button>
+                    </div>
+                </form>
+                <div class="mt-6">
+                    <div class="relative">
+                        <div class="absolute inset-0 flex items-center">
+                            <div class="w-full border-t border-gray-300 dark:border-gray-700"></div>
+                        </div>
+                        <div class="relative flex justify-center text-sm">
+                            <span
+                                class="bg-background-light dark:bg-background-dark px-2 text-gray-500 dark:text-gray-400">Or
+                                continue with</span>
+                        </div>
+                    </div>
+                    <div class="mt-6 grid grid-cols-2 gap-3">
+                        <div>
+                            <a class="inline-flex w-full justify-center rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 px-4 py-2 text-sm font-medium text-gray-500 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800"
+                                href="#">
+                                <span class="sr-only">Continue with Google</span>
+                                <svg aria-hidden="true" class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path clip-rule="evenodd"
+                                        d="M10 0C4.477 0 0 4.477 0 10c0 4.425 2.865 8.165 6.839 9.49.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.031-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.378.203 2.398.1 2.651.64.7 1.03 1.595 1.03 2.688 0 3.848-2.338 4.695-4.566 4.942.359.308.678.92.678 1.855 0 1.338-.012 2.419-.012 2.745 0 .267.18.577.688.48A10.001 10.001 0 0020 10c0-5.523-4.477-10-10-10z"
+                                        fill-rule="evenodd"></path>
+                                </svg>
+                            </a>
+                        </div>
+                        <div>
+                            <a class="inline-flex w-full justify-center rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 px-4 py-2 text-sm font-medium text-gray-500 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800"
+                                href="#">
+                                <span class="sr-only">Continue with Facebook</span>
+                                <svg aria-hidden="true" class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path clip-rule="evenodd"
+                                        d="M20 10c0-5.523-4.477-10-10-10S0 4.477 0 10c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V10h2.54V7.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V10h2.773l-.443 2.89h-2.33v6.988C16.343 19.128 20 14.991 20 10z"
+                                        fill-rule="evenodd"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <footer class="mt-8 text-center text-sm text-gray-500 dark:text-gray-400">
+                <p>Don't have an account? <a class="font-medium text-primary hover:text-primary/80" href="#">Sign up</a>
+                </p>
+            </footer>
+        </div>
+    </div>
+
+</body>
+
+</html>

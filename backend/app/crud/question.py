@@ -3,7 +3,7 @@ CRUD operations for Question model
 """
 
 from sqlalchemy.orm import Session
-from sqlalchemy import and_, func, text
+from sqlalchemy import and_, func, text, case
 from app.models.models import Question, UserActivity
 from app.schemas.schemas import QuestionCreate, QuestionFilter
 from typing import List, Optional, Tuple

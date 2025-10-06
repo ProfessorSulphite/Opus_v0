@@ -6,6 +6,7 @@ from fastapi import APIRouter, Depends, HTTPException, status, Query
 from sqlalchemy.orm import Session
 from typing import List, Optional
 from loguru import logger
+import json
 
 from app.core.database import get_db
 from app.api.auth import get_current_user
@@ -17,7 +18,7 @@ from app.crud.question import (
     get_chapter_summary,
     get_all_tags
 )
-from app.crud.analytics import record_user_activity, create_mark, get_user_marks, remove_mark
+from app.crud.analytics import record_user_activity, create_mark, get_user_marks, remove_mark, get_real_time_stats
 from app.schemas.schemas import (
     UserResponse, 
     QuestionResponse, 
@@ -28,6 +29,7 @@ from app.schemas.schemas import (
     MarkCreate,
     MarkResponse
 )
+from app.ws_manager import manager
 
 router = APIRouter()
 
@@ -139,7 +141,15 @@ async def check_answer(
         
         # Record user activity
         record_user_activity(db, current_user.id, submission, is_correct)
-        
+
+        # Broadcast real-time stats update
+        stats = get_real_time_stats(db, current_user.id)
+        await manager.broadcast(json.dumps({
+            "type": "stats_update",
+            "user_id": current_user.id,
+            "data": stats
+        }))
+
         # Get explanation for the user's answer
         explanation = None
         if question.explanations and submission.user_answer in question.explanations:
