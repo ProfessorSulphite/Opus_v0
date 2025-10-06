@@ -64,6 +64,8 @@ class EduTheoApp {
             const logoutBtn = target.closest('#logout-btn');
             const startPracticeBtn = target.closest('#start-practice-btn');
             const submitAnswerBtn = target.closest('#submit-answer-btn');
+            const resetAnalyticsBtn = target.closest('#reset-analytics-btn');
+            const showHintBtn = target.closest('#show-hint-btn');
 
             if (loginTab) this.switchAuthTab('login');
             if (signupTab) this.switchAuthTab('signup');
@@ -78,6 +80,15 @@ class EduTheoApp {
             }
             if (startPracticeBtn) this.startPractice();
             if (submitAnswerBtn) this.submitAnswer();
+            if (resetAnalyticsBtn) {
+                if (confirm('Are you sure you want to reset all your analytics data? This action cannot be undone.')) {
+                    this.resetAnalytics();
+                }
+            }
+            if (showHintBtn) {
+                const hintContainer = document.getElementById('hint-container');
+                hintContainer.classList.toggle('hidden');
+            }
         });
 
         this.root.addEventListener('submit', (e) => {
@@ -146,6 +157,9 @@ class EduTheoApp {
                     if (document.getElementById('progress-chart')) {
                         this.updateDashboardWithData(message.data);
                     }
+                }
+                if (message.type === 'analytics_reset' && message.user_id === this.user.id) {
+                    this.updateDashboard();
                 }
             } catch (error) {
                 console.error('Error processing WebSocket message:', error);
@@ -482,29 +496,46 @@ class EduTheoApp {
             <div class="p-6 sm:p-8">
                 <div class="flex justify-between items-start mb-4">
                     <p class="text-sm font-semibold text-primary">Question ${this.practice.currentQuestionIndex + 1} of ${this.practice.questions.length}</p>
-                    <p class="text-sm font-semibold text-gray-500 dark:text-gray-400">${question.chapter_name}</p>
+                    <div class="text-right">
+                        <button id="show-hint-btn" class="text-sm text-primary font-semibold hidden">Show Hint</button>
+                        <p class="text-sm font-semibold text-gray-500 dark:text-gray-400">${question.chapter_name}</p>
+                    </div>
                 </div>
                 <p class="text-lg font-medium text-slate-800 dark:text-slate-200 leading-relaxed">
                     ${question.question_text}
                 </p>
+                <div id="hint-container" class="hidden mt-4 p-4 bg-yellow-100 dark:bg-yellow-900/50 border-l-4 border-yellow-400 text-yellow-700 dark:text-yellow-300"></div>
             </div>
             <div class="px-6 sm:px-8 pb-6 sm:pb-8 grid grid-cols-1 sm:grid-cols-2 gap-3">
                 ${optionsHTML}
             </div>
+            <div id="explanation-container" class="hidden mx-6 sm:mx-8 mb-6 p-4 bg-blue-100 dark:bg-blue-900/50 border-l-4 border-blue-400 text-blue-700 dark:text-blue-300"></div>
             <div class="px-6 sm:px-8 py-4 bg-background-light dark:bg-background-dark/50 border-t border-slate-200 dark:border-slate-800">
                 <div class="flex justify-end items-center">
+                    <p id="practice-message" class="text-sm text-red-500 mr-4"></p>
                     <button id="submit-answer-btn" class="flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-bold bg-primary text-slate-900 hover:bg-primary/90 transition-colors">
                         Submit Answer
                     </button>
                 </div>
             </div>
         `;
+        
+        const hintContainer = document.getElementById('hint-container');
+        const showHintBtn = document.getElementById('show-hint-btn');
+        if (question.hints && question.hints.length > 0) {
+            hintContainer.innerHTML = `<strong>Hint:</strong> ${question.hints.join('<br>')}`;
+            showHintBtn.classList.remove('hidden');
+        } else {
+            showHintBtn.classList.add('hidden');
+        }
     }
 
     async submitAnswer() {
+        const practiceMessage = document.getElementById('practice-message');
+        practiceMessage.textContent = ''; // Clear previous messages
         const selectedOption = document.querySelector('input[name="mcq_option"]:checked');
         if (!selectedOption) {
-            alert('Please select an answer');
+            practiceMessage.textContent = 'Please select an answer.';
             return;
         }
 
@@ -530,6 +561,12 @@ class EduTheoApp {
                 }
             });
 
+            const explanationContainer = document.getElementById('explanation-container');
+            if (result.explanation) {
+                explanationContainer.innerHTML = `<strong>Explanation:</strong> ${result.explanation}`;
+                explanationContainer.classList.remove('hidden');
+            }
+
             document.getElementById('submit-answer-btn').disabled = true;
 
             setTimeout(() => {
@@ -544,6 +581,20 @@ class EduTheoApp {
 
         } catch (error) {
             console.error('Failed to submit answer:', error);
+        }
+    }
+
+    async resetAnalytics() {
+        try {
+            const response = await this.authenticatedFetch(`${this.api.baseUrl}/analytics/reset`, {
+                method: 'POST'
+            });
+            if (!response.ok) throw new Error('Failed to reset analytics');
+            alert('Your analytics data has been successfully reset.');
+            this.updateDashboard(); // Refresh dashboard to show empty stats
+        } catch (error) {
+            console.error('Failed to reset analytics:', error);
+            alert(`Error: ${error.message}`);
         }
     }
 }

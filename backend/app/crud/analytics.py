@@ -506,3 +506,9 @@ def record_session_end(db: Session, user_id: int, session_id: int):
         db.commit()
         return user
     return None
+
+def reset_user_analytics(db: Session, user_id: int) -> int:
+    """Deletes all activity for a user."""
+    num_deleted = db.query(UserActivity).filter(UserActivity.user_id == user_id).delete(synchronize_session=False)
+    db.commit()
+    return num_deleted

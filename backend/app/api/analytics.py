@@ -15,11 +15,14 @@ from app.api.auth import get_current_user
 from app.crud.analytics import (
     get_user_stats, get_chapter_progress, get_recent_activity, 
     get_leaderboard, get_performance_trends, get_detailed_analytics,
-    get_real_time_stats, record_session_start, record_session_end
+    get_real_time_stats, record_session_start, record_session_end,
+    reset_user_analytics
 )
 from app.schemas.schemas import UserResponse, AnalyticsResponse, UserStats, ChapterProgress
 from app.models.models import UserActivity, Question
 from app.ws_manager import manager
+
+logger.info("Reloading analytics.py...")
 
 router = APIRouter()
 
@@ -213,6 +216,30 @@ async def end_practice_session(
         raise HTTPException(
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
             detail="Failed to end session"
+        )
+
+@router.post("/reset")
+async def reset_analytics(
+    current_user: UserResponse = Depends(get_current_user),
+    db: Session = Depends(get_db)
+):
+    """Reset all analytics for the current user."""
+    try:
+        num_deleted = reset_user_analytics(db, current_user.id)
+        logger.info(f"Analytics reset for user {current_user.username}. {num_deleted} activities deleted.")
+        
+        # Broadcast reset event
+        await manager.broadcast(json.dumps({
+            "type": "analytics_reset",
+            "user_id": current_user.id
+        }))
+        
+        return {"message": "Analytics reset successfully.", "deleted_activities": num_deleted}
+    except Exception as e:
+        logger.error(f"Analytics reset error: {str(e)}")
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail="Failed to reset analytics"
         )
 
 
