@@ -26,6 +26,11 @@ def get_question_by_id(db: Session, question_id: int) -> Optional[Question]:
     ).first()
 
 
+def get_questions_by_ids(db: Session, question_ids: List[int]) -> List[Question]:
+    """Get questions by a list of IDs."""
+    return db.query(Question).filter(Question.id.in_(question_ids)).all()
+
+
 def get_question_by_question_id(db: Session, question_id: str) -> Optional[Question]:
     """Get question by question_id (PHY09-CH01-MCQ0001)"""
     return db.query(Question).filter(
@@ -146,3 +151,20 @@ def get_all_tags(db: Session) -> List[str]:
             all_tags.update(question.tags)
     
     return sorted(list(all_tags))
+
+def get_wrongly_answered_question_ids(db: Session, user_id: int) -> List[int]:
+    """Get IDs of all questions the user has answered incorrectly at least once."""
+    incorrect_question_ids = db.query(UserActivity.question_id).filter(
+        and_(
+            UserActivity.user_id == user_id,
+            UserActivity.is_correct == False
+        )
+    ).distinct().all()
+    return [qid for qid, in incorrect_question_ids]
+
+def get_attempted_question_ids(db: Session, user_id: int) -> List[int]:
+    """Get IDs of all questions the user has attempted."""
+    attempted_question_ids = db.query(UserActivity.question_id).filter(
+        UserActivity.user_id == user_id
+    ).distinct().all()
+    return [qid for qid, in attempted_question_ids]

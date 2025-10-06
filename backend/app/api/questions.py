@@ -16,7 +16,10 @@ from app.crud.question import (
     get_questions_filtered, 
     get_random_question,
     get_chapter_summary,
-    get_all_tags
+    get_all_tags,
+    get_wrongly_answered_question_ids,
+    get_attempted_question_ids,
+    get_questions_by_ids
 )
 from app.crud.analytics import record_user_activity, create_mark, get_user_marks, remove_mark, get_real_time_stats
 from app.schemas.schemas import (
@@ -320,4 +323,38 @@ async def get_questions_count(db: Session = Depends(get_db)):
         raise HTTPException(
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
             detail="Failed to get question count"
+        )
+
+@router.get("/review/wrong", response_model=List[QuestionResponse])
+async def get_wrong_questions_for_review(
+    current_user: UserResponse = Depends(get_current_user),
+    db: Session = Depends(get_db)
+):
+    """Get all questions the user has answered incorrectly."""
+    try:
+        question_ids = get_wrongly_answered_question_ids(db, current_user.id)
+        questions = get_questions_by_ids(db, question_ids)
+        return questions
+    except Exception as e:
+        logger.error(f"Get wrong questions error: {str(e)}")
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail="Failed to get questions for review"
+        )
+
+@router.get("/review/attempted", response_model=List[QuestionResponse])
+async def get_attempted_questions_for_review(
+    current_user: UserResponse = Depends(get_current_user),
+    db: Session = Depends(get_db)
+):
+    """Get all questions the user has attempted."""
+    try:
+        question_ids = get_attempted_question_ids(db, current_user.id)
+        questions = get_questions_by_ids(db, question_ids)
+        return questions
+    except Exception as e:
+        logger.error(f"Get attempted questions error: {str(e)}")
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail="Failed to get questions for review"
         )

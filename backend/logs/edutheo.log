@@ -370,3 +370,36 @@ TypeError: Function.__init__() got an unexpected keyword argument 'else_'
 2025-10-06 14:14:59.872 | INFO     | app.api.analytics:get_user_analytics:60 - Analytics requested by user: Sulphite
 2025-10-06 14:15:08.335 | INFO     | app.api.questions:get_chapters:264 - Total questions in DB: 80
 2025-10-06 14:15:08.337 | INFO     | app.api.questions:get_chapters:267 - Chapters retrieved: 9
+2025-10-06 14:27:32.468 | INFO     | app.api.analytics:get_user_analytics:60 - Analytics requested by user: Sulphite
+2025-10-06 14:27:55.393 | INFO     | app.api.questions:get_chapters:267 - Total questions in DB: 80
+2025-10-06 14:27:55.394 | INFO     | app.api.questions:get_chapters:270 - Chapters retrieved: 9
+2025-10-06 14:28:30.367 | INFO     | app.api.questions:check_answer:163 - Answer checked for user Sulphite: question PHY09-CH06-MCQ0049, correct: False
+2025-10-06 14:29:09.731 | INFO     | app.api.questions:check_answer:163 - Answer checked for user Sulphite: question PHY09-CH06-MCQ0050, correct: False
+2025-10-06 14:29:19.426 | INFO     | app.api.questions:check_answer:163 - Answer checked for user Sulphite: question PHY09-CH06-MCQ0051, correct: True
+2025-10-06 14:29:27.368 | INFO     | app.api.questions:check_answer:163 - Answer checked for user Sulphite: question PHY09-CH06-MCQ0052, correct: True
+2025-10-06 14:29:52.628 | INFO     | app.api.questions:check_answer:163 - Answer checked for user Sulphite: question PHY09-CH06-MCQ0053, correct: True
+2025-10-06 14:30:06.226 | INFO     | app.api.analytics:get_user_analytics:60 - Analytics requested by user: Sulphite
+2025-10-06 14:31:12.228 | INFO     | app.api.questions:get_chapters:267 - Total questions in DB: 80
+2025-10-06 14:31:12.228 | INFO     | app.api.questions:get_chapters:270 - Chapters retrieved: 9
+2025-10-06 14:31:58.532 | INFO     | app.api.questions:check_answer:163 - Answer checked for user Sulphite: question PHY09-CH01-MCQ0001, correct: False
+2025-10-06 14:32:55.140 | INFO     | app.api.questions:check_answer:163 - Answer checked for user Sulphite: question PHY09-CH01-MCQ0002, correct: True
+2025-10-06 14:33:17.303 | INFO     | app.api.questions:check_answer:163 - Answer checked for user Sulphite: question PHY09-CH01-MCQ0003, correct: True
+2025-10-06 14:33:28.885 | INFO     | app.api.questions:check_answer:163 - Answer checked for user Sulphite: question PHY09-CH01-MCQ0004, correct: False
+2025-10-06 14:34:06.384 | INFO     | app.api.questions:check_answer:163 - Answer checked for user Sulphite: question PHY09-CH01-MCQ0005, correct: False
+2025-10-06 14:34:18.440 | INFO     | app.api.analytics:get_user_analytics:60 - Analytics requested by user: Sulphite
+2025-10-06 14:36:10.081 | INFO     | app.api.analytics:get_user_analytics:60 - Analytics requested by user: Sulphite
+2025-10-06 14:36:33.208 | INFO     | app.api.questions:get_chapters:267 - Total questions in DB: 80
+2025-10-06 14:36:33.209 | INFO     | app.api.questions:get_chapters:270 - Chapters retrieved: 9
+2025-10-06 14:36:50.352 | INFO     | app.api.auth:login:105 - User logged in: Sulphite
+2025-10-06 14:36:50.374 | INFO     | app.api.analytics:get_user_analytics:60 - Analytics requested by user: Sulphite
+2025-10-06 14:36:52.237 | INFO     | app.api.questions:get_chapters:267 - Total questions in DB: 80
+2025-10-06 14:36:52.239 | INFO     | app.api.questions:get_chapters:270 - Chapters retrieved: 9
+2025-10-06 14:37:21.891 | INFO     | app.api.questions:check_answer:163 - Answer checked for user Sulphite: question PHY09-CH01-MCQ0001, correct: False
+2025-10-06 14:38:13.368 | INFO     | app.api.analytics:reset_analytics:229 - Analytics reset for user Sulphite. 16 activities deleted.
+2025-10-06 14:38:13.412 | INFO     | app.api.analytics:get_user_analytics:60 - Analytics requested by user: Sulphite
+2025-10-06 14:38:14.916 | INFO     | app.api.analytics:get_user_analytics:60 - Analytics requested by user: Sulphite
+2025-10-06 14:38:16.416 | INFO     | app.api.analytics:get_user_analytics:60 - Analytics requested by user: Sulphite
+2025-10-06 14:38:19.141 | INFO     | app.api.questions:get_chapters:267 - Total questions in DB: 80
+2025-10-06 14:38:19.143 | INFO     | app.api.questions:get_chapters:270 - Chapters retrieved: 9
+2025-10-06 15:08:06.194 | INFO     | app.api.auth:login:105 - User logged in: Sulphite
+2025-10-06 15:08:06.218 | INFO     | app.api.analytics:get_user_analytics:60 - Analytics requested by user: Sulphite

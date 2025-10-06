@@ -22,6 +22,7 @@ class EduTheoApp {
         this.practice = {
             questions: [],
             currentQuestionIndex: 0,
+            currentHintIndex: 0,
             filters: {}
         };
         this.ws = null;
@@ -57,51 +58,44 @@ class EduTheoApp {
     setupEventListeners() {
         this.root.addEventListener('click', (e) => {
             const target = e.target;
-            const loginTab = target.closest('#login-tab-btn');
-            const signupTab = target.closest('#signup-tab-btn');
-            const navLink = target.closest('.nav-link');
-            const themeToggle = target.closest('#theme-toggle');
-            const logoutBtn = target.closest('#logout-btn');
-            const startPracticeBtn = target.closest('#start-practice-btn');
-            const submitAnswerBtn = target.closest('#submit-answer-btn');
-            const resetAnalyticsBtn = target.closest('#reset-analytics-btn');
-            const showHintBtn = target.closest('#show-hint-btn');
-
-            if (loginTab) this.switchAuthTab('login');
-            if (signupTab) this.switchAuthTab('signup');
-            if (navLink) {
+            if (target.closest('#login-tab-btn')) this.switchAuthTab('login');
+            if (target.closest('#signup-tab-btn')) this.switchAuthTab('signup');
+            if (target.closest('.nav-link')) {
                 e.preventDefault();
-                this.navigateTo(navLink.dataset.page);
+                this.navigateTo(target.closest('.nav-link').dataset.page);
             }
-            if (themeToggle) this.toggleTheme();
-            if (logoutBtn) {
+            if (target.closest('#theme-toggle')) this.toggleTheme();
+            if (target.closest('#logout-btn')) {
                 e.preventDefault();
                 this.logout();
             }
-            if (startPracticeBtn) this.startPractice();
-            if (submitAnswerBtn) this.submitAnswer();
-            if (resetAnalyticsBtn) {
+            if (target.closest('#start-practice-btn')) this.startPractice();
+            if (target.closest('#submit-answer-btn')) this.submitAnswer();
+            if (target.closest('#reset-analytics-btn')) {
                 if (confirm('Are you sure you want to reset all your analytics data? This action cannot be undone.')) {
                     this.resetAnalytics();
                 }
             }
-            if (showHintBtn) {
-                const hintContainer = document.getElementById('hint-container');
-                hintContainer.classList.toggle('hidden');
-            }
+            if (target.closest('#show-hint-btn')) this.showHint();
+            if (target.closest('#prev-question-btn')) this.navigatePractice(-1);
+            if (target.closest('#next-question-btn')) this.navigatePractice(1);
+            
+            const reviewWrongTab = target.closest('#review-wrong-tab');
+            const reviewAttemptedTab = target.closest('#review-attempted-tab');
+            if (reviewWrongTab) this.loadReviewContent('wrong');
+            if (reviewAttemptedTab) this.loadReviewContent('attempted');
         });
 
         this.root.addEventListener('submit', (e) => {
-            const target = e.target;
-            if (target.id === 'login-form') {
+            if (e.target.id === 'login-form') {
                 e.preventDefault();
-                const formData = new FormData(target);
+                const formData = new FormData(e.target);
                 const data = Object.fromEntries(formData.entries());
                 this.login(data.username, data.password);
             }
-            if (target.id === 'signup-form') {
+            if (e.target.id === 'signup-form') {
                 e.preventDefault();
-                const formData = new FormData(target);
+                const formData = new FormData(e.target);
                 const data = Object.fromEntries(formData.entries());
                 this.signup(data);
             }
@@ -200,6 +194,7 @@ class EduTheoApp {
             if (page === 'dashboard') this.updateDashboard();
             if (page === 'practice') this.initPracticePage();
             if (page === 'analytics') this.updateAnalyticsPage();
+            if (page === 'review') this.updateReviewPage();
         } else if (this.mainContent) {
             this.mainContent.innerHTML = `<div class="text-center p-8"><h2 class="text-2xl">Coming Soon</h2><p>${page} page is under construction.</p></div>`;
         }
@@ -213,7 +208,6 @@ class EduTheoApp {
     }
 
     toggleTheme() {
-        console.log('Toggling theme');
         const isDark = document.documentElement.classList.toggle('dark');
         localStorage.setItem('theme', isDark ? 'dark' : 'light');
         const themeToggle = document.getElementById('theme-toggle')?.querySelector('span');
@@ -485,6 +479,8 @@ class EduTheoApp {
             return;
         }
 
+        this.practice.currentHintIndex = 0;
+
         const optionsHTML = Object.entries(question.options).map(([key, value]) => {
             return `<label class="flex items-center gap-4 p-4 rounded-lg border border-slate-200 dark:border-slate-700 has-[:checked]:bg-primary/10 has-[:checked]:border-primary dark:has-[:checked]:bg-primary/20 dark:has-[:checked]:border-primary cursor-pointer transition-all">
                         <input class="form-radio h-5 w-5 text-primary bg-background-light dark:bg-background-dark border-slate-300 dark:border-slate-600 focus:ring-primary focus:ring-offset-background-light dark:focus:ring-offset-background-dark" name="mcq_option" type="radio" value="${key}" />
@@ -504,35 +500,64 @@ class EduTheoApp {
                 <p class="text-lg font-medium text-slate-800 dark:text-slate-200 leading-relaxed">
                     ${question.question_text}
                 </p>
-                <div id="hint-container" class="hidden mt-4 p-4 bg-yellow-100 dark:bg-yellow-900/50 border-l-4 border-yellow-400 text-yellow-700 dark:text-yellow-300"></div>
+                <div id="hint-container" class="mt-4"></div>
             </div>
             <div class="px-6 sm:px-8 pb-6 sm:pb-8 grid grid-cols-1 sm:grid-cols-2 gap-3">
                 ${optionsHTML}
             </div>
             <div id="explanation-container" class="hidden mx-6 sm:mx-8 mb-6 p-4 bg-blue-100 dark:bg-blue-900/50 border-l-4 border-blue-400 text-blue-700 dark:text-blue-300"></div>
             <div class="px-6 sm:px-8 py-4 bg-background-light dark:bg-background-dark/50 border-t border-slate-200 dark:border-slate-800">
-                <div class="flex justify-end items-center">
-                    <p id="practice-message" class="text-sm text-red-500 mr-4"></p>
-                    <button id="submit-answer-btn" class="flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-bold bg-primary text-slate-900 hover:bg-primary/90 transition-colors">
-                        Submit Answer
-                    </button>
+                <div class="flex justify-between items-center">
+                    <button id="prev-question-btn" class="flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-bold bg-gray-200 text-gray-800 hover:bg-gray-300 transition-colors dark:bg-gray-700 dark:text-gray-200 dark:hover:bg-gray-600">Previous</button>
+                    <div class="flex items-center">
+                        <p id="practice-message" class="text-sm text-red-500 mr-4"></p>
+                        <button id="submit-answer-btn" class="flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-bold bg-primary text-slate-900 hover:bg-primary/90 transition-colors">Check Answer</button>
+                    </div>
+                    <button id="next-question-btn" class="flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-bold bg-gray-200 text-gray-800 hover:bg-gray-300 transition-colors dark:bg-gray-700 dark:text-gray-200 dark:hover:bg-gray-600">Next</button>
                 </div>
             </div>
         `;
-        
-        const hintContainer = document.getElementById('hint-container');
+
         const showHintBtn = document.getElementById('show-hint-btn');
         if (question.hints && question.hints.length > 0) {
-            hintContainer.innerHTML = `<strong>Hint:</strong> ${question.hints.join('<br>')}`;
             showHintBtn.classList.remove('hidden');
-        } else {
-            showHintBtn.classList.add('hidden');
+        }
+
+        this.updateNavButtons();
+    }
+    
+    updateNavButtons() {
+        document.getElementById('prev-question-btn').disabled = this.practice.currentQuestionIndex === 0;
+        document.getElementById('next-question-btn').disabled = this.practice.currentQuestionIndex === this.practice.questions.length - 1 || !this.practice.questions[this.practice.currentQuestionIndex].answered;
+    }
+
+    navigatePractice(direction) {
+        this.practice.currentQuestionIndex += direction;
+        this.renderPracticeQuestion();
+    }
+
+    showHint() {
+        const question = this.practice.questions[this.practice.currentQuestionIndex];
+        const hintContainer = document.getElementById('hint-container');
+        const showHintBtn = document.getElementById('show-hint-btn');
+
+        if (question.hints && this.practice.currentHintIndex < question.hints.length) {
+            const hintElement = document.createElement('p');
+            hintElement.innerHTML = `<strong>Hint ${this.practice.currentHintIndex + 1}:</strong> ${question.hints[this.practice.currentHintIndex]}`;
+            hintElement.className = 'p-2 bg-yellow-100/50 dark:bg-yellow-900/30 rounded-lg mt-2';
+            hintContainer.appendChild(hintElement);
+            this.practice.currentHintIndex++;
+        }
+
+        if (!question.hints || this.practice.currentHintIndex >= question.hints.length) {
+            showHintBtn.disabled = true;
+            showHintBtn.textContent = 'No more hints';
         }
     }
 
     async submitAnswer() {
         const practiceMessage = document.getElementById('practice-message');
-        practiceMessage.textContent = ''; // Clear previous messages
+        practiceMessage.textContent = '';
         const selectedOption = document.querySelector('input[name="mcq_option"]:checked');
         if (!selectedOption) {
             practiceMessage.textContent = 'Please select an answer.';
@@ -540,6 +565,7 @@ class EduTheoApp {
         }
 
         const question = this.practice.questions[this.practice.currentQuestionIndex];
+        question.answered = true; // Mark as answered
         const answer = selectedOption.value;
 
         try {
@@ -552,7 +578,7 @@ class EduTheoApp {
             const optionLabels = document.querySelectorAll('label.flex');
             optionLabels.forEach(label => {
                 const input = label.querySelector('input');
-                label.style.pointerEvents = 'none'; // Disable further clicks
+                label.style.pointerEvents = 'none';
                 if(input.value.toLowerCase() === result.correct_answer.toLowerCase()) {
                     label.classList.add('border-green-500', 'bg-green-100', 'dark:bg-green-900');
                 }
@@ -568,16 +594,7 @@ class EduTheoApp {
             }
 
             document.getElementById('submit-answer-btn').disabled = true;
-
-            setTimeout(() => {
-                this.practice.currentQuestionIndex++;
-                if (this.practice.currentQuestionIndex < this.practice.questions.length) {
-                    this.renderPracticeQuestion();
-                } else {
-                    alert('Practice session complete!');
-                    this.navigateTo('dashboard');
-                }
-            }, 2000);
+            this.updateNavButtons();
 
         } catch (error) {
             console.error('Failed to submit answer:', error);
@@ -591,10 +608,68 @@ class EduTheoApp {
             });
             if (!response.ok) throw new Error('Failed to reset analytics');
             alert('Your analytics data has been successfully reset.');
-            this.updateDashboard(); // Refresh dashboard to show empty stats
+            this.updateDashboard();
         } catch (error) {
             console.error('Failed to reset analytics:', error);
             alert(`Error: ${error.message}`);
         }
+    }
+    
+    async updateReviewPage() {
+        // Load wrong answers by default
+        this.loadReviewContent('wrong');
+    }
+
+    async loadReviewContent(type) {
+        const wrongTab = document.getElementById('review-wrong-tab');
+        const attemptedTab = document.getElementById('review-attempted-tab');
+        const reviewContent = document.getElementById('review-content');
+        reviewContent.innerHTML = '<p>Loading...</p>';
+
+        wrongTab.classList.remove('border-primary', 'text-primary');
+        attemptedTab.classList.remove('border-primary', 'text-primary');
+        if (type === 'wrong') {
+            wrongTab.classList.add('border-primary', 'text-primary');
+        } else {
+            attemptedTab.classList.add('border-primary', 'text-primary');
+        }
+
+        try {
+            const response = await this.authenticatedFetch(`${this.api.baseUrl}/questions/review/${type}`);
+            const questions = await response.json();
+            this.renderReviewQuestions(questions);
+        } catch (error) {
+            reviewContent.innerHTML = '<p>Could not load review questions.</p>';
+            console.error('Failed to load review content:', error);
+        }
+    }
+
+    renderReviewQuestions(questions) {
+        const reviewContent = document.getElementById('review-content');
+        if (questions.length === 0) {
+            reviewContent.innerHTML = '<p>No questions to review in this category.</p>';
+            return;
+        }
+
+        const questionsHTML = questions.map(q => {
+            const optionsHTML = Object.entries(q.options).map(([key, value]) => {
+                let classes = 'p-2 border rounded-lg';
+                if (key.toLowerCase() === q.correct_answer.toLowerCase()) {
+                    classes += ' bg-green-100 border-green-300 dark:bg-green-900/50 dark:border-green-700';
+                }
+                return `<div class="${classes}">${key.toUpperCase()}: ${value}</div>`;
+            }).join('');
+
+            return `
+            <div class="mb-4 p-4 border border-gray-200 dark:border-gray-700 rounded-lg bg-white dark:bg-gray-800">
+                <p class="font-bold mb-2">${q.question_text}</p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-2">
+                    ${optionsHTML}
+                </div>
+                ${q.explanations[q.correct_answer] ? `<p class="text-sm text-gray-600 dark:text-gray-400 mt-2"><strong>Explanation:</strong> ${q.explanations[q.correct_answer]}</p>` : ''}
+            </div>
+        `}).join('');
+
+        reviewContent.innerHTML = questionsHTML;
     }
 }
