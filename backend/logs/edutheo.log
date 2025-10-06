@@ -403,3 +403,61 @@ TypeError: Function.__init__() got an unexpected keyword argument 'else_'
 2025-10-06 14:38:19.143 | INFO     | app.api.questions:get_chapters:270 - Chapters retrieved: 9
 2025-10-06 15:08:06.194 | INFO     | app.api.auth:login:105 - User logged in: Sulphite
 2025-10-06 15:08:06.218 | INFO     | app.api.analytics:get_user_analytics:60 - Analytics requested by user: Sulphite
+2025-10-06 15:10:40.218 | INFO     | app.api.analytics:get_user_analytics:60 - Analytics requested by user: Sulphite
+2025-10-06 15:10:42.476 | INFO     | app.api.questions:get_chapters:267 - Total questions in DB: 80
+2025-10-06 15:10:42.478 | INFO     | app.api.questions:get_chapters:270 - Chapters retrieved: 9
+2025-10-06 15:10:45.011 | INFO     | app.api.analytics:get_user_analytics:60 - Analytics requested by user: Sulphite
+2025-10-06 15:22:04.902 | INFO     | app.api.analytics:get_user_analytics:60 - Analytics requested by user: Sulphite
+2025-10-06 15:22:06.865 | INFO     | app.api.questions:get_chapters:267 - Total questions in DB: 80
+2025-10-06 15:22:06.866 | INFO     | app.api.questions:get_chapters:270 - Chapters retrieved: 9
+2025-10-06 15:24:39.963 | INFO     | app.api.analytics:get_user_analytics:60 - Analytics requested by user: Sulphite
+2025-10-06 15:24:44.783 | INFO     | app.api.questions:get_chapters:267 - Total questions in DB: 80
+2025-10-06 15:24:44.786 | INFO     | app.api.questions:get_chapters:270 - Chapters retrieved: 9
+2025-10-06 15:25:06.117 | INFO     | app.api.questions:get_chapters:267 - Total questions in DB: 80
+2025-10-06 15:25:06.119 | INFO     | app.api.questions:get_chapters:270 - Chapters retrieved: 9
+2025-10-06 15:25:07.102 | INFO     | app.api.analytics:get_user_analytics:60 - Analytics requested by user: Sulphite
+2025-10-06 15:25:32.866 | INFO     | app.api.auth:login:119 - User logged in: Sulphite
+2025-10-06 15:25:32.887 | INFO     | app.api.analytics:get_user_analytics:60 - Analytics requested by user: Sulphite
+2025-10-06 15:25:35.881 | INFO     | app.api.questions:get_chapters:267 - Total questions in DB: 80
+2025-10-06 15:25:35.882 | INFO     | app.api.questions:get_chapters:270 - Chapters retrieved: 9
+2025-10-06 15:25:52.428 | INFO     | app.api.analytics:get_user_analytics:60 - Analytics requested by user: Sulphite
+2025-10-06 15:26:10.256 | INFO     | app.api.questions:get_chapters:267 - Total questions in DB: 80
+2025-10-06 15:26:10.258 | INFO     | app.api.questions:get_chapters:270 - Chapters retrieved: 9
+2025-10-06 15:26:17.524 | INFO     | app.api.questions:check_answer:163 - Answer checked for user Sulphite: question PHY09-CH08-MCQ0066, correct: False
+2025-10-06 15:26:26.877 | INFO     | app.api.questions:check_answer:163 - Answer checked for user Sulphite: question PHY09-CH08-MCQ0067, correct: True
+2025-10-06 15:26:29.970 | INFO     | app.api.questions:check_answer:163 - Answer checked for user Sulphite: question PHY09-CH08-MCQ0068, correct: True
+2025-10-06 15:26:33.959 | INFO     | app.api.questions:check_answer:163 - Answer checked for user Sulphite: question PHY09-CH08-MCQ0069, correct: True
+2025-10-06 15:26:37.966 | INFO     | app.api.questions:check_answer:163 - Answer checked for user Sulphite: question PHY09-CH08-MCQ0070, correct: True
+2025-10-06 15:26:50.034 | INFO     | app.api.analytics:get_user_analytics:60 - Analytics requested by user: Sulphite
+2025-10-06 15:26:55.866 | INFO     | app.api.questions:get_chapters:267 - Total questions in DB: 80
+2025-10-06 15:26:55.868 | INFO     | app.api.questions:get_chapters:270 - Chapters retrieved: 9
+2025-10-06 15:27:02.355 | INFO     | app.api.questions:check_answer:163 - Answer checked for user Sulphite: question PHY09-CH08-MCQ0066, correct: False
+2025-10-06 15:32:03.812 | INFO     | app.api.analytics:get_user_analytics:60 - Analytics requested by user: Sulphite
+2025-10-06 15:33:43.389 | INFO     | app.api.analytics:get_user_analytics:60 - Analytics requested by user: Sulphite
+2025-10-06 15:33:51.344 | INFO     | app.api.questions:get_chapters:267 - Total questions in DB: 80
+2025-10-06 15:33:51.346 | INFO     | app.api.questions:get_chapters:270 - Chapters retrieved: 9
+2025-10-06 15:33:56.287 | INFO     | app.api.questions:check_answer:163 - Answer checked for user Sulphite: question PHY09-CH08-MCQ0066, correct: True
+2025-10-06 15:34:18.149 | INFO     | app.api.analytics:get_user_analytics:60 - Analytics requested by user: Sulphite
+2025-10-06 15:34:29.550 | INFO     | app.api.analytics:reset_analytics:229 - Analytics reset for user Sulphite. 7 activities deleted.
+2025-10-06 15:34:29.579 | INFO     | app.api.analytics:get_user_analytics:60 - Analytics requested by user: Sulphite
+2025-10-06 15:34:29.602 | INFO     | app.api.analytics:get_user_analytics:60 - Analytics requested by user: Sulphite
+2025-10-06 15:34:29.621 | INFO     | app.api.analytics:get_user_analytics:60 - Analytics requested by user: Sulphite
+2025-10-06 15:34:29.646 | INFO     | app.api.analytics:get_user_analytics:60 - Analytics requested by user: Sulphite
+2025-10-06 15:34:29.668 | INFO     | app.api.analytics:get_user_analytics:60 - Analytics requested by user: Sulphite
+2025-10-06 15:34:31.176 | INFO     | app.api.questions:get_chapters:267 - Total questions in DB: 80
+2025-10-06 15:34:31.178 | INFO     | app.api.questions:get_chapters:270 - Chapters retrieved: 9
+2025-10-06 15:34:41.426 | INFO     | app.api.questions:check_answer:163 - Answer checked for user Sulphite: question PHY09-CH08-MCQ0066, correct: True
+2025-10-06 15:34:48.344 | INFO     | app.api.questions:check_answer:163 - Answer checked for user Sulphite: question PHY09-CH08-MCQ0067, correct: False
+2025-10-06 15:34:57.591 | INFO     | app.api.questions:check_answer:163 - Answer checked for user Sulphite: question PHY09-CH08-MCQ0068, correct: True
+2025-10-06 15:35:02.802 | INFO     | app.api.questions:check_answer:163 - Answer checked for user Sulphite: question PHY09-CH08-MCQ0069, correct: True
+2025-10-06 15:35:06.972 | INFO     | app.api.questions:check_answer:163 - Answer checked for user Sulphite: question PHY09-CH08-MCQ0070, correct: True
+2025-10-06 15:46:52.170 | INFO     | app.api.analytics:get_user_analytics:60 - Analytics requested by user: Sulphite
+2025-10-06 15:46:55.851 | INFO     | app.api.questions:get_chapters:267 - Total questions in DB: 80
+2025-10-06 15:46:55.852 | INFO     | app.api.questions:get_chapters:270 - Chapters retrieved: 9
+2025-10-06 15:46:59.915 | INFO     | app.api.questions:get_chapters:267 - Total questions in DB: 80
+2025-10-06 15:46:59.916 | INFO     | app.api.questions:get_chapters:270 - Chapters retrieved: 9
+2025-10-06 15:47:04.732 | INFO     | app.api.questions:check_answer:163 - Answer checked for user Sulphite: question PHY09-CH08-MCQ0067, correct: True
+2025-10-06 15:47:16.503 | INFO     | app.api.questions:get_chapters:267 - Total questions in DB: 80
+2025-10-06 15:47:16.504 | INFO     | app.api.questions:get_chapters:270 - Chapters retrieved: 9
+2025-10-06 15:47:17.452 | INFO     | app.api.analytics:get_user_analytics:60 - Analytics requested by user: Sulphite
+2025-10-06 15:47:36.397 | INFO     | app.api.analytics:get_user_analytics:60 - Analytics requested by user: Sulphite

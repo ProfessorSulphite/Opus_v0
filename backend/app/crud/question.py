@@ -153,13 +153,21 @@ def get_all_tags(db: Session) -> List[str]:
     return sorted(list(all_tags))
 
 def get_wrongly_answered_question_ids(db: Session, user_id: int) -> List[int]:
-    """Get IDs of all questions the user has answered incorrectly at least once."""
-    incorrect_question_ids = db.query(UserActivity.question_id).filter(
-        and_(
-            UserActivity.user_id == user_id,
-            UserActivity.is_correct == False
-        )
-    ).distinct().all()
+    """
+    Get IDs of all questions where the user's most recent attempt was incorrect.
+    """
+    # Subquery to find the ID of the last attempt for each question by the user
+    last_attempt_sq = db.query(
+        UserActivity.question_id,
+        func.max(UserActivity.id).label('last_activity_id')
+    ).filter(UserActivity.user_id == user_id).group_by(UserActivity.question_id).subquery()
+
+    # Join to get the last attempt activity record
+    incorrect_question_ids = db.query(UserActivity.question_id).join(
+        last_attempt_sq,
+        UserActivity.id == last_attempt_sq.c.last_activity_id
+    ).filter(UserActivity.is_correct == False).all()
+
     return [qid for qid, in incorrect_question_ids]
 
 def get_attempted_question_ids(db: Session, user_id: int) -> List[int]:

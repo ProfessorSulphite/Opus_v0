@@ -84,6 +84,18 @@ class EduTheoApp {
             const reviewAttemptedTab = target.closest('#review-attempted-tab');
             if (reviewWrongTab) this.loadReviewContent('wrong');
             if (reviewAttemptedTab) this.loadReviewContent('attempted');
+
+            const practiceWrongBtn = target.closest('#practice-wrong-btn');
+            if (practiceWrongBtn) this.startWrongQuestionsPractice();
+
+            if (target.closest('#google-login-btn')) {
+                e.preventDefault();
+                this.showToast('Google login is not configured yet.', 'info');
+            }
+            if (target.closest('#facebook-login-btn')) {
+                e.preventDefault();
+                this.showToast('Facebook login is not configured yet.', 'info');
+            }
         });
 
         this.root.addEventListener('submit', (e) => {
@@ -231,7 +243,7 @@ class EduTheoApp {
             this.connectWebSocket();
             this.navigateTo('dashboard');
         } catch (error) {
-            alert(`Login failed: ${error.message}`);
+            this.showToast(error.message, 'error');
         }
     }
 
@@ -243,10 +255,10 @@ class EduTheoApp {
                 body: JSON.stringify(data)
             });
             if (!response.ok) throw new Error((await response.json()).detail || 'Signup failed');
-            alert('Signup successful! Please log in.');
+            this.showToast('Signup successful! Please log in.', 'success');
             this.switchAuthTab('login');
         } catch (error) {
-            alert(`Signup failed: ${error.message}`);
+            this.showToast(error.message, 'error');
         }
     }
 
@@ -528,12 +540,31 @@ class EduTheoApp {
     
     updateNavButtons() {
         document.getElementById('prev-question-btn').disabled = this.practice.currentQuestionIndex === 0;
-        document.getElementById('next-question-btn').disabled = this.practice.currentQuestionIndex === this.practice.questions.length - 1 || !this.practice.questions[this.practice.currentQuestionIndex].answered;
+        document.getElementById('next-question-btn').disabled = !this.practice.questions[this.practice.currentQuestionIndex].answered;
     }
 
     navigatePractice(direction) {
-        this.practice.currentQuestionIndex += direction;
-        this.renderPracticeQuestion();
+        const newIndex = this.practice.currentQuestionIndex + direction;
+
+        if (newIndex >= this.practice.questions.length) {
+            const practiceContent = document.getElementById('practice-content');
+            practiceContent.innerHTML = `
+                <div class="p-8 text-center">
+                    <h2 class="text-2xl font-bold mb-4 text-gray-900 dark:text-white">Practice Complete!</h2>
+                    <p class="text-gray-600 dark:text-gray-400 mb-6">You have attempted all questions in this set.</p>
+                    <div class="flex justify-center gap-4">
+                        <button data-page="analytics" class="nav-link px-4 py-2 rounded-lg font-bold bg-primary text-slate-900 hover:bg-primary/90 transition-colors">View Analytics</button>
+                        <button data-page="review" class="nav-link px-4 py-2 rounded-lg font-bold bg-gray-200 text-gray-800 hover:bg-gray-300 dark:bg-gray-700 dark:text-gray-200 dark:hover:bg-gray-600 transition-colors">Review Answers</button>
+                    </div>
+                </div>
+            `;
+            return;
+        }
+
+        if (newIndex >= 0) {
+            this.practice.currentQuestionIndex = newIndex;
+            this.renderPracticeQuestion();
+        }
     }
 
     showHint() {
@@ -606,12 +637,11 @@ class EduTheoApp {
             const response = await this.authenticatedFetch(`${this.api.baseUrl}/analytics/reset`, {
                 method: 'POST'
             });
-            if (!response.ok) throw new Error('Failed to reset analytics');
-            alert('Your analytics data has been successfully reset.');
+            if (!response.ok) throw new Error((await response.json()).detail || 'Failed to reset analytics');
+            this.showToast('Your analytics data has been successfully reset.', 'success');
             this.updateDashboard();
         } catch (error) {
-            console.error('Failed to reset analytics:', error);
-            alert(`Error: ${error.message}`);
+            this.showToast(error.message, 'error');
         }
     }
     
@@ -624,14 +654,18 @@ class EduTheoApp {
         const wrongTab = document.getElementById('review-wrong-tab');
         const attemptedTab = document.getElementById('review-attempted-tab');
         const reviewContent = document.getElementById('review-content');
-        reviewContent.innerHTML = '<p>Loading...</p>';
+        const practiceWrongBtn = document.getElementById('practice-wrong-btn');
+        
+        reviewContent.innerHTML = '<p class="text-center py-8">Loading...</p>';
 
         wrongTab.classList.remove('border-primary', 'text-primary');
         attemptedTab.classList.remove('border-primary', 'text-primary');
         if (type === 'wrong') {
             wrongTab.classList.add('border-primary', 'text-primary');
+            practiceWrongBtn.classList.remove('hidden');
         } else {
             attemptedTab.classList.add('border-primary', 'text-primary');
+            practiceWrongBtn.classList.add('hidden');
         }
 
         try {
@@ -639,7 +673,7 @@ class EduTheoApp {
             const questions = await response.json();
             this.renderReviewQuestions(questions);
         } catch (error) {
-            reviewContent.innerHTML = '<p>Could not load review questions.</p>';
+            reviewContent.innerHTML = '<p class="text-center text-red-500 py-8">Could not load review questions.</p>';
             console.error('Failed to load review content:', error);
         }
     }
@@ -647,7 +681,7 @@ class EduTheoApp {
     renderReviewQuestions(questions) {
         const reviewContent = document.getElementById('review-content');
         if (questions.length === 0) {
-            reviewContent.innerHTML = '<p>No questions to review in this category.</p>';
+            reviewContent.innerHTML = '<p class="text-center text-gray-500 py-8">No questions to review in this category.</p>';
             return;
         }
 
@@ -661,15 +695,65 @@ class EduTheoApp {
             }).join('');
 
             return `
-            <div class="mb-4 p-4 border border-gray-200 dark:border-gray-700 rounded-lg bg-white dark:bg-gray-800">
+            <div class="mb-4 p-4 border border-gray-200 dark:border-gray-700 rounded-lg bg-card-light dark:bg-card-dark">
                 <p class="font-bold mb-2">${q.question_text}</p>
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-2">
                     ${optionsHTML}
                 </div>
-                ${q.explanations[q.correct_answer] ? `<p class="text-sm text-gray-600 dark:text-gray-400 mt-2"><strong>Explanation:</strong> ${q.explanations[q.correct_answer]}</p>` : ''}
+                ${q.explanations && q.explanations[q.correct_answer] ? `<p class="text-sm text-gray-600 dark:text-gray-400 mt-2"><strong>Explanation:</strong> ${q.explanations[q.correct_answer]}</p>` : ''}
             </div>
         `}).join('');
 
         reviewContent.innerHTML = questionsHTML;
+    }
+
+    async startWrongQuestionsPractice() {
+        try {
+            const response = await this.authenticatedFetch(`${this.api.baseUrl}/questions/review/wrong`);
+            const questions = await response.json();
+            if (questions.length === 0) {
+                this.showToast("You have no incorrect questions to practice!", 'info');
+                return;
+            }
+            // Convert QuestionResponse to QuestionPractice
+            this.practice.questions = questions.map(q => ({
+                id: q.id,
+                question_id: q.question_id,
+                question_text: q.question_text,
+                options: q.options,
+                hints: q.hints,
+                chapter_name: q.chapter_name,
+                chapter_number: q.chapter_number,
+                difficulty_level: q.difficulty_level,
+                tags: q.tags,
+                answered: false // Reset answered state for practice
+            }));
+            this.practice.currentQuestionIndex = 0;
+            this.navigateTo('practice');
+            
+            setTimeout(() => this.renderPracticeQuestion(), 100);
+        } catch (error) {
+            console.error('Failed to start practice session with wrong questions:', error);
+            this.showToast('Could not start practice session.', 'error');
+        }
+    }
+
+    showToast(message, type = 'info') {
+        const toastContainer = document.getElementById('toast-container');
+        const toast = document.createElement('div');
+        
+        let bgColor = 'bg-gray-800';
+        if (type === 'success') bgColor = 'bg-green-600';
+        if (type === 'error') bgColor = 'bg-red-600';
+
+        toast.className = `px-4 py-3 rounded-lg text-white ${bgColor} shadow-lg animate-fade-in-up`;
+        toast.textContent = message;
+        
+        toastContainer.appendChild(toast);
+        
+        setTimeout(() => {
+            toast.classList.add('animate-fade-out-down');
+            toast.addEventListener('animationend', () => toast.remove());
+        }, 3000);
     }
 }

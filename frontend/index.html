@@ -49,6 +49,16 @@
         .dark .tab-btn.active {
             background-color: #1f2d1a;
         }
+        @keyframes fade-in-up {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fade-out-down {
+            from { opacity: 1; transform: translateY(0); }
+            to { opacity: 0; transform: translateY(20px); }
+        }
+        .animate-fade-in-up { animation: fade-in-up 0.3s ease-out forwards; }
+        .animate-fade-out-down { animation: fade-out-down 0.3s ease-in forwards; }
     </style>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
@@ -126,13 +136,13 @@
                             </div>
                             <div class="mt-6 grid grid-cols-2 gap-3">
                                 <div>
-                                    <a class="inline-flex w-full justify-center items-center rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 px-4 py-2 text-sm font-medium text-gray-500 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800" href="#">
+                                    <a id="google-login-btn" class="inline-flex w-full justify-center items-center rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 px-4 py-2 text-sm font-medium text-gray-500 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800" href="#">
                                         <svg class="h-5 w-5 mr-2" fill="currentColor" viewBox="0 0 48 48"><path d="M43.611 20.083H42V20H24v8h11.303c-1.649 4.657-6.08 8-11.303 8-6.627 0-12-5.373-12-12s5.373-12 12-12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4 12.955 4 4 12.955 4 24s8.955 20 20 20 20-8.955 20-20c0-1.341-.138-2.65-.389-3.917z"></path></svg>
                                         Google
                                     </a>
                                 </div>
                                 <div>
-                                    <a class="inline-flex w-full justify-center items-center rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 px-4 py-2 text-sm font-medium text-gray-500 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800" href="#">
+                                    <a id="facebook-login-btn" class="inline-flex w-full justify-center items-center rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 px-4 py-2 text-sm font-medium text-gray-500 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800" href="#">
                                         <svg class="h-5 w-5 mr-2" fill="currentColor" viewBox="0 0 20 20"><path clip-rule="evenodd" d="M20 10c0-5.523-4.477-10-10-10S0 4.477 0 10c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V10h2.54V7.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V10h2.773l-.443 2.89h-2.33v6.988C16.343 19.128 20 14.991 20 10z" fill-rule="evenodd"></path></svg>
                                         Facebook
                                     </a>
@@ -329,7 +339,10 @@
     <template id="review-content-template">
         <main class="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 py-8">
             <div class="max-w-4xl mx-auto">
-                <h1 class="text-3xl font-bold mb-4">Review Questions</h1>
+                <div class="flex justify-between items-center mb-4">
+                    <h1 class="text-3xl font-bold">Review Questions</h1>
+                    <button id="practice-wrong-btn" class="hidden px-4 py-2 rounded-lg text-sm font-bold bg-primary text-slate-900 hover:bg-primary/90 transition-colors">Practice These</button>
+                </div>
                 <div class="flex border-b border-gray-200 dark:border-gray-700">
                     <button id="review-wrong-tab" class="px-4 py-2 text-sm font-medium text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 border-b-2 border-transparent">Wrong Answers</button>
                     <button id="review-attempted-tab" class="px-4 py-2 text-sm font-medium text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 border-b-2 border-transparent">All Attempted</button>
@@ -405,5 +418,6 @@
     </template>
 
     <script src="./app.js"></script>
+    <div id="toast-container" class="fixed bottom-5 right-5 z-50 space-y-2"></div>
 </body>
 </html>
