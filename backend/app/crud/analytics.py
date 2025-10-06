@@ -124,7 +124,7 @@ def get_chapter_progress(db: Session, user_id: int) -> List[Dict[str, Any]]:
     user_attempts = db.query(
         Question.chapter_number,
         func.count(UserActivity.id).label('attempted'),
-        func.sum(case((UserActivity.is_correct, 1), else_=0)).label('correct')
+        func.sum(case((UserActivity.is_correct == True, 1), else_=0)).label('correct')
     ).join(UserActivity).filter(
         UserActivity.user_id == user_id
     ).group_by(Question.chapter_number).all()
@@ -345,7 +345,7 @@ def get_performance_trends(db: Session, user_id: int, days: int = 30) -> List[Di
     for stat in daily_stats:
         accuracy = (stat.correct / stat.total * 100) if stat.total > 0 else 0
         trends.append({
-            "date": stat.date.isoformat(),
+            "date": stat.date,
             "questions_attempted": stat.total,
             "correct_answers": stat.correct,
             "accuracy": round(accuracy, 1),

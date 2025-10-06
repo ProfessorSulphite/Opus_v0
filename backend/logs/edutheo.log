@@ -309,3 +309,7 @@ TypeError: Function.__init__() got an unexpected keyword argument 'else_'
 2025-10-06 13:31:27.857 | ERROR    | app.api.analytics:get_detailed_analytics_endpoint:129 - Detailed analytics error: 'str' object has no attribute 'isoformat'
 2025-10-06 13:31:29.816 | ERROR    | app.api.analytics:get_detailed_analytics_endpoint:129 - Detailed analytics error: 'str' object has no attribute 'isoformat'
 2025-10-06 13:31:38.951 | ERROR    | app.api.analytics:get_detailed_analytics_endpoint:129 - Detailed analytics error: 'str' object has no attribute 'isoformat'
+2025-10-06 13:52:09.051 | INFO     | app.api.analytics:get_user_analytics:57 - Analytics requested by user: Sulphite
+2025-10-06 13:52:33.768 | INFO     | app.api.questions:get_chapters:264 - Total questions in DB: 80
+2025-10-06 13:52:33.770 | INFO     | app.api.questions:get_chapters:267 - Chapters retrieved: 9
+2025-10-06 13:52:35.397 | INFO     | app.api.analytics:get_user_analytics:57 - Analytics requested by user: Sulphite
