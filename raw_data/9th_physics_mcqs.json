@@ -1,0 +1,3095 @@
+[
+  {
+    "question": "The instrument that is most suitable for measuring the thickness of a few sheets of cardboard is:",
+    "options": {
+      "a": "Vernier rule",
+      "b": "measuring tape",
+      "c": "Vernier Callipers",
+      "d": "micrometer screw gauge"
+    },
+    "answer": "d",
+    "explanations": {
+      "a": "Incorrect. A Vernier rule (or a standard ruler) has a least count of 1 mm, which is not precise enough for this measurement.",
+      "b": "Incorrect. A measuring tape is designed for measuring longer distances and lacks the precision needed for a few sheets of cardboard.",
+      "c": "Incorrect. Vernier Callipers have a least count of about 0.1 mm. While more precise than a ruler, they are less suitable than a micrometer for such a small thickness.",
+      "d": "Correct. A micrometer screw gauge has a least count of 0.01 mm, making it the most precise and suitable instrument for measuring the very small thickness of a few sheets."
+    },
+    "hints": [
+      "Consider the precision (least count) of each measuring instrument.",
+      "Which instrument is designed to measure the smallest thicknesses with the highest accuracy?"
+    ],
+    "metadata": {
+      "question_id": "PHY09-CH01-MCQ0001",
+      "chapter_name": "Physical Quantities and Measurement",
+      "chapter_number": 1,
+      "difficulty_level": "Easy",
+      "reasoning": "Requires direct recall of the application and precision of standard laboratory instruments.",
+      "question_type": "multiple_choice",
+      "source": "Physics Textbook 9th Grade",
+      "language": "English",
+      "organizer": "Huzaifa Altaf",
+      "created_date": "2025-10-05",
+      "grade": "9th",
+      "subject": "Physics",
+      "tags": [
+        "Screw Gauge",
+        "Precision",
+        "Accuracy"
+      ]
+    }
+  },
+  {
+    "question": "One femtometre is equal to:",
+    "options": {
+      "a": "$10^{-15}$ m",
+      "b": "$10^{-12}$ m",
+      "c": "$10^{-9}$ m",
+      "d": "$10^{-6}$ m"
+    },
+    "answer": "a",
+    "explanations": {
+      "a": "Correct. The SI prefix 'femto' represents a factor of $10^{-15}$. Therefore, 1 femtometre is equal to $10^{-15}$ metres.",
+      "b": "Incorrect. $10^{-12}$ m corresponds to the prefix 'pico'.",
+      "c": "Incorrect. $10^{-9}$ m corresponds to the prefix 'nano'.",
+      "d": "Incorrect. $10^{-6}$ m corresponds to the prefix 'micro'."
+    },
+    "hints": [
+      "Recall the standard SI prefixes for powers of ten.",
+      "Think about the sequence: milli ($10^{-3}$), micro ($10^{-6}$), nano ($10^{-9}$), pico ($10^{-12}$), femto ($10^{-15}$)."
+    ],
+    "metadata": {
+      "question_id": "PHY09-CH01-MCQ0002",
+      "chapter_name": "Physical Quantities and Measurement",
+      "chapter_number": 1,
+      "difficulty_level": "Easy",
+      "reasoning": "Tests direct recall of a standard SI prefix.",
+      "question_type": "multiple_choice",
+      "source": "Physics Textbook 9th Grade",
+      "language": "English",
+      "organizer": "Huzaifa Altaf",
+      "created_date": "2025-10-05",
+      "grade": "9th",
+      "subject": "Physics",
+      "tags": [
+        "SI Units",
+        "Prefixes",
+        "Scientific Notation"
+      ]
+    }
+  },
+  {
+    "question": "A lightyear is a unit of:",
+    "options": {
+      "a": "light",
+      "b": "time",
+      "c": "distance",
+      "d": "speed"
+    },
+    "answer": "c",
+    "explanations": {
+      "a": "Incorrect. A lightyear measures the distance light travels; it is not a unit of light itself.",
+      "b": "Incorrect. Although it has the word 'year' in it, a lightyear is not a unit of time.",
+      "c": "Correct. A lightyear is the distance that light travels in a vacuum in one year, often used for astronomical distances.",
+      "d": "Incorrect. The speed of light is a constant ($c$), but a lightyear is a measure of distance, not speed."
+    },
+    "hints": [
+      "What does a lightyear measure?",
+      "Think about its definition: the distance light travels in one year."
+    ],
+    "metadata": {
+      "question_id": "PHY09-CH01-MCQ0003",
+      "chapter_name": "Physical Quantities and Measurement",
+      "chapter_number": 1,
+      "difficulty_level": "Easy",
+      "reasoning": "Tests the definition of a common scientific term (lightyear), addressing a frequent misconception.",
+      "question_type": "multiple_choice",
+      "source": "Physics Textbook 9th Grade",
+      "language": "English",
+      "organizer": "Huzaifa Altaf",
+      "created_date": "2025-10-05",
+      "grade": "9th",
+      "subject": "Physics",
+      "tags": [
+        "Physical Quantities",
+        "SI Units"
+      ]
+    }
+  },
+  {
+    "question": "Which one is a non-physical quantity?",
+    "options": {
+      "a": "distance",
+      "b": "density",
+      "c": "colour",
+      "d": "temperature"
+    },
+    "answer": "c",
+    "explanations": {
+      "a": "Incorrect. Distance is a fundamental physical quantity measured in units like metres.",
+      "b": "Incorrect. Density is a derived physical quantity, calculated as mass per unit volume.",
+      "c": "Correct. Colour is a qualitative property based on human perception of light wavelengths and is not considered a physical quantity in the same way as measurable properties.",
+      "d": "Incorrect. Temperature is a fundamental physical quantity that measures the degree of hotness or coldness, measured in units like Kelvin or Celsius."
+    },
+    "hints": [
+      "A physical quantity is a property of a material or system that can be quantified by measurement.",
+      "Which option cannot be measured with a standard scientific instrument to give a numerical value?"
+    ],
+    "metadata": {
+      "question_id": "PHY09-CH01-MCQ0004",
+      "chapter_name": "Physical Quantities and Measurement",
+      "chapter_number": 1,
+      "difficulty_level": "Easy",
+      "reasoning": "Based on the fundamental definition of a physical quantity, requiring conceptual understanding rather than calculation.",
+      "question_type": "multiple_choice",
+      "source": "Physics Textbook 9th Grade",
+      "language": "English",
+      "organizer": "Huzaifa Altaf",
+      "created_date": "2025-10-05",
+      "grade": "9th",
+      "subject": "Physics",
+      "tags": [
+        "Physical Quantities"
+      ]
+    }
+  },
+  {
+    "question": "When using a measuring cylinder, one precaution to take is to:",
+    "options": {
+      "a": "check for the zero error",
+      "b": "look at the meniscus from below the level of the water surface",
+      "c": "take several readings by looking from more than one direction",
+      "d": "position the eye in line with the bottom of the meniscus"
+    },
+    "answer": "d",
+    "explanations": {
+      "a": "Incorrect. Zero error is a concern for instruments like Vernier callipers or screw gauges, not typically for measuring cylinders.",
+      "b": "Incorrect. Looking from below or above the meniscus level will cause a parallax error, leading to an inaccurate reading.",
+      "c": "Incorrect. Taking readings from multiple directions will introduce parallax errors and give inconsistent results. You should view from one, correct position.",
+      "d": "Correct. To avoid parallax error, your eye must be at the same level as the surface of the liquid. For water, the reading is taken from the bottom of the curved surface (meniscus)."
+    },
+    "hints": [
+      "Think about how to avoid parallax error when reading a scale.",
+      "Recall that the surface of water in a narrow tube is curved. This curve is called the meniscus."
+    ],
+    "metadata": {
+      "question_id": "PHY09-CH01-MCQ0005",
+      "chapter_name": "Physical Quantities and Measurement",
+      "chapter_number": 1,
+      "difficulty_level": "Easy",
+      "reasoning": "Assesses knowledge of a standard laboratory procedure (avoiding parallax error).",
+      "question_type": "multiple_choice",
+      "source": "Physics Textbook 9th Grade",
+      "language": "English",
+      "organizer": "Huzaifa Altaf",
+      "created_date": "2025-10-05",
+      "grade": "9th",
+      "subject": "Physics",
+      "tags": [
+        "Measurement Errors",
+        "Accuracy"
+      ]
+    }
+  },
+  {
+    "question": "Volume of millilitre water consumed by you per day is estimated in:",
+    "options": {
+      "a": "kilogram",
+      "b": "litre",
+      "c": "cubic centimetre",
+      "d": "cubic metre"
+    },
+    "answer": "b",
+    "explanations": {
+      "a": "Incorrect. Kilogram is a unit of mass, not volume.",
+      "b": "Correct. Litres (L) and millilitres (mL) are standard units for everyday liquid volumes, like water consumption. 1 litre = 1000 millilitres.",
+      "c": "Incorrect. While a cubic centimetre is a unit of volume (1 cm³ = 1 mL), daily water consumption is usually measured in the larger unit of litres.",
+      "d": "Incorrect. A cubic metre is a very large unit of volume (1 m³ = 1000 litres), unsuitable for measuring daily water intake."
+    },
+    "hints": [
+      "The question asks for an estimation of a daily amount.",
+      "Which unit of volume is commonly used for beverages?"
+    ],
+    "metadata": {
+      "question_id": "PHY09-CH01-MCQ0006",
+      "chapter_name": "Physical Quantities and Measurement",
+      "chapter_number": 1,
+      "difficulty_level": "Easy",
+      "reasoning": "Relates scientific units to a common real-world estimation.",
+      "question_type": "multiple_choice",
+      "source": "Physics Textbook 9th Grade",
+      "language": "English",
+      "organizer": "Huzaifa Altaf",
+      "created_date": "2025-10-05",
+      "grade": "9th",
+      "subject": "Physics",
+      "tags": [
+        "Physical Quantities",
+        "SI Units"
+      ]
+    }
+  },
+  {
+    "question": "A displacement can is used to measure:",
+    "options": {
+      "a": "mass of a liquid",
+      "b": "mass of a solid",
+      "c": "volume of a liquid",
+      "d": "volume of an irregular solid"
+    },
+    "answer": "d",
+    "explanations": {
+      "a": "Incorrect. Mass is measured using a balance, not a displacement can.",
+      "b": "Incorrect. Mass is measured using a balance.",
+      "c": "Incorrect. The volume of a liquid is typically measured directly with a measuring cylinder.",
+      "d": "Correct. A displacement can (or Eureka can) is used to find the volume of an irregularly shaped solid by measuring the volume of water it displaces when fully submerged."
+    },
+    "hints": [
+      "Think about Archimedes' principle.",
+      "How can you measure the volume of an object that doesn't have simple dimensions like a cube or sphere?"
+    ],
+    "metadata": {
+      "question_id": "PHY09-CH01-MCQ0007",
+      "chapter_name": "Physical Quantities and Measurement",
+      "chapter_number": 1,
+      "difficulty_level": "Easy",
+      "reasoning": "Tests knowledge of the specific function of a common piece of laboratory equipment.",
+      "question_type": "multiple_choice",
+      "source": "Physics Textbook 9th Grade",
+      "language": "English",
+      "organizer": "Huzaifa Altaf",
+      "created_date": "2025-10-05",
+      "grade": "9th",
+      "subject": "Physics",
+      "tags": [
+        "Physical Quantities"
+      ]
+    }
+  },
+  {
+    "question": "Two rods with lengths 12.321 cm and 10.3 cm are placed side by side, the difference in their lengths is:",
+    "options": {
+      "a": "2.02 cm",
+      "b": "2.0 cm",
+      "c": "2 cm",
+      "d": "2.021 cm"
+    },
+    "answer": "b",
+    "explanations": {
+      "a": "Incorrect. While the subtraction gives 2.021, the answer must be rounded according to the rules of significant figures.",
+      "b": "Correct. The raw difference is $12.321 - 10.3 = 2.021$ cm. When adding or subtracting, the result must be rounded to the same number of decimal places as the measurement with the fewest decimal places. The measurement 10.3 cm has only one decimal place, so the answer must be rounded to one decimal place, which is 2.0 cm.",
+      "c": "Incorrect. This is rounded too much; the precision of the least precise measurement (one decimal place) should be maintained.",
+      "d": "Incorrect. This is the exact mathematical answer, but it does not follow the rules for significant figures in measurements."
+    },
+    "hints": [
+      "First, perform the subtraction.",
+      "Then, apply the rule for significant figures in addition and subtraction.",
+      "The answer should have the same number of decimal places as the input with the fewest decimal places."
+    ],
+    "metadata": {
+      "question_id": "PHY09-CH01-MCQ0008",
+      "chapter_name": "Physical Quantities and Measurement",
+      "chapter_number": 1,
+      "difficulty_level": "Medium",
+      "reasoning": "Requires not only a calculation but also the correct application of the rules for significant figures in subtraction.",
+      "question_type": "multiple_choice",
+      "source": "Physics Textbook 9th Grade",
+      "language": "English",
+      "organizer": "Huzaifa Altaf",
+      "created_date": "2025-10-05",
+      "grade": "9th",
+      "subject": "Physics",
+      "tags": [
+        "Significant Figures",
+        "Measurement Errors",
+        "Precision"
+      ]
+    }
+  },
+  {
+    "question": "Four students measure the diameter of a cylinder with Vernier Callipers. Which of the following readings is correct?",
+    "options": {
+      "a": "3.4 cm",
+      "b": "3.475 cm",
+      "c": "3.47 cm",
+      "d": "3.5 cm"
+    },
+    "answer": "c",
+    "explanations": {
+      "a": "Incorrect. A standard ruler might give this precision, but a Vernier calliper is more precise.",
+      "b": "Incorrect. This reading has three decimal places, which implies the precision of a micrometer screw gauge, not a Vernier calliper.",
+      "c": "Correct. A standard Vernier calliper has a least count of 0.01 cm (or 0.1 mm), so its measurements are correctly recorded to two decimal places.",
+      "d": "Incorrect. This reading only has one decimal place, which is less precise than what a Vernier calliper can measure."
+    },
+    "hints": [
+      "Consider the least count (precision) of a standard Vernier calliper.",
+      "How many decimal places in centimetres can a typical Vernier calliper measure?"
+    ],
+    "metadata": {
+      "question_id": "PHY09-CH01-MCQ0009",
+      "chapter_name": "Physical Quantities and Measurement",
+      "chapter_number": 1,
+      "difficulty_level": "Medium",
+      "reasoning": "Requires understanding the precision and least count of a Vernier Calliper, not just its general use.",
+      "question_type": "multiple_choice",
+      "source": "Physics Textbook 9th Grade",
+      "language": "English",
+      "organizer": "Huzaifa Altaf",
+      "created_date": "2025-10-05",
+      "grade": "9th",
+      "subject": "Physics",
+      "tags": [
+        "Vernier Callipers",
+        "Precision"
+      ]
+    }
+  },
+  {
+    "question": "Which of the following measures are likely to represent the thickness of a sheet of this book?",
+    "options": {
+      "a": "$6 \\times 10^{-5}$ m",
+      "b": "$1 \\times 10^{-4}$ m",
+      "c": "$1.2 \\times 10^{-3}$ m",
+      "d": "$4 \\times 10^{-2}$ m"
+    },
+    "answer": "b",
+    "explanations": {
+      "a": "Incorrect. $6 \\times 10^{-5}$ m is 0.06 mm, which is very thin, like tissue paper.",
+      "b": "Correct. $1 \\times 10^{-4}$ m is 0.1 mm. This is a typical thickness for a standard sheet of paper.",
+      "c": "Incorrect. $1.2 \\times 10^{-3}$ m is 1.2 mm, which is the thickness of a piece of cardboard, not a single sheet of paper.",
+      "d": "Incorrect. $4 \\times 10^{-2}$ m is 4 cm, which is the thickness of a very thick book, not a single sheet."
+    },
+    "hints": [
+      "Convert the measurements from metres to millimetres for easier comparison (1 mm = $10^{-3}$ m).",
+      "Estimate the thickness of a single sheet of paper in your mind. Is it closer to 0.1 mm or 1 mm?"
+    ],
+    "metadata": {
+      "question_id": "PHY09-CH01-MCQ0010",
+      "chapter_name": "Physical Quantities and Measurement",
+      "chapter_number": 1,
+      "difficulty_level": "Medium",
+      "reasoning": "Involves estimation, understanding of scientific notation, and relating it to a real-world object's dimension.",
+      "question_type": "multiple_choice",
+      "source": "Physics Textbook 9th Grade",
+      "language": "English",
+      "organizer": "Huzaifa Altaf",
+      "created_date": "2025-10-05",
+      "grade": "9th",
+      "subject": "Physics",
+      "tags": [
+        "Scientific Notation",
+        "SI Units",
+        "Precision"
+      ]
+    }
+  },
+  {
+    "question": "In a Vernier Callipers, ten smallest divisions of the Vernier scale are equal to nine smallest divisions of the main scale. If the smallest division of the main scale is half millimetre, the Vernier constant is equal to:",
+    "options": {
+      "a": "0.5 mm",
+      "b": "0.1 mm",
+      "c": "0.05 mm",
+      "d": "0.001 mm"
+    },
+    "answer": "c",
+    "explanations": {
+      "a": "Incorrect. 0.5 mm is the size of one main scale division, not the least count.",
+      "b": "Incorrect. This would be the least count if 1 main scale division were 1 mm.",
+      "c": "Correct. The least count (Vernier constant) is calculated as: (1 Main Scale Division) - (1 Vernier Scale Division). We know 10 VSD = 9 MSD, so 1 VSD = 0.9 MSD. The least count is 1 MSD - 0.9 MSD = 0.1 MSD. Since 1 MSD = 0.5 mm, the least count is $0.1 \\times 0.5 \\text{ mm} = 0.05$ mm.",
+      "d": "Incorrect. This level of precision is characteristic of more advanced measuring devices, not a standard Vernier calliper."
+    },
+    "hints": [
+      "The formula for the least count is the value of one main scale division divided by the number of divisions on the Vernier scale.",
+      "Alternatively, Least Count = (1 Main Scale Division) - (1 Vernier Scale Division)."
+    ],
+    "metadata": {
+      "question_id": "PHY09-CH01-MCQ0011",
+      "chapter_name": "Physical Quantities and Measurement",
+      "chapter_number": 1,
+      "difficulty_level": "Hard",
+      "reasoning": "Requires a multi-step calculation based on the specific definition of the Vernier constant (least count) under non-standard conditions.",
+      "question_type": "multiple_choice",
+      "source": "Physics Textbook 9th Grade",
+      "language": "English",
+      "organizer": "Huzaifa Altaf",
+      "created_date": "2025-10-05",
+      "grade": "9th",
+      "subject": "Physics",
+      "tags": [
+        "Vernier Callipers",
+        "Precision",
+        "Measurement Errors"
+      ]
+    }
+  },
+  {
+    "question": "The numerical ratio of displacement to distance is:",
+    "options": {
+      "a": "always less than one",
+      "b": "always equal to one",
+      "c": "always greater than one",
+      "d": "equal to or less than one"
+    },
+    "answer": "d",
+    "explanations": {
+      "a": "Incorrect. The ratio can be equal to one if the object travels in a straight line without changing direction.",
+      "b": "Incorrect. If an object changes direction, the distance will be greater than the magnitude of the displacement, making the ratio less than one.",
+      "c": "Incorrect. Displacement is the shortest path between start and end points, so its magnitude can never be greater than the total distance travelled.",
+      "d": "Correct. Displacement is a vector (shortest path), while distance is a scalar (total path taken). The magnitude of displacement is always less than or equal to the distance. Therefore, the ratio $\\frac{|\\text{Displacement}|}{\\text{Distance}} \\le 1$."
+    },
+    "hints": [
+      "Remember the definitions of distance (total path travelled) and displacement (shortest straight line from start to finish).",
+      "Can the magnitude of displacement ever be larger than the distance?"
+    ],
+    "metadata": {
+      "question_id": "PHY09-CH02-MCQ0012",
+      "chapter_name": "Kinematics",
+      "chapter_number": 2,
+      "difficulty_level": "Easy",
+      "reasoning": "Tests the fundamental conceptual difference between distance (scalar) and displacement (vector).",
+      "question_type": "multiple_choice",
+      "source": "Physics Textbook 9th Grade",
+      "language": "English",
+      "organizer": "Huzaifa Altaf",
+      "created_date": "2025-10-05",
+      "grade": "9th",
+      "subject": "Physics",
+      "tags": [
+        "Kinematics",
+        "Distance",
+        "Displacement",
+        "Scalars",
+        "Vectors"
+      ]
+    }
+  },
+  {
+    "question": "If a body does not change its position with respect to some fixed point, then it will be in a state of:",
+    "options": {
+      "a": "rest",
+      "b": "motion",
+      "c": "uniform motion",
+      "d": "variable motion"
+    },
+    "answer": "a",
+    "explanations": {
+      "a": "Correct. The definition of rest is a state where an object's position does not change over time relative to a reference point.",
+      "b": "Incorrect. Motion is defined as the change in position with respect to a fixed point.",
+      "c": "Incorrect. Uniform motion means the body is moving at a constant velocity, so its position is changing.",
+      "d": "Incorrect. Variable motion means the body's velocity is changing, so its position is definitely changing."
+    },
+    "hints": [
+      "What is the fundamental definition of motion?",
+      "The question describes the opposite of motion."
+    ],
+    "metadata": {
+      "question_id": "PHY09-CH02-MCQ0013",
+      "chapter_name": "Kinematics",
+      "chapter_number": 2,
+      "difficulty_level": "Easy",
+      "reasoning": "Based on the direct recall of the definition of 'rest' in physics.",
+      "question_type": "multiple_choice",
+      "source": "Physics Textbook 9th Grade",
+      "language": "English",
+      "organizer": "Huzaifa Altaf",
+      "created_date": "2025-10-05",
+      "grade": "9th",
+      "subject": "Physics",
+      "tags": [
+        "Kinematics",
+        "Rest and Motion"
+      ]
+    }
+  },
+  {
+    "question": "A ball is dropped from the top of a tower. The distance covered by it in the first second is:",
+    "options": {
+      "a": "5 m",
+      "b": "10 m",
+      "c": "50 m",
+      "d": "100 m"
+    },
+    "answer": "a",
+    "explanations": {
+      "a": "Correct. Using the equation of motion $s = v_i t + \\frac{1}{2} g t^2$, with initial velocity $v_i = 0$, time $t = 1$ s, and acceleration due to gravity $g \\approx 10 \\text{ m/s}^2$, the distance is $s = \\frac{1}{2} \\times 10 \\times (1)^2 = 5$ m.",
+      "b": "Incorrect. This value might be confused with the approximate final velocity after 1 second ($v_f = g t \\approx 10$ m/s), not the distance covered.",
+      "c": "Incorrect. This value is too large for the distance covered in just one second of free fall.",
+      "d": "Incorrect. This is a significant distance that would take much longer than one second to fall."
+    },
+    "hints": [
+      "Use the second equation of motion for an object in free fall: $s = v_i t + \\frac{1}{2} a t^2$.",
+      "Remember that the object is 'dropped', so its initial velocity ($v_i$) is zero.",
+      "Use $g \\approx 10 \\text{ m/s}^2$ for the acceleration due to gravity."
+    ],
+    "metadata": {
+      "question_id": "PHY09-CH02-MCQ0014",
+      "chapter_name": "Kinematics",
+      "chapter_number": 2,
+      "difficulty_level": "Medium",
+      "reasoning": "Requires the application of a kinematic equation with given values.",
+      "question_type": "multiple_choice",
+      "source": "Physics Textbook 9th Grade",
+      "language": "English",
+      "organizer": "Huzaifa Altaf",
+      "created_date": "2025-10-05",
+      "grade": "9th",
+      "subject": "Physics",
+      "tags": [
+        "Kinematics",
+        "Equations of Motion",
+        "Acceleration"
+      ]
+    }
+  },
+  {
+    "question": "A body accelerates from rest to a velocity of 144 km/h in 20 seconds. The distance covered by it is:",
+    "options": {
+      "a": "100 m",
+      "b": "400 m",
+      "c": "1440 m",
+      "d": "2880 m"
+    },
+    "answer": "b",
+    "explanations": {
+      "a": "Incorrect. This value is too small. Check your unit conversions and formula.",
+      "b": "Correct. First, convert the final velocity to m/s: $144 \\text{ km/h} \\times \\frac{1000 \\text{ m}}{3600 \\text{ s}} = 40 \\text{ m/s}$. Since acceleration is constant, use the formula $s = \\frac{(v_i + v_f)}{2} t$. With $v_i = 0$, $s = \\frac{(0 + 40)}{2} \\times 20 = 20 \\times 20 = 400$ m.",
+      "c": "Incorrect. This result may come from incorrectly using the velocity in km/h in the equations of motion.",
+      "d": "Incorrect. This result is obtained by multiplying 144 by 20, which is dimensionally incorrect."
+    },
+    "hints": [
+      "Always convert all quantities to standard SI units (metres, seconds) before calculating.",
+      "To convert km/h to m/s, multiply by $\\frac{5}{18}$.",
+      "You can use the formula $s = \\frac{(v_i + v_f)}{2} t$ to find the distance."
+    ],
+    "metadata": {
+      "question_id": "PHY09-CH02-MCQ0015",
+      "chapter_name": "Kinematics",
+      "chapter_number": 2,
+      "difficulty_level": "Medium",
+      "reasoning": "Involves two steps: unit conversion (km/h to m/s) and application of a kinematic formula.",
+      "question_type": "multiple_choice",
+      "source": "Physics Textbook 9th Grade",
+      "language": "English",
+      "organizer": "Huzaifa Altaf",
+      "created_date": "2025-10-05",
+      "grade": "9th",
+      "subject": "Physics",
+      "tags": [
+        "Kinematics",
+        "Equations of Motion",
+        "Velocity",
+        "Distance"
+      ]
+    }
+  },
+  {
+    "question": "A body is moving with constant acceleration starting from rest. It covers a distance of 5 m in 4 seconds. How much time does it take to cover one-fourth of this distance?",
+    "options": {
+      "a": "1 s",
+      "b": "2 s",
+      "c": "4 s",
+      "d": "16 s"
+    },
+    "answer": "b",
+    "explanations": {
+      "a": "Incorrect. For an object starting from rest, the distance covered is proportional to the square of the time, not directly proportional to time.",
+      "b": "Correct. For an object starting from rest with constant acceleration, distance $s$ is proportional to the square of time $t$ ($s \\propto t^2$). To cover one-fourth the distance ($s/4$), the time required would be $\\sqrt{1/4} = 1/2$ of the original time. Half of 4 seconds is 2 seconds.",
+      "c": "Incorrect. 4 seconds is the time to cover the full distance.",
+      "d": "Incorrect. This seems to be based on a misunderstanding of the relationship between distance and time."
+    },
+    "hints": [
+      "Use the equation of motion $s = v_i t + \\frac{1}{2}at^2$. Since it starts from rest, $s = \\frac{1}{2}at^2$.",
+      "This means distance ($s$) is directly proportional to time squared ($t^2$).",
+      "How does $t$ change if $s$ becomes $s/4$?"
+    ],
+    "metadata": {
+      "question_id": "PHY09-CH02-MCQ0016",
+      "chapter_name": "Kinematics",
+      "chapter_number": 2,
+      "difficulty_level": "Hard",
+      "reasoning": "Requires proportional reasoning ($s \\propto t^2$) rather than direct calculation, testing a deeper understanding of kinematic relationships.",
+      "question_type": "multiple_choice",
+      "source": "Physics Textbook 9th Grade",
+      "language": "English",
+      "organizer": "Huzaifa Altaf",
+      "created_date": "2025-10-05",
+      "grade": "9th",
+      "subject": "Physics",
+      "tags": [
+        "Kinematics",
+        "Equations of Motion",
+        "Acceleration"
+      ]
+    }
+  },
+  {
+    "question": "The displacement-time graphs of two objects A and B are shown in the figure. Point out the true statement from the following:",
+    "options": {
+      "a": "The velocity of A is greater than B.",
+      "b": "The velocity of A is less than B.",
+      "c": "The velocity of A is equal to that of B.",
+      "d": "The graph gives no information in this regard."
+    },
+    "answer": "c",
+    "explanations": {
+      "a": "Incorrect. The slope of a displacement-time graph represents velocity. Check if the slopes are different.",
+      "b": "Incorrect. The slope of a displacement-time graph represents velocity. Check if the slopes are different.",
+      "c": "Correct. The velocity is the gradient (slope) of the displacement-time graph. Since both lines are parallel, they have the same gradient and therefore the same velocity. Object B simply started at a different initial position.",
+      "d": "Incorrect. The graph provides clear information about the velocities of the objects."
+    },
+    "hints": [
+      "What does the gradient (slope) of a displacement-time graph represent?",
+      "Compare the slopes of the two lines, A and B.",
+      "What does it mean if two lines are parallel?"
+    ],
+    "metadata": {
+      "question_id": "PHY09-CH02-MCQ0017",
+      "chapter_name": "Kinematics",
+      "chapter_number": 2,
+      "difficulty_level": "Easy",
+      "reasoning": "Requires basic graph interpretation skills, specifically understanding that the slope of a displacement-time graph represents velocity.",
+      "question_type": "multiple_choice",
+      "source": "Physics Textbook 9th Grade",
+      "language": "English",
+      "organizer": "Huzaifa Altaf",
+      "created_date": "2025-10-05",
+      "grade": "9th",
+      "subject": "Physics",
+      "tags": [
+        "Kinematics",
+        "Graphical Analysis",
+        "Velocity",
+        "Displacement"
+      ]
+    }
+  },
+  {
+    "question": "The area under the speed-time graph is numerically equal to:",
+    "options": {
+      "a": "velocity",
+      "b": "uniform velocity",
+      "c": "acceleration",
+      "d": "distance covered"
+    },
+    "answer": "d",
+    "explanations": {
+      "a": "Incorrect. Velocity is represented by the value on the y-axis at a specific point in time on a velocity-time graph.",
+      "b": "Incorrect. Uniform velocity would be represented by a horizontal line on the graph, but the area is not velocity itself.",
+      "c": "Incorrect. Acceleration is the gradient (slope) of the speed-time graph, not the area under it.",
+      "d": "Correct. The area under the speed-time graph represents the product of speed and time ($\text{speed} \\times \text{time}$), which is the distance covered."
+    },
+    "hints": [
+      "Consider the units. The y-axis is speed (m/s) and the x-axis is time (s).",
+      "What physical quantity do you get when you multiply the units of the axes together: $\\frac{\\text{m}}{\\text{s}} \\times \\text{s}$?"
+    ],
+    "metadata": {
+      "question_id": "PHY09-CH02-MCQ0018",
+      "chapter_name": "Kinematics",
+      "chapter_number": 2,
+      "difficulty_level": "Easy",
+      "reasoning": "Tests recall of a fundamental concept in kinematics: the physical meaning of the area under a speed-time graph.",
+      "question_type": "multiple_choice",
+      "source": "Physics Textbook 9th Grade",
+      "language": "English",
+      "organizer": "Huzaifa Altaf",
+      "created_date": "2025-10-05",
+      "grade": "9th",
+      "subject": "Physics",
+      "tags": [
+        "Kinematics",
+        "Graphical Analysis",
+        "Distance",
+        "Speed"
+      ]
+    }
+  },
+  {
+    "question": "Gradient of the speed-time graph is equal to:",
+    "options": {
+      "a": "speed",
+      "b": "velocity",
+      "c": "acceleration",
+      "d": "distance covered"
+    },
+    "answer": "c",
+    "explanations": {
+      "a": "Incorrect. Speed is the value on the vertical axis.",
+      "b": "Incorrect. Velocity and speed are closely related, but the gradient represents the rate of change of speed/velocity.",
+      "c": "Correct. The gradient (slope) of a speed-time graph is the change in speed divided by the change in time ($\\frac{\\Delta v}{\\Delta t}$), which is the definition of acceleration.",
+      "d": "Incorrect. Distance covered is the area under the speed-time graph."
+    },
+    "hints": [
+      "The gradient of a graph is the 'rise over run' or the change in the y-axis value divided by the change in the x-axis value.",
+      "What is the formula for acceleration?"
+    ],
+    "metadata": {
+      "question_id": "PHY09-CH02-MCQ0019",
+      "chapter_name": "Kinematics",
+      "chapter_number": 2,
+      "difficulty_level": "Easy",
+      "reasoning": "Tests recall of a fundamental concept in kinematics: the physical meaning of the gradient of a speed-time graph.",
+      "question_type": "multiple_choice",
+      "source": "Physics Textbook 9th Grade",
+      "language": "English",
+      "organizer": "Huzaifa Altaf",
+      "created_date": "2025-10-05",
+      "grade": "9th",
+      "subject": "Physics",
+      "tags": [
+        "Kinematics",
+        "Graphical Analysis",
+        "Acceleration"
+      ]
+    }
+  },
+  {
+    "question": "Gradient of the distance-time graph is equal to the:",
+    "options": {
+      "a": "speed",
+      "b": "velocity",
+      "c": "distance covered",
+      "d": "acceleration"
+    },
+    "answer": "a",
+    "explanations": {
+      "a": "Correct. The gradient of a distance-time graph is the change in distance divided by the change in time ($\\frac{\\Delta d}{\\Delta t}$), which is the definition of speed.",
+      "b": "Incorrect. The gradient of a *displacement*-time graph gives velocity. Since the question specifies distance, the answer is speed.",
+      "c": "Incorrect. Distance covered is the value on the vertical axis.",
+      "d": "Incorrect. Acceleration is the rate of change of velocity, which would be related to the change in the gradient of a distance-time graph (its curvature)."
+    },
+    "hints": [
+      "The gradient of a graph is the change in the y-axis quantity divided by the change in the x-axis quantity.",
+      "What is the definition of speed?"
+    ],
+    "metadata": {
+      "question_id": "PHY09-CH02-MCQ0020",
+      "chapter_name": "Kinematics",
+      "chapter_number": 2,
+      "difficulty_level": "Easy",
+      "reasoning": "Tests recall of a fundamental concept in kinematics: the physical meaning of the gradient of a distance-time graph.",
+      "question_type": "multiple_choice",
+      "source": "Physics Textbook 9th Grade",
+      "language": "English",
+      "organizer": "Huzaifa Altaf",
+      "created_date": "2025-10-05",
+      "grade": "9th",
+      "subject": "Physics",
+      "tags": [
+        "Kinematics",
+        "Graphical Analysis",
+        "Speed",
+        "Distance"
+      ]
+    }
+  },
+  {
+    "question": "When we kick a stone, we get hurt. This is due to:",
+    "options": {
+      "a": "inertia",
+      "b": "velocity",
+      "c": "momentum",
+      "d": "reaction"
+    },
+    "answer": "d",
+    "explanations": {
+      "a": "Incorrect. Inertia is the property of the stone to resist a change in its state of motion, but it doesn't directly explain why our foot gets hurt.",
+      "b": "Incorrect. The stone's velocity is a result of the kick, but velocity itself is not the reason for the pain.",
+      "c": "Incorrect. While the change in momentum is related to the force, the direct cause of the hurt is the force exerted back on the foot.",
+      "d": "Correct. According to Newton's third law of motion, for every action, there is an equal and opposite reaction. When your foot exerts a force on the stone (action), the stone exerts an equal and opposite force on your foot (reaction), which causes the pain."
+    },
+    "hints": [
+      "Think about Newton's Laws of Motion.",
+      "Which law talks about pairs of forces acting on interacting objects?"
+    ],
+    "metadata": {
+      "question_id": "PHY09-CH03-MCQ0021",
+      "chapter_name": "Dynamics",
+      "chapter_number": 3,
+      "difficulty_level": "Easy",
+      "reasoning": "A classic, real-world application of Newton's Third Law.",
+      "question_type": "multiple_choice",
+      "source": "Physics Textbook 9th Grade",
+      "language": "English",
+      "organizer": "Huzaifa Altaf",
+      "created_date": "2025-10-05",
+      "grade": "9th",
+      "subject": "Physics",
+      "tags": [
+        "Dynamics",
+        "Force",
+        "Newton's Laws"
+      ]
+    }
+  },
+  {
+    "question": "An object will continue its motion with constant velocity until:",
+    "options": {
+      "a": "the resultant force on it begins to decrease.",
+      "b": "the resultant force on it is zero.",
+      "c": "the resultant force on it begins to increase.",
+      "d": "the resultant force is at right angle to the tangential velocity."
+    },
+    "answer": "b",
+    "explanations": {
+      "a": "Incorrect. Any non-zero resultant force, even a decreasing one, will cause acceleration (a change in velocity).",
+      "b": "Correct. This is a statement of Newton's First Law of Motion. An object moves with constant velocity (including zero velocity, i.e., at rest) if and only if the net or resultant force acting on it is zero.",
+      "c": "Incorrect. An increasing resultant force will cause an increasing acceleration.",
+      "d": "Incorrect. A resultant force at a right angle to the velocity causes a change in direction, which is a form of acceleration (centripetal acceleration). The speed might remain constant, but the velocity changes."
+    },
+    "hints": [
+      "Recall Newton's First Law of Motion (the law of inertia).",
+      "What condition is necessary for an object's velocity to remain constant?"
+    ],
+    "metadata": {
+      "question_id": "PHY09-CH03-MCQ0022",
+      "chapter_name": "Dynamics",
+      "chapter_number": 3,
+      "difficulty_level": "Easy",
+      "reasoning": "Tests the direct understanding of Newton's First Law of Motion.",
+      "question_type": "multiple_choice",
+      "source": "Physics Textbook 9th Grade",
+      "language": "English",
+      "organizer": "Huzaifa Altaf",
+      "created_date": "2025-10-05",
+      "grade": "9th",
+      "subject": "Physics",
+      "tags": [
+        "Dynamics",
+        "Force",
+        "Newton's Laws",
+        "Inertia"
+      ]
+    }
+  },
+  {
+    "question": "Which of the following is a non-contact force?",
+    "options": {
+      "a": "Friction",
+      "b": "Air resistance",
+      "c": "Electrostatic force",
+      "d": "Tension in the string"
+    },
+    "answer": "c",
+    "explanations": {
+      "a": "Incorrect. Friction is a contact force that occurs when two surfaces rub against each other.",
+      "b": "Incorrect. Air resistance is a type of friction and is a contact force between an object and air molecules.",
+      "c": "Correct. Electrostatic force is a force that acts between charged objects at a distance, without them needing to touch. Gravity and magnetic forces are other examples of non-contact forces.",
+      "d": "Incorrect. Tension is a contact force transmitted through a string, rope, or cable when it is pulled taut."
+    },
+    "hints": [
+      "A contact force requires physical touching between objects.",
+      "A non-contact force can act over a distance.",
+      "Which of these forces can act on an object without anything touching it?"
+    ],
+    "metadata": {
+      "question_id": "PHY09-CH03-MCQ0023",
+      "chapter_name": "Dynamics",
+      "chapter_number": 3,
+      "difficulty_level": "Easy",
+      "reasoning": "Requires classifying types of forces, a fundamental concept.",
+      "question_type": "multiple_choice",
+      "source": "Physics Textbook 9th Grade",
+      "language": "English",
+      "organizer": "Huzaifa Altaf",
+      "created_date": "2025-10-05",
+      "grade": "9th",
+      "subject": "Physics",
+      "tags": [
+        "Dynamics",
+        "Force"
+      ]
+    }
+  },
+  {
+    "question": "A ball with initial momentum p hits a solid wall and bounces back with the same speed. Its momentum p' after collision will be:",
+    "options": {
+      "a": "$p' = p$",
+      "b": "$p' = -p$",
+      "c": "$p' = 2p$",
+      "d": "$p' = 0$"
+    },
+    "answer": "b",
+    "explanations": {
+      "a": "Incorrect. Momentum is a vector quantity. Since the direction has changed, the momentum has changed.",
+      "b": "Correct. Momentum is a vector, defined as $p = mv$. If the initial momentum is $p$, and the ball bounces back with the same speed, its velocity is now in the opposite direction ($-v$). Therefore, the new momentum is $p' = m(-v) = -mv = -p$.",
+      "c": "Incorrect. This represents the magnitude of the change in momentum ($\\Delta p = p' - p = -p - p = -2p$), not the final momentum.",
+      "d": "Incorrect. The momentum would only be zero if the ball stopped."
+    },
+    "hints": [
+      "Remember that momentum is a vector quantity, meaning it has both magnitude and direction.",
+      "If an object reverses its direction, what happens to the sign of its velocity?",
+      "How does the change in the sign of velocity affect the momentum?"
+    ],
+    "metadata": {
+      "question_id": "PHY09-CH03-MCQ0024",
+      "chapter_name": "Dynamics",
+      "chapter_number": 3,
+      "difficulty_level": "Medium",
+      "reasoning": "Requires understanding that momentum is a vector quantity and that a reversal in direction results in a negative sign.",
+      "question_type": "multiple_choice",
+      "source": "Physics Textbook 9th Grade",
+      "language": "English",
+      "organizer": "Huzaifa Altaf",
+      "created_date": "2025-10-05",
+      "grade": "9th",
+      "subject": "Physics",
+      "tags": [
+        "Dynamics",
+        "Momentum"
+      ]
+    }
+  },
+  {
+    "question": "A particle of mass m moving with velocity v collides elastically with another particle of the same mass at rest. The velocity of the first particle after collision is:",
+    "options": {
+      "a": "$v$",
+      "b": "$-v$",
+      "c": "$0$",
+      "d": "$v/2$"
+    },
+    "answer": "c",
+    "explanations": {
+      "a": "Incorrect. If the first particle continued with velocity v, the second particle would have to remain at rest to conserve momentum, which violates the conservation of energy.",
+      "b": "Incorrect. This would violate the conservation of momentum.",
+      "c": "Correct. In a one-dimensional elastic collision between two objects of equal mass, where one is initially at rest, the objects exchange velocities. The moving particle stops, and the particle at rest moves off with the initial velocity of the first particle.",
+      "d": "Incorrect. This would happen in a perfectly inelastic collision where the two particles stick together."
+    },
+    "hints": [
+      "This is a classic case of an elastic collision between two equal masses.",
+      "Both momentum and kinetic energy are conserved in an elastic collision.",
+      "Think of a head-on collision between two billiard balls of the same mass."
+    ],
+    "metadata": {
+      "question_id": "PHY09-CH03-MCQ0025",
+      "chapter_name": "Dynamics",
+      "chapter_number": 3,
+      "difficulty_level": "Medium",
+      "reasoning": "Tests knowledge of a specific, classic outcome in elastic collisions between two objects of equal mass.",
+      "question_type": "multiple_choice",
+      "source": "Physics Textbook 9th Grade",
+      "language": "English",
+      "organizer": "Huzaifa Altaf",
+      "created_date": "2025-10-05",
+      "grade": "9th",
+      "subject": "Physics",
+      "tags": [
+        "Dynamics",
+        "Momentum",
+        "Conservation of Momentum"
+      ]
+    }
+  },
+  {
+    "question": "Conservation of linear momentum is equivalent to:",
+    "options": {
+      "a": "Newton's first law of motion",
+      "b": "Newton's second law of motion in terms of momentum",
+      "c": "Newton's third law of motion",
+      "d": "Combination of Newton's second and third laws"
+    },
+    "answer": "d",
+    "explanations": {
+      "a": "Incorrect. The first law (law of inertia) is a special case where net external force is zero, which leads to momentum conservation for a single body, but not for an interacting system.",
+      "b": "Incorrect. Newton's second law ($F_{net} = \\frac{\\Delta p}{\\Delta t}$) is the foundation, but it requires the third law to apply to a system.",
+      "c": "Incorrect. The third law (action-reaction) is crucial, but it needs to be combined with the second law to derive the conservation principle.",
+      "d": "Correct. For a system of two interacting particles, Newton's third law states $F_{12} = -F_{21}$. Using Newton's second law ($F = \\frac{\\Delta p}{\\Delta t}$), we get $\\frac{\\Delta p_1}{\\Delta t} = -\\frac{\\Delta p_2}{\\Delta t}$. This implies $\\Delta p_1 + \\Delta p_2 = 0$, meaning the total change in momentum of the system is zero, so momentum is conserved."
+    },
+    "hints": [
+      "Consider a collision between two objects.",
+      "The forces they exert on each other are an action-reaction pair (3rd Law).",
+      "The force on each object causes a change in its momentum (2nd Law)."
+    ],
+    "metadata": {
+      "question_id": "PHY09-CH03-MCQ0026",
+      "chapter_name": "Dynamics",
+      "chapter_number": 3,
+      "difficulty_level": "Hard",
+      "reasoning": "Requires a deeper theoretical understanding of how the conservation of momentum is derived from a combination of Newton's Second and Third Laws.",
+      "question_type": "multiple_choice",
+      "source": "Physics Textbook 9th Grade",
+      "language": "English",
+      "organizer": "Huzaifa Altaf",
+      "created_date": "2025-10-05",
+      "grade": "9th",
+      "subject": "Physics",
+      "tags": [
+        "Dynamics",
+        "Newton's Laws",
+        "Conservation of Momentum"
+      ]
+    }
+  },
+  {
+    "question": "A large force acts on an object for a very short time interval. The effect is called:",
+    "options": {
+      "a": "magnitude of force",
+      "b": "time interval",
+      "c": "impulse",
+      "d": "none of these"
+    },
+    "answer": "c",
+    "explanations": {
+      "a": "Incorrect. The magnitude of the force is only one part of the interaction.",
+      "b": "Incorrect. The time interval is the other part of the interaction.",
+      "c": "Correct. Impulse is defined as the product of the force and the time interval over which it acts ($J = F \\Delta t$). It is also equal to the change in momentum of the object.",
+      "d": "Incorrect. The effect has a specific name in physics."
+    },
+    "hints": [
+      "Think about the relationship between force, time, and momentum.",
+      "The term you're looking for is equal to the change in momentum."
+    ],
+    "metadata": {
+      "question_id": "PHY09-CH03-MCQ0027",
+      "chapter_name": "Dynamics",
+      "chapter_number": 3,
+      "difficulty_level": "Easy",
+      "reasoning": "Tests the direct definition of impulse.",
+      "question_type": "multiple_choice",
+      "source": "Physics Textbook 9th Grade",
+      "language": "English",
+      "organizer": "Huzaifa Altaf",
+      "created_date": "2025-10-05",
+      "grade": "9th",
+      "subject": "Physics",
+      "tags": [
+        "Dynamics",
+        "Impulse",
+        "Force"
+      ]
+    }
+  },
+  {
+    "question": "A lubricant is usually introduced between two surfaces to decrease friction. The lubricant:",
+    "options": {
+      "a": "decreases temperature",
+      "b": "acts as ball bearings",
+      "c": "prevents direct contact of the surfaces",
+      "d": "provides rolling friction"
+    },
+    "answer": "c",
+    "explanations": {
+      "a": "Incorrect. While reducing friction can lead to a decrease in temperature, the primary function of the lubricant is not to decrease temperature directly.",
+      "b": "Incorrect. Ball bearings reduce friction by replacing sliding with rolling, but a liquid lubricant works differently.",
+      "c": "Correct. A lubricant works by creating a thin film between two surfaces, separating them so that the microscopic bumps and ridges (asperities) on the surfaces do not interlock. This replaces solid-solid friction with much lower fluid friction.",
+      "d": "Incorrect. Lubricants provide fluid friction, not rolling friction."
+    },
+    "hints": [
+      "Friction is caused by the microscopic roughness of surfaces interlocking.",
+      "How would a liquid layer between two solid surfaces affect this interlocking?"
+    ],
+    "metadata": {
+      "question_id": "PHY09-CH03-MCQ0028",
+      "chapter_name": "Dynamics",
+      "chapter_number": 3,
+      "difficulty_level": "Easy",
+      "reasoning": "Assesses the conceptual understanding of how lubricants reduce friction.",
+      "question_type": "multiple_choice",
+      "source": "Physics Textbook 9th Grade",
+      "language": "English",
+      "organizer": "Huzaifa Altaf",
+      "created_date": "2025-10-05",
+      "grade": "9th",
+      "subject": "Physics",
+      "tags": [
+        "Dynamics",
+        "Friction"
+      ]
+    }
+  },
+  {
+    "question": "A particle is simultaneously acted upon by two forces of 4 N and 3 N. The net force on the particle could be:",
+    "options": {
+      "a": "1 N",
+      "b": "5 N",
+      "c": "7 N",
+      "d": "All of these"
+    },
+    "answer": "d",
+    "explanations": {
+      "a": "Incorrect. This is one possible value, but not the only one.",
+      "b": "Incorrect. This is one possible value, but not the only one.",
+      "c": "Incorrect. This is one possible value, but not the only one.",
+      "d": "Correct. The resultant of two forces depends on the angle between them. The minimum resultant force is $4 - 3 = 1$ N (when they act in opposite directions). The maximum is $4 + 3 = 7$ N (when they act in the same direction). If they act at a right angle, the resultant is $\\sqrt{4^2 + 3^2} = 5$ N. All these values are possible."
+    },
+    "hints": [
+      "The resultant of two vectors depends on the angle between them.",
+      "What is the maximum possible net force?",
+      "What is the minimum possible net force?"
+    ],
+    "metadata": {
+      "question_id": "PHY09-CH04-MCQ0029",
+      "chapter_name": "Turning Effect of Force",
+      "chapter_number": 4,
+      "difficulty_level": "Medium",
+      "reasoning": "Requires understanding the principles of vector addition, specifically the range of possible magnitudes for the resultant of two forces.",
+      "question_type": "multiple_choice",
+      "source": "Physics Textbook 9th Grade",
+      "language": "English",
+      "organizer": "Huzaifa Altaf",
+      "created_date": "2025-10-05",
+      "grade": "9th",
+      "subject": "Physics",
+      "tags": [
+        "Resolution of Forces"
+      ]
+    }
+  },
+  {
+    "question": "A force F is making an angle of 60° with x-axis. Its y-component is equal to:",
+    "options": {
+      "a": "$F$",
+      "b": "$F \\sin 60°$",
+      "c": "$F \\cos 60°$",
+      "d": "$F \\tan 60°$"
+    },
+    "answer": "b",
+    "explanations": {
+      "a": "Incorrect. The y-component can only be equal to F if the entire force is directed along the y-axis (angle = 90°).",
+      "b": "Correct. In resolving a vector into its perpendicular components, the component opposite to the angle $\\theta$ is given by $F_y = F \\sin \\theta$. Here, the y-component is opposite to the 60° angle with the x-axis.",
+      "c": "Incorrect. $F \\cos 60°$ would give the x-component of the force, which is the component adjacent to the angle.",
+      "d": "Incorrect. The tangent function is not used for finding the components of a vector in this way."
+    },
+    "hints": [
+      "Recall the rules for resolving a vector into its horizontal (x) and vertical (y) components (SOH CAH TOA).",
+      "The component adjacent to the angle $\\theta$ uses cosine, and the component opposite the angle uses sine.",
+      "Draw a right-angled triangle with F as the hypotenuse."
+    ],
+    "metadata": {
+      "question_id": "PHY09-CH04-MCQ0030",
+      "chapter_name": "Turning Effect of Force",
+      "chapter_number": 4,
+      "difficulty_level": "Easy",
+      "reasoning": "A straightforward application of trigonometry to find the component of a vector.",
+      "question_type": "multiple_choice",
+      "source": "Physics Textbook 9th Grade",
+      "language": "English",
+      "organizer": "Huzaifa Altaf",
+      "created_date": "2025-10-05",
+      "grade": "9th",
+      "subject": "Physics",
+      "tags": [
+        "Resolution of Forces"
+      ]
+    }
+  },
+  {
+    "question": "Moment of force is called:",
+    "options": {
+      "a": "moment arm",
+      "b": "couple",
+      "c": "couple arm",
+      "d": "torque"
+    },
+    "answer": "d",
+    "explanations": {
+      "a": "Incorrect. The moment arm is the perpendicular distance from the axis of rotation to the line of action of the force.",
+      "b": "Incorrect. A couple is a pair of equal and opposite forces that cause rotation.",
+      "c": "Incorrect. The couple arm is the perpendicular distance between the two forces in a couple.",
+      "d": "Correct. Torque is the rotational equivalent of force and is another name for the moment of a force."
+    },
+    "hints": [
+      "What is the term for the turning effect produced by a force?",
+      "This quantity is calculated as Force × Perpendicular Distance."
+    ],
+    "metadata": {
+      "question_id": "PHY09-CH04-MCQ0031",
+      "chapter_name": "Turning Effect of Force",
+      "chapter_number": 4,
+      "difficulty_level": "Easy",
+      "reasoning": "Tests the direct recall of an alternative term for 'moment of force'.",
+      "question_type": "multiple_choice",
+      "source": "Physics Textbook 9th Grade",
+      "language": "English",
+      "organizer": "Huzaifa Altaf",
+      "created_date": "2025-10-05",
+      "grade": "9th",
+      "subject": "Physics",
+      "tags": [
+        "Torque",
+        "Moment of Force"
+      ]
+    }
+  },
+  {
+    "question": "If F is the net force acting on a body and τ is the net torque, the body will be in complete equilibrium when:",
+    "options": {
+      "a": "$\\Sigma F = 0$ and $\\Sigma \\tau = 0$",
+      "b": "$\\Sigma F = 0$ and $\\Sigma \\tau \\ne 0$",
+      "c": "$\\Sigma F \\ne 0$ and $\\Sigma \\tau = 0$",
+      "d": "$\\Sigma F \\ne 0$ and $\\Sigma \\tau \\ne 0$"
+    },
+    "answer": "a",
+    "explanations": {
+      "a": "Correct. For an object to be in complete equilibrium, two conditions must be met. First, the net force must be zero ($\\Sigma F = 0$) for translational equilibrium (no acceleration). Second, the net torque must be zero ($\\Sigma \\tau = 0$) for rotational equilibrium (no angular acceleration).",
+      "b": "Incorrect. If the net torque is not zero, the object will have angular acceleration and will not be in rotational equilibrium.",
+      "c": "Incorrect. If the net force is not zero, the object will have linear acceleration and will not be in translational equilibrium.",
+      "d": "Incorrect. In this case, the object is not in equilibrium at all."
+    },
+    "hints": [
+      "Equilibrium means no change in motion.",
+      "What are the two types of motion an object can have?",
+      "What condition prevents linear acceleration? What condition prevents rotational acceleration?"
+    ],
+    "metadata": {
+      "question_id": "PHY09-CH04-MCQ0032",
+      "chapter_name": "Turning Effect of Force",
+      "chapter_number": 4,
+      "difficulty_level": "Easy",
+      "reasoning": "Tests the recall of the two fundamental conditions for complete equilibrium.",
+      "question_type": "multiple_choice",
+      "source": "Physics Textbook 9th Grade",
+      "language": "English",
+      "organizer": "Huzaifa Altaf",
+      "created_date": "2025-10-05",
+      "grade": "9th",
+      "subject": "Physics",
+      "tags": [
+        "Equilibrium",
+        "Torque"
+      ]
+    }
+  },
+  {
+    "question": "A man walks on a tight rope. He balances himself by holding a long bamboo stick horizontally. This is an application of:",
+    "options": {
+      "a": "law of conservation of momentum",
+      "b": "principle of moments",
+      "c": "Newton's second law of motion",
+      "d": "Newton's third law of motion"
+    },
+    "answer": "b",
+    "explanations": {
+      "a": "Incorrect. Conservation of momentum is primarily related to collisions and explosions.",
+      "b": "Correct. The long stick increases the man's moment of inertia, making him more resistant to rotational changes (tipping over). By shifting the pole, he can adjust his center of gravity and create counter-torques (moments) to balance any tipping torques, thus maintaining rotational equilibrium based on the principle of moments.",
+      "c": "Incorrect. Newton's second law ($F=ma$) describes how forces cause acceleration, but the act of balancing is about preventing acceleration.",
+      "d": "Incorrect. Newton's third law (action-reaction) is always true but doesn't specifically explain the balancing technique."
+    },
+    "hints": [
+      "Balancing involves preventing rotation or tipping.",
+      "Which principle deals with torques and rotational equilibrium?",
+      "How does holding a long pole affect the man's stability?"
+    ],
+    "metadata": {
+      "question_id": "PHY09-CH04-MCQ0033",
+      "chapter_name": "Turning Effect of Force",
+      "chapter_number": 4,
+      "difficulty_level": "Medium",
+      "reasoning": "Requires applying the concept of rotational equilibrium (principle of moments) to a practical, real-world scenario.",
+      "question_type": "multiple_choice",
+      "source": "Physics Textbook 9th Grade",
+      "language": "English",
+      "organizer": "Huzaifa Altaf",
+      "created_date": "2025-10-05",
+      "grade": "9th",
+      "subject": "Physics",
+      "tags": [
+        "Equilibrium",
+        "Moment of Force",
+        "Stability",
+        "Centre of Gravity"
+      ]
+    }
+  },
+  {
+    "question": "In stable equilibrium, the centre of gravity of the body lies:",
+    "options": {
+      "a": "at the highest position",
+      "b": "at the lowest position",
+      "c": "at any position",
+      "d": "outside the body"
+    },
+    "answer": "b",
+    "explanations": {
+      "a": "Incorrect. When the center of gravity is at its highest possible position, the equilibrium is unstable.",
+      "b": "Correct. A body is in stable equilibrium when its center of gravity is at its lowest possible position. If displaced, its center of gravity is raised, and its potential energy increases. It will naturally return to the position of minimum potential energy.",
+      "c": "Incorrect. The position of the center of gravity determines the type of equilibrium.",
+      "d": "Incorrect. While the center of gravity can be outside the body (e.g., in a doughnut), this fact alone does not determine the type of equilibrium."
+    },
+    "hints": [
+      "Think about potential energy. Systems tend to move towards a state of minimum potential energy.",
+      "Is the potential energy of an object higher or lower when its center of gravity is raised?",
+      "A cone resting on its base is stable. Where is its center of gravity?"
+    ],
+    "metadata": {
+      "question_id": "PHY09-CH04-MCQ0034",
+      "chapter_name": "Turning Effect of Force",
+      "chapter_number": 4,
+      "difficulty_level": "Easy",
+      "reasoning": "Tests the fundamental concept linking stable equilibrium to the lowest position of the center of gravity.",
+      "question_type": "multiple_choice",
+      "source": "Physics Textbook 9th Grade",
+      "language": "English",
+      "organizer": "Huzaifa Altaf",
+      "created_date": "2025-10-05",
+      "grade": "9th",
+      "subject": "Physics",
+      "tags": [
+        "Equilibrium",
+        "Stability",
+        "Centre of Gravity"
+      ]
+    }
+  },
+  {
+    "question": "The centre of mass of a body:",
+    "options": {
+      "a": "lies always inside the body",
+      "b": "lies always outside the body",
+      "c": "lies always on the surface of the body",
+      "d": "may lie within, outside or on the surface"
+    },
+    "answer": "d",
+    "explanations": {
+      "a": "Incorrect. For a hollow object like a ring or a boomerang, the center of mass is outside the material of the body.",
+      "b": "Incorrect. For a solid object like a sphere or a cube, the center of mass is inside the body.",
+      "c": "Incorrect. This is rarely the case, although it's possible for some specific shapes.",
+      "d": "Correct. The location of the center of mass depends on the shape and distribution of mass. It is inside a solid sphere, on the surface of a thin shell (if we consider the point itself), and outside the material of a ring or an L-shaped object."
+    },
+    "hints": [
+      "Consider a solid sphere. Where is its center of mass?",
+      "Now consider a hollow ring or a doughnut. Where is its center of mass?",
+      "Think about an L-shaped piece of wood."
+    ],
+    "metadata": {
+      "question_id": "PHY09-CH04-MCQ0035",
+      "chapter_name": "Turning Effect of Force",
+      "chapter_number": 4,
+      "difficulty_level": "Easy",
+      "reasoning": "Assesses the conceptual understanding that the center of mass is dependent on object geometry and can lie outside the material.",
+      "question_type": "multiple_choice",
+      "source": "Physics Textbook 9th Grade",
+      "language": "English",
+      "organizer": "Huzaifa Altaf",
+      "created_date": "2025-10-05",
+      "grade": "9th",
+      "subject": "Physics",
+      "tags": [
+        "Centre of Gravity"
+      ]
+    }
+  },
+  {
+    "question": "A cylinder resting on its circular base is in:",
+    "options": {
+      "a": "stable equilibrium",
+      "b": "unstable equilibrium",
+      "c": "neutral equilibrium",
+      "d": "none of these"
+    },
+    "answer": "a",
+    "explanations": {
+      "a": "Correct. A cylinder resting on its base has a wide base of support and a low center of gravity. If it is tilted slightly, its center of gravity rises, and when released, it will return to its original position. This is the definition of stable equilibrium.",
+      "b": "Incorrect. Unstable equilibrium would be the cylinder balanced on its edge.",
+      "c": "Incorrect. Neutral equilibrium would be the cylinder lying on its curved side, where rolling it does not change the height of its center of gravity.",
+      "d": "Incorrect. The cylinder is in one of the states of equilibrium."
+    },
+    "hints": [
+      "What happens if you slightly push or tilt the cylinder?",
+      "Does its center of gravity get higher or lower when tilted?",
+      "An object is in stable equilibrium if it returns to its original position after a small displacement."
+    ],
+    "metadata": {
+      "question_id": "PHY09-CH04-MCQ0036",
+      "chapter_name": "Turning Effect of Force",
+      "chapter_number": 4,
+      "difficulty_level": "Easy",
+      "reasoning": "A simple application of the definition of stable equilibrium to a common object.",
+      "question_type": "multiple_choice",
+      "source": "Physics Textbook 9th Grade",
+      "language": "English",
+      "organizer": "Huzaifa Altaf",
+      "created_date": "2025-10-05",
+      "grade": "9th",
+      "subject": "Physics",
+      "tags": [
+        "Equilibrium",
+        "Stability"
+      ]
+    }
+  },
+  {
+    "question": "Centripetal force is given by:",
+    "options": {
+      "a": "$rF$",
+      "b": "$rF \\cos\\theta$",
+      "c": "$mv^2/r$",
+      "d": "$mv/r$"
+    },
+    "answer": "c",
+    "explanations": {
+      "a": "Incorrect. This does not represent centripetal force.",
+      "b": "Incorrect. This is the formula for work or torque, depending on the context, not centripetal force.",
+      "c": "Correct. The centripetal force, $F_c$, required to keep an object of mass $m$ moving in a circle of radius $r$ at a speed $v$ is given by the formula $F_c = \\frac{mv^2}{r}$.",
+      "d": "Incorrect. $mv$ is momentum. This expression is dimensionally incorrect for force."
+    },
+    "hints": [
+      "Centripetal force is the net force that causes centripetal acceleration ($a_c = v^2/r$).",
+      "Use Newton's second law, $F = ma$, with the expression for centripetal acceleration."
+    ],
+    "metadata": {
+      "question_id": "PHY09-CH04-MCQ0037",
+      "chapter_name": "Turning Effect of Force",
+      "chapter_number": 4,
+      "difficulty_level": "Easy",
+      "reasoning": "Requires direct recall of the formula for centripetal force.",
+      "question_type": "multiple_choice",
+      "source": "Physics Textbook 9th Grade",
+      "language": "English",
+      "organizer": "Huzaifa Altaf",
+      "created_date": "2025-10-05",
+      "grade": "9th",
+      "subject": "Physics",
+      "tags": [
+        "Centripetal Force",
+        "Rotational Motion"
+      ]
+    }
+  },
+  {
+    "question": "Work done is maximum when the angle between the force F and the displacement d is:",
+    "options": {
+      "a": "0°",
+      "b": "30°",
+      "c": "60°",
+      "d": "90°"
+    },
+    "answer": "a",
+    "explanations": {
+      "a": "Correct. The formula for work done is $W = Fd \\cos \\theta$. The cosine function has its maximum value of 1 when the angle $\\theta$ is 0°. This means the force and displacement are in the same direction.",
+      "b": "Incorrect. At 30°, $\\cos 30° = \\frac{\\sqrt{3}}{2} \\approx 0.866$, which is less than the maximum value of 1.",
+      "c": "Incorrect. At 60°, $\\cos 60° = 0.5$, which is less than the maximum value.",
+      "d": "Incorrect. At 90°, $\\cos 90° = 0$. This means no work is done when the force is perpendicular to the displacement."
+    },
+    "hints": [
+      "Recall the formula for work done: $W = Fd \\cos \\theta$.",
+      "For W to be maximum, the value of $\\cos \\theta$ must be maximum.",
+      "What is the maximum value of the cosine function, and at what angle does it occur?"
+    ],
+    "metadata": {
+      "question_id": "PHY09-CH05-MCQ0038",
+      "chapter_name": "Work, Energy and Power",
+      "chapter_number": 5,
+      "difficulty_level": "Easy",
+      "reasoning": "Requires understanding the work formula and knowing the angle at which the cosine function is maximum.",
+      "question_type": "multiple_choice",
+      "source": "Physics Textbook 9th Grade",
+      "language": "English",
+      "organizer": "Huzaifa Altaf",
+      "created_date": "2025-10-05",
+      "grade": "9th",
+      "subject": "Physics",
+      "tags": [
+        "Work"
+      ]
+    }
+  },
+  {
+    "question": "A joule can also be written as:",
+    "options": {
+      "a": "kg m²/s²",
+      "b": "kg m/s",
+      "c": "kg m/s³",
+      "d": "kg m²/s³"
+    },
+    "answer": "a",
+    "explanations": {
+      "a": "Correct. A joule is a unit of work or energy. Work = Force × Distance. The unit of force (Newton) is kg m/s². So, Joule = (kg m/s²) × m = kg m²/s².",
+      "b": "Incorrect. kg m/s is the unit of momentum.",
+      "c": "Incorrect. This does not correspond to a common physical quantity.",
+      "d": "Incorrect. kg m²/s³ is the unit of power (Watt)."
+    },
+    "hints": [
+      "Think about a formula for energy, for example, kinetic energy: $KE = \\frac{1}{2}mv^2$.",
+      "Substitute the base SI units for mass (kg) and velocity (m/s) into the formula."
+    ],
+    "metadata": {
+      "question_id": "PHY09-CH05-MCQ0039",
+      "chapter_name": "Work, Energy and Power",
+      "chapter_number": 5,
+      "difficulty_level": "Medium",
+      "reasoning": "Requires deriving a unit from a formula (e.g., kinetic energy) and breaking it down into base SI units.",
+      "question_type": "multiple_choice",
+      "source": "Physics Textbook 9th Grade",
+      "language": "English",
+      "organizer": "Huzaifa Altaf",
+      "created_date": "2025-10-05",
+      "grade": "9th",
+      "subject": "Physics",
+      "tags": [
+        "Work",
+        "Energy"
+      ]
+    }
+  },
+  {
+    "question": "The SI unit of power is:",
+    "options": {
+      "a": "joule",
+      "b": "newton",
+      "c": "watt",
+      "d": "second"
+    },
+    "answer": "c",
+    "explanations": {
+      "a": "Incorrect. Joule (J) is the SI unit of energy or work.",
+      "b": "Incorrect. Newton (N) is the SI unit of force.",
+      "c": "Correct. The SI unit of power is the watt (W), which is defined as one joule per second (J/s).",
+      "d": "Incorrect. Second (s) is the SI unit of time."
+    },
+    "hints": [
+      "Power is the rate at which work is done or energy is transferred.",
+      "How would you express 'rate' mathematically?"
+    ],
+    "metadata": {
+      "question_id": "PHY09-CH05-MCQ0040",
+      "chapter_name": "Work, Energy and Power",
+      "chapter_number": 5,
+      "difficulty_level": "Easy",
+      "reasoning": "Tests direct recall of the SI unit for power.",
+      "question_type": "multiple_choice",
+      "source": "Physics Textbook 9th Grade",
+      "language": "English",
+      "organizer": "Huzaifa Altaf",
+      "created_date": "2025-10-05",
+      "grade": "9th",
+      "subject": "Physics",
+      "tags": [
+        "Power"
+      ]
+    }
+  },
+  {
+    "question": "The power of a water pump is 2 kW. The amount of water it can raise in one minute to a height of 5 metres is (assume g=10 m/s²):",
+    "options": {
+      "a": "1000 litres",
+      "b": "1200 litres",
+      "c": "2400 litres",
+      "d": "240 litres"
+    },
+    "answer": "c",
+    "explanations": {
+      "a": "Incorrect. Check your calculations involving power, time, and potential energy.",
+      "b": "Incorrect. Check your calculations involving power, time, and potential energy.",
+      "c": "Correct. Power $P = \\frac{W}{t} = \\frac{mgh}{t}$. We need to find the mass $m$. Rearranging, $m = \\frac{P \\times t}{g \\times h}$. Given $P = 2 \\text{ kW} = 2000 \\text{ W}$, $t = 1 \\text{ min} = 60 \\text{ s}$, $h = 5 \\text{ m}$, and $g = 10 \\text{ m/s}^2$. So, $m = \\frac{2000 \\times 60}{10 \\times 5} = \\frac{120000}{50} = 2400$ kg. Since the density of water is 1 kg/litre, 2400 kg of water is 2400 litres.",
+      "d": "Incorrect. You may have missed a factor of 10 in your calculation."
+    },
+    "hints": [
+      "Power is the work done per unit time ($P = W/t$).",
+      "The work done in lifting water is equal to the gain in its potential energy ($W = mgh$).",
+      "Remember to convert kilowatts to watts and minutes to seconds. For water, 1 litre has a mass of 1 kg."
+    ],
+    "metadata": {
+      "question_id": "PHY09-CH05-MCQ0041",
+      "chapter_name": "Work, Energy and Power",
+      "chapter_number": 5,
+      "difficulty_level": "Hard",
+      "reasoning": "A multi-step problem involving unit conversions (kW to W, minutes to seconds), rearranging the power formula, and using the potential energy formula.",
+      "question_type": "multiple_choice",
+      "source": "Physics Textbook 9th Grade",
+      "language": "English",
+      "organizer": "Huzaifa Altaf",
+      "created_date": "2025-10-05",
+      "grade": "9th",
+      "subject": "Physics",
+      "tags": [
+        "Power",
+        "Work",
+        "Potential Energy"
+      ]
+    }
+  },
+  {
+    "question": "A bullet of mass 0.05 kg has a speed of 300 m/s. Its kinetic energy will be:",
+    "options": {
+      "a": "2250 J",
+      "b": "4500 J",
+      "c": "15 J",
+      "d": "1125 J"
+    },
+    "answer": "a",
+    "explanations": {
+      "a": "Correct. The formula for kinetic energy (KE) is $KE = \\frac{1}{2}mv^2$. Plugging in the values: $KE = \\frac{1}{2} \\times 0.05 \\text{ kg} \\times (300 \\text{ m/s})^2 = 0.5 \\times 0.05 \\times 90000 = 2250$ J.",
+      "b": "Incorrect. This result is obtained if you forget to multiply by $\\frac{1}{2}$ in the kinetic energy formula ($mv^2$).",
+      "c": "Incorrect. This result is obtained by multiplying mass and velocity ($mv$), which calculates momentum, not kinetic energy.",
+      "d": "Incorrect. This calculation seems to involve an error, possibly by not squaring the velocity correctly or misplacing a decimal."
+    },
+    "hints": [
+      "Recall the formula for kinetic energy: $KE = \\frac{1}{2}mv^2$.",
+      "Make sure to square the velocity ($v$) before multiplying by the mass ($m$) and $\\frac{1}{2}$.",
+      "Check your arithmetic carefully."
+    ],
+    "metadata": {
+      "question_id": "PHY09-CH05-MCQ0042",
+      "chapter_name": "Work, Energy and Power",
+      "chapter_number": 5,
+      "difficulty_level": "Easy",
+      "reasoning": "A direct calculation using the kinetic energy formula with given values.",
+      "question_type": "multiple_choice",
+      "source": "Physics Textbook 9th Grade",
+      "language": "English",
+      "organizer": "Huzaifa Altaf",
+      "created_date": "2025-10-05",
+      "grade": "9th",
+      "subject": "Physics",
+      "tags": [
+        "Kinetic Energy"
+      ]
+    }
+  },
+  {
+    "question": "If a car doubles its speed, its kinetic energy will be:",
+    "options": {
+      "a": "the same",
+      "b": "doubled",
+      "c": "increased to three times",
+      "d": "increased to four times"
+    },
+    "answer": "d",
+    "explanations": {
+      "a": "Incorrect. Kinetic energy depends on speed, so changing the speed will change the kinetic energy.",
+      "b": "Incorrect. This would be true if kinetic energy were directly proportional to speed ($v$), but it's proportional to the square of the speed ($v^2$).",
+      "c": "Incorrect. The relationship is not linear, so a doubling of speed does not result in a tripling of energy.",
+      "d": "Correct. Kinetic energy is given by $KE = \\frac{1}{2}mv^2$. If the speed $v$ is doubled to $2v$, the new kinetic energy $KE' = \\frac{1}{2}m(2v)^2 = \\frac{1}{2}m(4v^2) = 4 \\times (\\frac{1}{2}mv^2) = 4 \\times KE$. So the kinetic energy increases to four times its original value."
+    },
+    "hints": [
+      "Look at the formula for kinetic energy: $KE = \\frac{1}{2}mv^2$.",
+      "How does KE change if you replace $v$ with $(2v)$ in the formula?",
+      "The kinetic energy is proportional to the square of the velocity."
+    ],
+    "metadata": {
+      "question_id": "PHY09-CH05-MCQ0043",
+      "chapter_name": "Work, Energy and Power",
+      "chapter_number": 5,
+      "difficulty_level": "Medium",
+      "reasoning": "Requires proportional reasoning based on the relationship between kinetic energy and the square of velocity.",
+      "question_type": "multiple_choice",
+      "source": "Physics Textbook 9th Grade",
+      "language": "English",
+      "organizer": "Huzaifa Altaf",
+      "created_date": "2025-10-05",
+      "grade": "9th",
+      "subject": "Physics",
+      "tags": [
+        "Kinetic Energy"
+      ]
+    }
+  },
+  {
+    "question": "The energy possessed by a body by virtue of its position is:",
+    "options": {
+      "a": "kinetic energy",
+      "b": "potential energy",
+      "c": "chemical energy",
+      "d": "solar energy"
+    },
+    "answer": "b",
+    "explanations": {
+      "a": "Incorrect. Kinetic energy is the energy of motion.",
+      "b": "Correct. Potential energy is stored energy an object has due to its position or configuration (e.g., gravitational potential energy due to height, or elastic potential energy in a stretched spring).",
+      "c": "Incorrect. Chemical energy is stored in the bonds of chemical compounds.",
+      "d": "Incorrect. Solar energy is radiant energy emitted by the sun."
+    },
+    "hints": [
+      "Think about an object held at a height. What kind of energy does it have?",
+      "This type of energy has the 'potential' to be converted into kinetic energy."
+    ],
+    "metadata": {
+      "question_id": "PHY09-CH05-MCQ0044",
+      "chapter_name": "Work, Energy and Power",
+      "chapter_number": 5,
+      "difficulty_level": "Easy",
+      "reasoning": "Tests the direct definition of potential energy.",
+      "question_type": "multiple_choice",
+      "source": "Physics Textbook 9th Grade",
+      "language": "English",
+      "organizer": "Huzaifa Altaf",
+      "created_date": "2025-10-05",
+      "grade": "9th",
+      "subject": "Physics",
+      "tags": [
+        "Potential Energy"
+      ]
+    }
+  },
+  {
+    "question": "If the magnitude of momentum of an object is doubled, the kinetic energy of the object will:",
+    "options": {
+      "a": "double",
+      "b": "increase to four times",
+      "c": "reduce to one-half",
+      "d": "remain the same"
+    },
+    "answer": "b",
+    "explanations": {
+      "a": "Incorrect. This assumes a linear relationship that doesn't exist.",
+      "b": "Correct. The relationship between kinetic energy (KE) and momentum (p) is $KE = \\frac{p^2}{2m}$. If the momentum $p$ is doubled to $2p$, the new kinetic energy is $KE' = \\frac{(2p)^2}{2m} = \\frac{4p^2}{2m} = 4 \\times (\\frac{p^2}{2m}) = 4 \\times KE$.",
+      "c": "Incorrect. Increasing momentum will increase kinetic energy.",
+      "d": "Incorrect. Since momentum changes, kinetic energy must also change."
+    },
+    "hints": [
+      "Recall the relationship between kinetic energy and momentum: $KE = \\frac{p^2}{2m}$.",
+      "Substitute $2p$ for $p$ in the equation and see how KE changes.",
+      "Kinetic energy is proportional to the square of momentum."
+    ],
+    "metadata": {
+      "question_id": "PHY09-CH05-MCQ0045",
+      "chapter_name": "Work, Energy and Power",
+      "chapter_number": 5,
+      "difficulty_level": "Hard",
+      "reasoning": "Requires knowledge of the specific relationship between kinetic energy and momentum ($KE = p^2/2m$) and applying proportional reasoning.",
+      "question_type": "multiple_choice",
+      "source": "Physics Textbook 9th Grade",
+      "language": "English",
+      "organizer": "Huzaifa Altaf",
+      "created_date": "2025-10-05",
+      "grade": "9th",
+      "subject": "Physics",
+      "tags": [
+        "Kinetic Energy",
+        "Energy"
+      ]
+    }
+  },
+  {
+    "question": "Which of the following is not a renewable energy source?",
+    "options": {
+      "a": "Hydroelectric energy",
+      "b": "Fossil fuels",
+      "c": "Wind energy",
+      "d": "Solar energy"
+    },
+    "answer": "b",
+    "explanations": {
+      "a": "Incorrect. Hydroelectric energy, derived from the flow of water, is considered renewable as it is replenished by the natural water cycle.",
+      "b": "Correct. Fossil fuels (coal, oil, natural gas) were formed from the remains of ancient organisms over millions of years. They are consumed much faster than they are formed and are therefore considered non-renewable.",
+      "c": "Incorrect. Wind energy is generated by the movement of air, which is driven by the sun. It is a renewable resource.",
+      "d": "Incorrect. Solar energy comes directly from the sun and is considered the ultimate renewable resource for Earth."
+    },
+    "hints": [
+      "A renewable resource is one that can be replenished naturally over a short period of time.",
+      "Which of these energy sources is finite and will eventually run out?"
+    ],
+    "metadata": {
+      "question_id": "PHY09-CH05-MCQ0046",
+      "chapter_name": "Work, Energy and Power",
+      "chapter_number": 5,
+      "difficulty_level": "Easy",
+      "reasoning": "Requires basic knowledge and classification of common energy sources.",
+      "question_type": "multiple_choice",
+      "source": "Physics Textbook 9th Grade",
+      "language": "English",
+      "organizer": "Huzaifa Altaf",
+      "created_date": "2025-10-05",
+      "grade": "9th",
+      "subject": "Physics",
+      "tags": [
+        "Energy"
+      ]
+    }
+  },
+  {
+    "question": "A wire is stretched by a weight w. If the diameter of the wire is reduced to half of its previous value, the extension will become:",
+    "options": {
+      "a": "one half",
+      "b": "double",
+      "c": "one fourth",
+      "d": "four times"
+    },
+    "answer": "d",
+    "explanations": {
+      "a": "Incorrect. The extension is inversely proportional to the cross-sectional area, not the diameter.",
+      "b": "Incorrect. Check the relationship between area and diameter.",
+      "c": "Incorrect. This would be true if the extension were directly proportional to the area.",
+      "d": "Correct. Stress = $F/A$ and Strain = $e/L$. Young's Modulus $Y = \\text{Stress}/\\text{Strain} = (F/A)/(e/L)$. Rearranging for extension $e$: $e = \\frac{FL}{AY}$. The area $A = \\pi r^2 = \\pi (d/2)^2 = \\frac{\\pi d^2}{4}$. So, extension $e$ is inversely proportional to $d^2$. If the diameter $d$ is halved ($d/2$), the new extension $e'$ will be proportional to $1/(d/2)^2 = 1/(d^2/4) = 4/d^2$. Thus, the extension becomes four times larger."
+    },
+    "hints": [
+      "Extension is inversely proportional to the cross-sectional area of the wire.",
+      "How does the area of a circle change if its diameter is halved?",
+      "Area is proportional to the square of the diameter ($A \\propto d^2$)."
+    ],
+    "metadata": {
+      "question_id": "PHY09-CH06-MCQ0047",
+      "chapter_name": "Mechanical Properties of Matter",
+      "chapter_number": 6,
+      "difficulty_level": "Hard",
+      "reasoning": "Involves complex proportional reasoning, specifically an inverse square relationship between extension and diameter.",
+      "question_type": "multiple_choice",
+      "source": "Physics Textbook 9th Grade",
+      "language": "English",
+      "organizer": "Huzaifa Altaf",
+      "created_date": "2025-10-05",
+      "grade": "9th",
+      "subject": "Physics",
+      "tags": [
+        "Elasticity",
+        "Stress",
+        "Strain",
+        "Hooke's Law"
+      ]
+    }
+  },
+  {
+    "question": "Four wires of the same material are stretched by the same load. Their dimensions are given below. Which of them will elongate most?",
+    "options": {
+      "a": "Length 1 m, diameter 1 mm",
+      "b": "Length 2 m, diameter 2 mm",
+      "c": "Length 3 m, diameter 1 mm",
+      "d": "Length 4 m, diameter 2.5 mm"
+    },
+    "answer": "c",
+    "explanations": {
+      "a": "Incorrect. Compare the ratio $L/d^2$ for all options.",
+      "b": "Incorrect. Compare the ratio $L/d^2$ for all options.",
+      "c": "Correct. Elongation (extension) $e$ is given by $e = \\frac{FL}{AY}$. Since F, Y are constant, $e$ is proportional to $\\frac{L}{A}$, and since $A \\propto d^2$, the elongation $e$ is proportional to $\\frac{L}{d^2}$. We need to find the largest ratio of $L/d^2$. (a) $1/1^2=1$. (b) $2/2^2=0.5$. (c) $3/1^2=3$. (d) $4/2.5^2 = 4/6.25 = 0.64$. Option (c) has the largest ratio, so it will elongate the most.",
+      "d": "Incorrect. Compare the ratio $L/d^2$ for all options."
+    },
+    "hints": [
+      "Elongation is directly proportional to the original length ($L$).",
+      "Elongation is inversely proportional to the cross-sectional area ($A$), which is proportional to the diameter squared ($d^2$).",
+      "You are looking for the wire with the largest ratio of $L/d^2$."
+    ],
+    "metadata": {
+      "question_id": "PHY09-CH06-MCQ0048",
+      "chapter_name": "Mechanical Properties of Matter",
+      "chapter_number": 6,
+      "difficulty_level": "Medium",
+      "reasoning": "Requires applying proportional reasoning ($e \\propto L/d^2$) and performing calculations for multiple options to find the maximum value.",
+      "question_type": "multiple_choice",
+      "source": "Physics Textbook 9th Grade",
+      "language": "English",
+      "organizer": "Huzaifa Altaf",
+      "created_date": "2025-10-05",
+      "grade": "9th",
+      "subject": "Physics",
+      "tags": [
+        "Elasticity",
+        "Stress",
+        "Strain"
+      ]
+    }
+  },
+  {
+    "question": "Two metal plates of area 2 and 3 square metres are placed in a liquid at the same depth. The ratio of pressures on the two plates is:",
+    "options": {
+      "a": "1:1",
+      "b": "$\\sqrt{2} : \\sqrt{3}$",
+      "c": "2:3",
+      "d": "4:9"
+    },
+    "answer": "a",
+    "explanations": {
+      "a": "Correct. The pressure in a liquid at a certain depth is given by the formula $P = \\rho g h$, where $\\rho$ is the density of the liquid, $g$ is the acceleration due to gravity, and $h$ is the depth. Since both plates are in the same liquid (same $\\rho$) and at the same depth (same $h$), the pressure on them is identical, regardless of their area. The ratio is therefore 1:1.",
+      "b": "Incorrect. The square root of the area is not relevant to calculating liquid pressure.",
+      "c": "Incorrect. Pressure in a liquid at a given depth does not depend on the surface area. This would be the ratio of the forces on the plates ($F = PA$), but not the pressures.",
+      "d": "Incorrect. The square of the area is not relevant to calculating liquid pressure."
+    },
+    "hints": [
+      "Recall the formula for pressure inside a fluid: $P = \\rho g h$.",
+      "Identify which variables in the formula are the same for both plates.",
+      "Does the area of the surface affect the pressure at a certain depth?"
+    ],
+    "metadata": {
+      "question_id": "PHY09-CH06-MCQ0049",
+      "chapter_name": "Mechanical Properties of Matter",
+      "chapter_number": 6,
+      "difficulty_level": "Easy",
+      "reasoning": "Tests the conceptual understanding that liquid pressure depends only on depth and fluid density, not on surface area.",
+      "question_type": "multiple_choice",
+      "source": "Physics Textbook 9th Grade",
+      "language": "English",
+      "organizer": "Huzaifa Altaf",
+      "created_date": "2025-10-05",
+      "grade": "9th",
+      "subject": "Physics",
+      "tags": [
+        "Pressure"
+      ]
+    }
+  },
+  {
+    "question": "Pressure at any point in a liquid is proportional to:",
+    "options": {
+      "a": "density of the liquid",
+      "b": "depth of the point below the surface of the liquid",
+      "c": "acceleration due to gravity",
+      "d": "all of the above"
+    },
+    "answer": "d",
+    "explanations": {
+      "a": "Incorrect. This is true, but it's not the only factor.",
+      "b": "Incorrect. This is true, but it's not the only factor.",
+      "c": "Incorrect. This is true, but it's not the only factor.",
+      "d": "Correct. The formula for gauge pressure in a liquid is $P = \\rho g h$. The pressure $P$ is directly proportional to the density of the liquid ($\\rho$), the acceleration due to gravity ($g$), and the depth ($h$)."
+    },
+    "hints": [
+      "Write down the formula for the pressure exerted by a column of fluid.",
+      "Examine the relationship between pressure and each of the variables in the formula."
+    ],
+    "metadata": {
+      "question_id": "PHY09-CH06-MCQ0050",
+      "chapter_name": "Mechanical Properties of Matter",
+      "chapter_number": 6,
+      "difficulty_level": "Easy",
+      "reasoning": "Tests recall and understanding of the variables in the formula for liquid pressure.",
+      "question_type": "multiple_choice",
+      "source": "Physics Textbook 9th Grade",
+      "language": "English",
+      "organizer": "Huzaifa Altaf",
+      "created_date": "2025-10-05",
+      "grade": "9th",
+      "subject": "Physics",
+      "tags": [
+        "Pressure",
+        "Density"
+      ]
+    }
+  },
+  {
+    "question": "Pressure applied to an enclosed fluid is:",
+    "options": {
+      "a": "increased and applied to every part of the fluid",
+      "b": "diminished and transmitted to the walls of the container",
+      "c": "increased in proportion to the depth of each part of the fluid",
+      "d": "transmitted unchanged to every portion of the fluid and the walls of the containing vessel"
+    },
+    "answer": "d",
+    "explanations": {
+      "a": "Incorrect. The pressure change is transmitted unchanged, not necessarily increased everywhere.",
+      "b": "Incorrect. The pressure is transmitted undiminished.",
+      "c": "Incorrect. The existing pressure varies with depth, but the applied change in pressure is transmitted equally everywhere.",
+      "d": "Correct. This is the statement of Pascal's Principle, which is fundamental to the operation of hydraulic systems."
+    },
+    "hints": [
+      "This question is asking for the statement of a fundamental principle of fluid mechanics.",
+      "Which principle is named after a French mathematician and physicist and relates to pressure in a confined fluid?"
+    ],
+    "metadata": {
+      "question_id": "PHY09-CH06-MCQ0051",
+      "chapter_name": "Mechanical Properties of Matter",
+      "chapter_number": 6,
+      "difficulty_level": "Easy",
+      "reasoning": "Requires recall of the statement of Pascal's Principle.",
+      "question_type": "multiple_choice",
+      "source": "Physics Textbook 9th Grade",
+      "language": "English",
+      "organizer": "Huzaifa Altaf",
+      "created_date": "2025-10-05",
+      "grade": "9th",
+      "subject": "Physics",
+      "tags": [
+        "Pascal's Principle",
+        "Pressure"
+      ]
+    }
+  },
+  {
+    "question": "The principle of a hydraulic press is based on:",
+    "options": {
+      "a": "Hooke's law",
+      "b": "Pascal's law",
+      "c": "Principle of conservation of energy",
+      "d": "Principle of conservation of momentum"
+    },
+    "answer": "b",
+    "explanations": {
+      "a": "Incorrect. Hooke's law relates the force needed to stretch or compress a spring to the distance of that stretch or compression.",
+      "b": "Correct. Pascal's law states that a pressure change at any point in a confined incompressible fluid is transmitted throughout the fluid such that the same change occurs everywhere. This is the principle that allows a small force on a small piston to generate a large force on a large piston in a hydraulic press.",
+      "c": "Incorrect. While energy is conserved in the system, this is not the fundamental principle explaining its operation of force multiplication.",
+      "d": "Incorrect. The principle of conservation of momentum applies to collisions and systems with no external forces and is not the basis for a hydraulic press."
+    },
+    "hints": [
+      "Think about which law specifically deals with the transmission of pressure in an enclosed fluid.",
+      "Hydraulic systems use fluids to transmit and multiply force."
+    ],
+    "metadata": {
+      "question_id": "PHY09-CH06-MCQ0052",
+      "chapter_name": "Mechanical Properties of Matter",
+      "chapter_number": 6,
+      "difficulty_level": "Easy",
+      "reasoning": "Tests knowledge of the underlying principle of a common application (hydraulic press).",
+      "question_type": "multiple_choice",
+      "source": "Physics Textbook 9th Grade",
+      "language": "English",
+      "organizer": "Huzaifa Altaf",
+      "created_date": "2025-10-05",
+      "grade": "9th",
+      "subject": "Physics",
+      "tags": [
+        "Pascal's Principle"
+      ]
+    }
+  },
+  {
+    "question": "When a spring is compressed, what form of energy does it possess?",
+    "options": {
+      "a": "Kinetic",
+      "b": "Elastic Potential",
+      "c": "Internal",
+      "d": "Heat"
+    },
+    "answer": "b",
+    "explanations": {
+      "a": "Incorrect. Kinetic energy is the energy of motion. A compressed spring can be at rest.",
+      "b": "Correct. When a spring is compressed or stretched, work is done on it, and this work is stored as elastic potential energy in the deformed spring.",
+      "c": "Incorrect. Internal energy relates to the random kinetic and potential energies of the molecules within the spring, which is related to its temperature.",
+      "d": "Incorrect. Heat is energy in transit due to a temperature difference. While compressing a spring might generate a tiny amount of heat, the primary form of stored energy is potential."
+    },
+    "hints": [
+      "The energy is stored due to the object's change in shape.",
+      "What type of energy can be released to do work when the compressing force is removed?"
+    ],
+    "metadata": {
+      "question_id": "PHY09-CH06-MCQ0053",
+      "chapter_name": "Mechanical Properties of Matter",
+      "chapter_number": 6,
+      "difficulty_level": "Easy",
+      "reasoning": "Requires recall of the specific type of energy stored in a deformed elastic object.",
+      "question_type": "multiple_choice",
+      "source": "Physics Textbook 9th Grade",
+      "language": "English",
+      "organizer": "Huzaifa Altaf",
+      "created_date": "2025-10-05",
+      "grade": "9th",
+      "subject": "Physics",
+      "tags": [
+        "Elasticity",
+        "Hooke's Law"
+      ]
+    }
+  },
+  {
+    "question": "What is the force exerted by the atmosphere on a rectangular block surface of length 50 cm and breadth 40 cm? The atmospheric pressure is 100 kPa.",
+    "options": {
+      "a": "20,000 N",
+      "b": "2,000 N",
+      "c": "200 N",
+      "d": "20 N"
+    },
+    "answer": "a",
+    "explanations": {
+      "a": "Correct. First, convert all units to SI units. Area $A = 50 \\text{ cm} \\times 40 \\text{ cm} = 0.5 \\text{ m} \\times 0.4 \\text{ m} = 0.2 \\text{ m}^2$. Pressure $P = 100 \\text{ kPa} = 100,000 \\text{ Pa}$ (or N/m²). The formula relating pressure, force, and area is $P = F/A$, so $F = P \\times A$. $F = 100,000 \\text{ N/m}^2 \\times 0.2 \\text{ m}^2 = 20,000$ N.",
+      "b": "Incorrect. This might result from an error in converting units, possibly using cm² with kPa.",
+      "c": "Incorrect. This result is off by a factor of 100, likely due to a unit conversion error.",
+      "d": "Incorrect. This result is off by a factor of 1000, likely due to a unit conversion error."
+    },
+    "hints": [
+      "Recall the formula for pressure: Pressure = Force / Area.",
+      "Convert all measurements to standard SI units (metres, Pascals) before calculating.",
+      "1 kPa = 1000 Pa, and 1 m = 100 cm."
+    ],
+    "metadata": {
+      "question_id": "PHY09-CH06-MCQ0054",
+      "chapter_name": "Mechanical Properties of Matter",
+      "chapter_number": 6,
+      "difficulty_level": "Medium",
+      "reasoning": "A multi-step problem involving unit conversions for both area and pressure, followed by an application of the pressure formula.",
+      "question_type": "multiple_choice",
+      "source": "Physics Textbook 9th Grade",
+      "language": "English",
+      "organizer": "Huzaifa Altaf",
+      "created_date": "2025-10-05",
+      "grade": "9th",
+      "subject": "Physics",
+      "tags": [
+        "Pressure"
+      ]
+    }
+  },
+  {
+    "question": "How do the molecules in a solid behave?",
+    "options": {
+      "a": "Move randomly",
+      "b": "Vibrate about their mean positions",
+      "c": "Rotate and vibrate randomly at their own positions",
+      "d": "Move in a straight line from hot to cold ends"
+    },
+    "answer": "b",
+    "explanations": {
+      "a": "Incorrect. Random movement over large distances is characteristic of molecules in gases and liquids, not solids.",
+      "b": "Correct. In a solid, atoms or molecules are held in fixed positions in a lattice structure and possess kinetic energy by vibrating about these equilibrium positions.",
+      "c": "Incorrect. While some rotation can occur in more complex molecules, the primary and defining motion for all solids is vibration. This option is less accurate than 'b'.",
+      "d": "Incorrect. This describes the net flow of energy (heat conduction), not the motion of individual molecules themselves."
+    },
+    "hints": [
+      "Think about the structure of a solid at the atomic level.",
+      "Are molecules in a solid free to move from one place to another like in a gas?"
+    ],
+    "metadata": {
+      "question_id": "PHY09-CH07-MCQ0055",
+      "chapter_name": "Thermal Properties of Matter",
+      "chapter_number": 7,
+      "difficulty_level": "Easy",
+      "reasoning": "Tests fundamental knowledge from the kinetic theory of matter regarding the motion of particles in solids.",
+      "question_type": "multiple_choice",
+      "source": "Physics Textbook 9th Grade",
+      "language": "English",
+      "organizer": "Huzaifa Altaf",
+      "created_date": "2025-10-05",
+      "grade": "9th",
+      "subject": "Physics",
+      "tags": [
+        "Temperature",
+        "Heat"
+      ]
+    }
+  },
+  {
+    "question": "What type of motion is of the molecules in a gas?",
+    "options": {
+      "a": "Linear motion",
+      "b": "Random motion",
+      "c": "Vibratory motion",
+      "d": "Rotatory motion"
+    },
+    "answer": "b",
+    "explanations": {
+      "a": "Incorrect. While individual molecules move in straight lines between collisions, their overall motion is not uniform or linear but chaotic.",
+      "b": "Correct. Gas molecules move rapidly and randomly in straight lines until they collide with other molecules or the container walls, changing direction. This chaotic movement is best described as random motion.",
+      "c": "Incorrect. Vibratory motion is the primary motion of particles in a solid.",
+      "d": "Incorrect. While gas molecules can rotate, their overall translational movement is best described as random."
+    },
+    "hints": [
+      "Consider the kinetic theory of gases.",
+      "How are gas molecules arranged compared to solids and liquids?",
+      "Are there strong forces holding gas molecules in place?"
+    ],
+    "metadata": {
+      "question_id": "PHY09-CH07-MCQ0056",
+      "chapter_name": "Thermal Properties of Matter",
+      "chapter_number": 7,
+      "difficulty_level": "Easy",
+      "reasoning": "Tests fundamental knowledge from the kinetic theory of matter regarding the motion of particles in gases.",
+      "question_type": "multiple_choice",
+      "source": "Physics Textbook 9th Grade",
+      "language": "English",
+      "organizer": "Huzaifa Altaf",
+      "created_date": "2025-10-05",
+      "grade": "9th",
+      "subject": "Physics",
+      "tags": [
+        "Temperature",
+        "Heat"
+      ]
+    }
+  },
+  {
+    "question": "Temperature of a substance is:",
+    "options": {
+      "a": "the total amount of heat contained in it",
+      "b": "the total kinetic energy of the molecules in it",
+      "c": "the degree of hotness or coldness",
+      "d": "dependent upon the intermolecular distance"
+    },
+    "answer": "c",
+    "explanations": {
+      "a": "Incorrect. Heat is energy in transit. A substance 'contains' internal energy, not heat.",
+      "b": "Incorrect. Temperature is a measure of the *average* kinetic energy of the molecules, not the total.",
+      "c": "Correct. Temperature is fundamentally a measure of how hot or cold an object is, which corresponds to the average kinetic energy of its constituent particles.",
+      "d": "Incorrect. While intermolecular distance relates to the state of matter (solid, liquid, gas), it doesn't define temperature."
+    },
+    "hints": [
+      "What does a thermometer measure?",
+      "Distinguish between temperature, heat, and internal energy.",
+      "Is temperature related to the total energy or the average energy of particles?"
+    ],
+    "metadata": {
+      "question_id": "PHY09-CH07-MCQ0057",
+      "chapter_name": "Thermal Properties of Matter",
+      "chapter_number": 7,
+      "difficulty_level": "Easy",
+      "reasoning": "Tests the conceptual definition of temperature as a measure of average kinetic energy.",
+      "question_type": "multiple_choice",
+      "source": "Physics Textbook 9th Grade",
+      "language": "English",
+      "organizer": "Huzaifa Altaf",
+      "created_date": "2025-10-05",
+      "grade": "9th",
+      "subject": "Physics",
+      "tags": [
+        "Temperature"
+      ]
+    }
+  },
+  {
+    "question": "Heat is the:",
+    "options": {
+      "a": "total kinetic energy of the molecules",
+      "b": "internal energy of the molecules",
+      "c": "work done by the molecules",
+      "d": "energy in transit"
+    },
+    "answer": "d",
+    "explanations": {
+      "a": "Incorrect. The total kinetic energy of molecules is a component of the internal energy.",
+      "b": "Incorrect. Internal energy is the total energy stored within a system. Heat is a way of transferring this energy.",
+      "c": "Incorrect. Work is another way to transfer energy, but it is not heat.",
+      "d": "Correct. In physics, heat is specifically defined as the transfer of thermal energy from a hotter object to a colder object due to their temperature difference."
+    },
+    "hints": [
+      "An object does not 'contain' heat.",
+      "Heat is a process, not a property of a system.",
+      "What is the term for energy that flows from a hot object to a cold one?"
+    ],
+    "metadata": {
+      "question_id": "PHY09-CH07-MCQ0058",
+      "chapter_name": "Thermal Properties of Matter",
+      "chapter_number": 7,
+      "difficulty_level": "Medium",
+      "reasoning": "Assesses the specific scientific definition of heat as energy in transit, a concept that is often misunderstood.",
+      "question_type": "multiple_choice",
+      "source": "Physics Textbook 9th Grade",
+      "language": "English",
+      "organizer": "Huzaifa Altaf",
+      "created_date": "2025-10-05",
+      "grade": "9th",
+      "subject": "Physics",
+      "tags": [
+        "Heat",
+        "Heat Transfer"
+      ]
+    }
+  },
+  {
+    "question": "In Kelvin scale, the temperature corresponding to the melting point of ice is:",
+    "options": {
+      "a": "0 K",
+      "b": "32 K",
+      "c": "-273 K",
+      "d": "273 K"
+    },
+    "answer": "d",
+    "explanations": {
+      "a": "Incorrect. 0 K is absolute zero, the lowest possible temperature.",
+      "b": "Incorrect. 32 is the melting point of ice on the Fahrenheit scale.",
+      "c": "Incorrect. -273.15 is the value of absolute zero on the Celsius scale.",
+      "d": "Correct. The melting point of ice is 0°C. To convert from Celsius to Kelvin, you add 273.15 (often approximated as 273). So, $0°C = 273$ K."
+    },
+    "hints": [
+      "The melting point of ice is 0 degrees Celsius.",
+      "What is the formula to convert from degrees Celsius to Kelvin?",
+      "The formula is $K = °C + 273.15$."
+    ],
+    "metadata": {
+      "question_id": "PHY09-CH07-MCQ0059",
+      "chapter_name": "Thermal Properties of Matter",
+      "chapter_number": 7,
+      "difficulty_level": "Easy",
+      "reasoning": "A straightforward temperature scale conversion.",
+      "question_type": "multiple_choice",
+      "source": "Physics Textbook 9th Grade",
+      "language": "English",
+      "organizer": "Huzaifa Altaf",
+      "created_date": "2025-10-05",
+      "grade": "9th",
+      "subject": "Physics",
+      "tags": [
+        "Temperature"
+      ]
+    }
+  },
+  {
+    "question": "The temperature which has the same value on Celsius and Fahrenheit scale is:",
+    "options": {
+      "a": "-40",
+      "b": "+40",
+      "c": "0",
+      "d": "-32"
+    },
+    "answer": "a",
+    "explanations": {
+      "a": "Correct. We can find this by setting the Celsius value ($T_C$) equal to the Fahrenheit value ($T_F$) in the conversion formula. Let $T_C = T_F = x$. The formula is $T_F = \\frac{9}{5}T_C + 32$. So, $x = \\frac{9}{5}x + 32$. Solving for x: $x - \\frac{9}{5}x = 32 \\implies -\\frac{4}{5}x = 32 \\implies x = -\\frac{5 \\times 32}{4} = -40$.",
+      "b": "Incorrect. If you substitute +40 into the formula, the values do not match.",
+      "c": "Incorrect. 0°C is 32°F.",
+      "d": "Incorrect. This is not the correct numerical value."
+    },
+    "hints": [
+      "Use the conversion formula between Celsius and Fahrenheit: $F = \\frac{9}{5}C + 32$.",
+      "You are looking for the temperature 'x' where F = C = x.",
+      "Set up the equation $x = \\frac{9}{5}x + 32$ and solve for x."
+    ],
+    "metadata": {
+      "question_id": "PHY09-CH07-MCQ0060",
+      "chapter_name": "Thermal Properties of Matter",
+      "chapter_number": 7,
+      "difficulty_level": "Medium",
+      "reasoning": "Requires setting up and solving an algebraic equation using the temperature conversion formula.",
+      "question_type": "multiple_choice",
+      "source": "Physics Textbook 9th Grade",
+      "language": "English",
+      "organizer": "Huzaifa Altaf",
+      "created_date": "2025-10-05",
+      "grade": "9th",
+      "subject": "Physics",
+      "tags": [
+        "Temperature"
+      ]
+    }
+  },
+  {
+    "question": "Which one is a better choice for a liquid-in-glass thermometer?",
+    "options": {
+      "a": "Is colourless",
+      "b": "Is a bad conductor",
+      "c": "Expands linearly",
+      "d": "Wets glass"
+    },
+    "answer": "c",
+    "explanations": {
+      "a": "Incorrect. A colorless liquid would be hard to read, which is why alcohol in thermometers is often dyed red.",
+      "b": "Incorrect. A good conductor of heat is preferred so the liquid quickly reaches the temperature of its surroundings.",
+      "c": "Correct. A thermometric liquid should expand uniformly and linearly with temperature. This ensures that the scale on the thermometer has evenly spaced markings, making it reliable and easy to read.",
+      "d": "Incorrect. A liquid that wets glass (like water) would stick to the sides of the capillary tube, leading to inaccurate readings. Mercury is often used because it does not wet glass."
+    },
+    "hints": [
+      "Think about the desirable properties of a substance used for measurement.",
+      "What property ensures that the thermometer scale is uniform and easy to calibrate?",
+      "Consider the practical aspects of reading the thermometer."
+    ],
+    "metadata": {
+      "question_id": "PHY09-CH07-MCQ0061",
+      "chapter_name": "Thermal Properties of Matter",
+      "chapter_number": 7,
+      "difficulty_level": "Easy",
+      "reasoning": "Assesses knowledge of the ideal properties of a thermometric liquid.",
+      "question_type": "multiple_choice",
+      "source": "Physics Textbook 9th Grade",
+      "language": "English",
+      "organizer": "Huzaifa Altaf",
+      "created_date": "2025-10-05",
+      "grade": "9th",
+      "subject": "Physics",
+      "tags": [
+        "Temperature",
+        "Thermal Expansion"
+      ]
+    }
+  },
+  {
+    "question": "One disadvantage of using alcohol in a liquid-in-glass thermometer is:",
+    "options": {
+      "a": "it has a low boiling point (78°C)",
+      "b": "it has a low freezing point (-115°C)",
+      "c": "it wets the glass tube",
+      "d": "its expansion is not linear"
+    },
+    "answer": "a",
+    "explanations": {
+      "a": "Correct. The relatively low boiling point of ethanol (about 78°C) means it cannot be used to measure temperatures at or above this point, such as the boiling point of water.",
+      "b": "Incorrect. The very low freezing point is an advantage, as it allows the thermometer to be used in very cold conditions where mercury would freeze.",
+      "c": "Incorrect. While alcohol does wet glass slightly, this is manageable and less of a primary disadvantage than its boiling point.",
+      "d": "Incorrect. Alcohol has a reasonably linear expansion over its useful range, making it a good thermometric liquid."
+    },
+    "hints": [
+      "A thermometer's usefulness is defined by the range of temperatures it can measure.",
+      "What limits the maximum temperature a liquid-in-glass thermometer can measure?",
+      "Compare the boiling point of alcohol to that of water."
+    ],
+    "metadata": {
+      "question_id": "PHY09-CH07-MCQ0062",
+      "chapter_name": "Thermal Properties of Matter",
+      "chapter_number": 7,
+      "difficulty_level": "Easy",
+      "reasoning": "Tests practical knowledge about the limitations of a common laboratory instrument.",
+      "question_type": "multiple_choice",
+      "source": "Physics Textbook 9th Grade",
+      "language": "English",
+      "organizer": "Huzaifa Altaf",
+      "created_date": "2025-10-05",
+      "grade": "9th",
+      "subject": "Physics",
+      "tags": [
+        "Temperature",
+        "Thermal Expansion"
+      ]
+    }
+  },
+  {
+    "question": "Water is not used as a thermometric liquid mainly due to:",
+    "options": {
+      "a": "being colourless",
+      "b": "being a bad conductor of heat",
+      "c": "its non-linear (anomalous) expansion",
+      "d": "its high boiling point (100°C)"
+    },
+    "answer": "c",
+    "explanations": {
+      "a": "Incorrect. While being colorless is a disadvantage, it could be solved with dye. It's not the main reason.",
+      "b": "Incorrect. While it's not a great conductor, this is not the primary reason it's unsuitable.",
+      "c": "Correct. Water exhibits anomalous expansion; it contracts when cooled until 4°C, and then begins to expand as it cools further to its freezing point at 0°C. This non-linear and non-uniform expansion makes it completely unsuitable for creating a reliable thermometer scale.",
+      "d": "Incorrect. A relatively high boiling point is generally a desirable property for a thermometric liquid."
+    },
+    "hints": [
+      "A key property for a thermometric liquid is uniform expansion with temperature.",
+      "Think about the unique properties of water near its freezing point.",
+      "What happens to the density of water as it cools below 4°C?"
+    ],
+    "metadata": {
+      "question_id": "PHY09-CH07-MCQ0063",
+      "chapter_name": "Thermal Properties of Matter",
+      "chapter_number": 7,
+      "difficulty_level": "Medium",
+      "reasoning": "Requires knowledge of a specific, non-obvious property of water (anomalous expansion) and its implications.",
+      "question_type": "multiple_choice",
+      "source": "Physics Textbook 9th Grade",
+      "language": "English",
+      "organizer": "Huzaifa Altaf",
+      "created_date": "2025-10-05",
+      "grade": "9th",
+      "subject": "Physics",
+      "tags": [
+        "Temperature",
+        "Thermal Expansion"
+      ]
+    }
+  },
+  {
+    "question": "A thermometer has a narrow capillary tube so that:",
+    "options": {
+      "a": "it quickly responds to temperature changes",
+      "b": "it can be read easily",
+      "c": "it gives a large change in length for a given temperature change",
+      "d": "it can measure a large range of temperature"
+    },
+    "answer": "c",
+    "explanations": {
+      "a": "Incorrect. The responsiveness is more related to the thickness of the glass bulb and the thermal conductivity of the liquid.",
+      "b": "Incorrect. While a large change makes it easier to read, this is the result, not the direct physical reason.",
+      "c": "Correct. A small change in the volume of the liquid in the bulb will be forced into the narrow tube, resulting in a significant and easily visible change in the length of the liquid column. This makes the thermometer more sensitive.",
+      "d": "Incorrect. A narrow tube increases sensitivity but reduces the range of the thermometer for a given bulb volume and stem length."
+    },
+    "hints": [
+      "Think about the relationship between volume, area, and length ($V = A \\times L$).",
+      "For a fixed change in volume ($\\Delta V$), what happens to the change in length ($\\Delta L$) if the cross-sectional area ($A$) is very small?",
+      "This property is called sensitivity."
+    ],
+    "metadata": {
+      "question_id": "PHY09-CH07-MCQ0064",
+      "chapter_name": "Thermal Properties of Matter",
+      "chapter_number": 7,
+      "difficulty_level": "Medium",
+      "reasoning": "Requires a conceptual understanding of how the design of an instrument (narrow tube) affects its sensitivity.",
+      "question_type": "multiple_choice",
+      "source": "Physics Textbook 9th Grade",
+      "language": "English",
+      "organizer": "Huzaifa Altaf",
+      "created_date": "2025-10-05",
+      "grade": "9th",
+      "subject": "Physics",
+      "tags": [
+        "Temperature",
+        "Thermal Expansion"
+      ]
+    }
+  },
+  {
+    "question": "Which thermometer is most suitable for recording rapidly varying temperature?",
+    "options": {
+      "a": "Thermocouple",
+      "b": "Mercury-in-glass laboratory thermometer",
+      "c": "Alcohol-in-glass thermometer",
+      "d": "Mercury-in-glass clinical thermometer"
+    },
+    "answer": "a",
+    "explanations": {
+      "a": "Correct. A thermocouple has a very low thermal mass (it's just a junction of two thin wires). It responds almost instantaneously to temperature changes because it requires very little energy to change its own temperature. It also generates an electrical signal that can be easily recorded.",
+      "b": "Incorrect. A liquid-in-glass thermometer has a large thermal mass (the glass and the liquid) and takes time to reach thermal equilibrium, making it slow to respond.",
+      "c": "Incorrect. Similar to a mercury thermometer, an alcohol thermometer is also slow to respond.",
+      "d": "Incorrect. A clinical thermometer is designed to hold its reading and is very slow to respond."
+    },
+    "hints": [
+      "To measure rapid changes, the sensor must have a low 'thermal inertia' or thermal mass.",
+      "Which of these options does not rely on the expansion of a large volume of liquid?",
+      "Which device works based on an electrical effect?"
+    ],
+    "metadata": {
+      "question_id": "PHY09-CH07-MCQ0065",
+      "chapter_name": "Thermal Properties of Matter",
+      "chapter_number": 7,
+      "difficulty_level": "Medium",
+      "reasoning": "Requires comparing the operational principles and response times of different types of thermometers.",
+      "question_type": "multiple_choice",
+      "source": "Physics Textbook 9th Grade",
+      "language": "English",
+      "organizer": "Huzaifa Altaf",
+      "created_date": "2025-10-05",
+      "grade": "9th",
+      "subject": "Physics",
+      "tags": [
+        "Temperature"
+      ]
+    }
+  },
+  {
+    "question": "Which one of the following is not a magnetic material?",
+    "options": {
+      "a": "Cobalt",
+      "b": "Iron",
+      "c": "Aluminium",
+      "d": "Nickel"
+    },
+    "answer": "c",
+    "explanations": {
+      "a": "Incorrect. Cobalt is a ferromagnetic material, meaning it can be strongly magnetized.",
+      "b": "Incorrect. Iron is the most common ferromagnetic material.",
+      "c": "Correct. Aluminium is a paramagnetic material, which means it is very weakly attracted to magnets but cannot be permanently magnetized. It is not considered a magnetic material in the common sense (ferromagnetic).",
+      "d": "Incorrect. Nickel is a ferromagnetic material."
+    },
+    "hints": [
+      "Ferromagnetic materials are strongly attracted to magnets.",
+      "Think about common materials that magnets stick to.",
+      "Three of these are in the same category of magnetic materials."
+    ],
+    "metadata": {
+      "question_id": "PHY09-CH08-MCQ0066",
+      "chapter_name": "Magnetism",
+      "chapter_number": 8,
+      "difficulty_level": "Easy",
+      "reasoning": "Tests recall of common ferromagnetic materials.",
+      "question_type": "multiple_choice",
+      "source": "Physics Textbook 9th Grade",
+      "language": "English",
+      "organizer": "Huzaifa Altaf",
+      "created_date": "2025-10-05",
+      "grade": "9th",
+      "subject": "Physics",
+      "tags": [
+        "Magnets"
+      ]
+    }
+  },
+  {
+    "question": "Magnetic lines of force:",
+    "options": {
+      "a": "are always directed in a straight line",
+      "b": "cross one another",
+      "c": "form continuous closed loops",
+      "d": "enter into the south pole"
+    },
+    "answer": "c",
+    "explanations": {
+      "a": "Incorrect. They are curved, especially around the poles of a magnet.",
+      "b": "Incorrect. A fundamental property of magnetic field lines is that they never cross. If they did, it would imply the magnetic field has two different directions at the same point, which is impossible.",
+      "c": "Correct. Magnetic field lines always form closed loops, emerging from the north pole, travelling through the surrounding space to the south pole, and then continuing through the magnet back to the north pole.",
+      "d": "Incorrect. By convention, they emerge from the north pole and enter the south pole *outside* the magnet."
+    },
+    "hints": [
+      "Recall the properties of magnetic field lines.",
+      "Unlike electric field lines, magnetic field lines have no beginning or end.",
+      "What would happen if two field lines were to cross?"
+    ],
+    "metadata": {
+      "question_id": "PHY09-CH08-MCQ0067",
+      "chapter_name": "Magnetism",
+      "chapter_number": 8,
+      "difficulty_level": "Easy",
+      "reasoning": "Tests recall of the fundamental properties of magnetic field lines.",
+      "question_type": "multiple_choice",
+      "source": "Physics Textbook 9th Grade",
+      "language": "English",
+      "organizer": "Huzaifa Altaf",
+      "created_date": "2025-10-05",
+      "grade": "9th",
+      "subject": "Physics",
+      "tags": [
+        "Magnets",
+        "Magnetic Field"
+      ]
+    }
+  },
+  {
+    "question": "Permanent magnets cannot be made from:",
+    "options": {
+      "a": "soft iron",
+      "b": "steel",
+      "c": "neodymium",
+      "d": "alnico"
+    },
+    "answer": "a",
+    "explanations": {
+      "a": "Correct. Soft iron is a magnetically 'soft' material. It can be easily magnetized but also loses its magnetism very easily (low retentivity), making it suitable for temporary magnets (electromagnets), but not permanent ones.",
+      "b": "Incorrect. Steel (an iron-carbon alloy) is magnetically 'hard', meaning it is harder to magnetize but retains its magnetism well (high retentivity), making it suitable for permanent magnets.",
+      "c": "Incorrect. Neodymium magnets are a type of rare-earth magnet and are among the strongest permanent magnets available.",
+      "d": "Incorrect. Alnico is an alloy of aluminium, nickel, and cobalt, and it is used to make strong permanent magnets."
+    },
+    "hints": [
+      "Permanent magnets are made from magnetically 'hard' materials that retain their magnetism.",
+      "Temporary magnets are made from magnetically 'soft' materials that easily lose their magnetism.",
+      "Which of these materials is used in the core of an electromagnet?"
+    ],
+    "metadata": {
+      "question_id": "PHY09-CH08-MCQ0068",
+      "chapter_name": "Magnetism",
+      "chapter_number": 8,
+      "difficulty_level": "Easy",
+      "reasoning": "Requires knowledge of the difference between magnetically soft and hard materials and their applications.",
+      "question_type": "multiple_choice",
+      "source": "Physics Textbook 9th Grade",
+      "language": "English",
+      "organizer": "Huzaifa Altaf",
+      "created_date": "2025-10-05",
+      "grade": "9th",
+      "subject": "Physics",
+      "tags": [
+        "Magnets"
+      ]
+    }
+  },
+  {
+    "question": "Permanent magnets are used in:",
+    "options": {
+      "a": "circuit breaker",
+      "b": "loudspeaker",
+      "c": "electric crane",
+      "d": "magnetic recording"
+    },
+    "answer": "b",
+    "explanations": {
+      "a": "Incorrect. Circuit breakers typically use electromagnets.",
+      "b": "Correct. A loudspeaker uses a permanent magnet and a voice coil (an electromagnet) to create vibrations that produce sound.",
+      "c": "Incorrect. Electric cranes use powerful electromagnets that can be switched on and off to lift and release scrap metal.",
+      "d": "Incorrect. Magnetic recording (like on a credit card strip or old cassette tape) involves magnetizing tiny particles, but the device that does the recording and reading uses electromagnets."
+    },
+    "hints": [
+      "Think about which application requires a constant magnetic field that does not need to be switched off.",
+      "Which applications require a magnetic field that can be turned on and off?"
+    ],
+    "metadata": {
+      "question_id": "PHY09-CH08-MCQ0069",
+      "chapter_name": "Magnetism",
+      "chapter_number": 8,
+      "difficulty_level": "Easy",
+      "reasoning": "Requires distinguishing between applications of permanent magnets and electromagnets.",
+      "question_type": "multiple_choice",
+      "source": "Physics Textbook 9th Grade",
+      "language": "English",
+      "organizer": "Huzaifa Altaf",
+      "created_date": "2025-10-05",
+      "grade": "9th",
+      "subject": "Physics",
+      "tags": [
+        "Magnets",
+        "Electromagnetism"
+      ]
+    }
+  },
+  {
+    "question": "A common method used to magnetise a material is:",
+    "options": {
+      "a": "stroking",
+      "b": "hitting",
+      "c": "heating",
+      "d": "placing inside a solenoid with DC"
+    },
+    "answer": "d",
+    "explanations": {
+      "a": "Incorrect. While single-touch stroking with a permanent magnet is a method, the electrical method is more common and effective.",
+      "b": "Incorrect. Hitting a magnet can demagnetize it by misaligning the magnetic domains.",
+      "c": "Incorrect. Heating a magnet above its Curie temperature will demagnetize it.",
+      "d": "Correct. The most effective and common method for making a strong magnet is to place a ferromagnetic material inside a solenoid (a coil of wire) and pass a strong, direct current (DC) through it. The strong magnetic field inside the solenoid aligns the magnetic domains in the material."
+    },
+    "hints": [
+      "Magnetization involves aligning the tiny magnetic 'domains' inside a material.",
+      "Which of these methods creates a strong, uniform magnetic field that can align these domains?",
+      "Consider the difference between AC and DC for creating a magnet."
+    ],
+    "metadata": {
+      "question_id": "PHY09-CH08-MCQ0070",
+      "chapter_name": "Magnetism",
+      "chapter_number": 8,
+      "difficulty_level": "Easy",
+      "reasoning": "Tests knowledge of common and effective methods for magnetization.",
+      "question_type": "multiple_choice",
+      "source": "Physics Textbook 9th Grade",
+      "language": "English",
+      "organizer": "Huzaifa Altaf",
+      "created_date": "2025-10-05",
+      "grade": "9th",
+      "subject": "Physics",
+      "tags": [
+        "Magnets",
+        "Electromagnetism"
+      ]
+    }
+  },
+  {
+    "question": "Physics is a branch of:",
+    "options": {
+      "a": "social science",
+      "b": "life science",
+      "c": "physical science",
+      "d": "biological science"
+    },
+    "answer": "c",
+    "explanations": {
+      "a": "Incorrect. Social science studies human society and social relationships.",
+      "b": "Incorrect. Life science (or biology) is the study of living organisms.",
+      "c": "Correct. Physical science is the branch of natural science that studies non-living systems, in contrast to life science. It includes physics, chemistry, astronomy, and Earth sciences.",
+      "d": "Incorrect. Biological science is another term for life science."
+    },
+    "hints": [
+      "Science is broadly divided into the study of living and non-living things.",
+      "Which category does the study of matter, energy, and their interactions fall into?"
+    ],
+    "metadata": {
+      "question_id": "PHY09-CH09-MCQ0071",
+      "chapter_name": "Nature of Science",
+      "chapter_number": 9,
+      "difficulty_level": "Easy",
+      "reasoning": "A basic classification question about the branches of science.",
+      "question_type": "multiple_choice",
+      "source": "Physics Textbook 9th Grade",
+      "language": "English",
+      "organizer": "Huzaifa Altaf",
+      "created_date": "2025-10-05",
+      "grade": "9th",
+      "subject": "Physics",
+      "tags": [
+        "Physics and Society"
+      ]
+    }
+  },
+  {
+    "question": "Which branch of science plays a vital role in technology and engineering?",
+    "options": {
+      "a": "Biology",
+      "b": "Chemistry",
+      "c": "Geology",
+      "d": "Physics"
+    },
+    "answer": "d",
+    "explanations": {
+      "a": "Incorrect. While biology is vital for biotechnology and medicine, physics underpins most fundamental technologies.",
+      "b": "Incorrect. Chemistry is crucial for materials science and pharmaceuticals, but physics provides the foundational principles for engineering.",
+      "c": "Incorrect. Geology is important for civil engineering and resource extraction, but its scope is more specialized.",
+      "d": "Correct. Physics is the most fundamental of the sciences. Its principles of mechanics, electromagnetism, thermodynamics, and quantum mechanics are the foundation upon which most modern technology and engineering disciplines are built."
+    },
+    "hints": [
+      "Think about technologies like electricity, computers, vehicles, and communication systems.",
+      "Which science studies the fundamental laws governing these technologies?"
+    ],
+    "metadata": {
+      "question_id": "PHY09-CH09-MCQ0072",
+      "chapter_name": "Nature of Science",
+      "chapter_number": 9,
+      "difficulty_level": "Easy",
+      "reasoning": "Tests general knowledge about the role of physics as a foundational science for technology.",
+      "question_type": "multiple_choice",
+      "source": "Physics Textbook 9th Grade",
+      "language": "English",
+      "organizer": "Huzaifa Altaf",
+      "created_date": "2025-10-05",
+      "grade": "9th",
+      "subject": "Physics",
+      "tags": [
+        "Physics and Society",
+        "Technology"
+      ]
+    }
+  },
+  {
+    "question": "Automobile technology is based on:",
+    "options": {
+      "a": "acoustics",
+      "b": "thermodynamics and mechanics",
+      "c": "optics",
+      "d": "nuclear physics"
+    },
+    "answer": "b",
+    "explanations": {
+      "a": "Incorrect. Acoustics (the study of sound) is relevant for reducing engine noise, but it's not the primary basis of the technology.",
+      "b": "Correct. The internal combustion engine works on the principles of thermodynamics (converting heat into work). The movement of the car, its suspension, and transmission are all based on the principles of mechanics.",
+      "c": "Incorrect. Optics is relevant for headlights and mirrors but not the core technology of the automobile.",
+      "d": "Incorrect. Nuclear physics is not used in conventional automobiles."
+    },
+    "hints": [
+      "How does a car's engine work?",
+      "How does a car move and handle forces?",
+      "Which branches of physics deal with heat engines and motion?"
+    ],
+    "metadata": {
+      "question_id": "PHY09-CH09-MCQ0073",
+      "chapter_name": "Nature of Science",
+      "chapter_number": 9,
+      "difficulty_level": "Easy",
+      "reasoning": "Requires connecting a complex technology to its underlying fundamental physics principles.",
+      "question_type": "multiple_choice",
+      "source": "Physics Textbook 9th Grade",
+      "language": "English",
+      "organizer": "Huzaifa Altaf",
+      "created_date": "2025-10-05",
+      "grade": "9th",
+      "subject": "Physics",
+      "tags": [
+        "Physics and Society",
+        "Technology"
+      ]
+    }
+  },
+  {
+    "question": "The working of refrigeration and air conditioning involves:",
+    "options": {
+      "a": "electromagnetism",
+      "b": "mechanics",
+      "c": "climate science",
+      "d": "thermodynamics"
+    },
+    "answer": "d",
+    "explanations": {
+      "a": "Incorrect. While these devices use electric motors (which work on electromagnetism), their core principle of cooling is not based on it.",
+      "b": "Incorrect. Mechanics is involved in the moving parts like compressors, but the process of heat transfer is the key principle.",
+      "c": "Incorrect. Climate science studies long-term weather patterns; it doesn't explain the operation of a refrigerator.",
+      "d": "Correct. Refrigeration and air conditioning work on the principles of thermodynamics, specifically the process of moving heat from a colder space to a warmer space using a refrigeration cycle (compression and expansion of a refrigerant)."
+    },
+    "hints": [
+      "What is the primary function of a refrigerator?",
+      "Which branch of physics deals with heat, work, and temperature, and their relation to energy?"
+    ],
+    "metadata": {
+      "question_id": "PHY09-CH09-MCQ0074",
+      "chapter_name": "Nature of Science",
+      "chapter_number": 9,
+      "difficulty_level": "Easy",
+      "reasoning": "Requires connecting a technology to its underlying fundamental physics principle.",
+      "question_type": "multiple_choice",
+      "source": "Physics Textbook 9th Grade",
+      "language": "English",
+      "organizer": "Huzaifa Altaf",
+      "created_date": "2025-10-05",
+      "grade": "9th",
+      "subject": "Physics",
+      "tags": [
+        "Physics and Society",
+        "Technology"
+      ]
+    }
+  },
+  {
+    "question": "What is the ultimate truth of a scientific method?",
+    "options": {
+      "a": "Hypothesis",
+      "b": "Experimentation",
+      "c": "Theory",
+      "d": "Law"
+    },
+    "answer": "d",
+    "explanations": {
+      "a": "Incorrect. A hypothesis is a proposed explanation that is testable but not yet proven.",
+      "b": "Incorrect. Experimentation is a process used to test a hypothesis; it is a tool, not a final truth.",
+      "c": "Incorrect. A scientific theory is a well-substantiated explanation of some aspect of the natural world, but it is always subject to revision or rejection if new evidence emerges.",
+      "d": "Correct. A scientific law is a statement based on repeated experimental observations that describes some aspect of the universe. It is considered a fundamental truth because it has been observed to be true universally, though it describes what happens without necessarily explaining why."
+    },
+    "hints": [
+      "Arrange the following in order of increasing certainty: theory, law, hypothesis.",
+      "Which term describes a well-tested explanation, and which term describes an observed phenomenon?"
+    ],
+    "metadata": {
+      "question_id": "PHY09-CH09-MCQ0075",
+      "chapter_name": "Nature of Science",
+      "chapter_number": 9,
+      "difficulty_level": "Medium",
+      "reasoning": "Requires understanding the nuanced differences and hierarchy within the scientific method (hypothesis vs. theory vs. law).",
+      "question_type": "multiple_choice",
+      "source": "Physics Textbook 9th Grade",
+      "language": "English",
+      "organizer": "Huzaifa Altaf",
+      "created_date": "2025-10-05",
+      "grade": "9th",
+      "subject": "Physics",
+      "tags": [
+        "Scientific Method",
+        "Hypothesis",
+        "Theory",
+        "Law"
+      ]
+    }
+  },
+  {
+    "question": "The statement 'If I do not study for this test, then I will not get a good grade' is an example of:",
+    "options": {
+      "a": "theory",
+      "b": "observation",
+      "c": "prediction",
+      "d": "law"
+    },
+    "answer": "c",
+    "explanations": {
+      "a": "Incorrect. A theory is a broad explanation for a wide range of phenomena.",
+      "b": "Incorrect. An observation is something you notice using your senses.",
+      "c": "Correct. This is a prediction, often made as part of a hypothesis. It's a statement about a future outcome based on a certain condition, typically in an 'If..., then...' format.",
+      "d": "Incorrect. A law is a statement that is consistently observed to be true."
+    },
+    "hints": [
+      "This statement is structured as 'If [action], then [consequence]'.",
+      "What part of the scientific method involves forecasting an outcome?"
+    ],
+    "metadata": {
+      "question_id": "PHY09-CH09-MCQ0076",
+      "chapter_name": "Nature of Science",
+      "chapter_number": 9,
+      "difficulty_level": "Easy",
+      "reasoning": "Tests the ability to identify a specific component (a prediction) of the scientific method from a statement.",
+      "question_type": "multiple_choice",
+      "source": "Physics Textbook 9th Grade",
+      "language": "English",
+      "organizer": "Huzaifa Altaf",
+      "created_date": "2025-10-05",
+      "grade": "9th",
+      "subject": "Physics",
+      "tags": [
+        "Scientific Method",
+        "Hypothesis"
+      ]
+    }
+  },
+  {
+    "question": "Which of the following are methods of investigation?",
+    "options": {
+      "a": "Observation",
+      "b": "Experimentation",
+      "c": "Research",
+      "d": "All of these"
+    },
+    "answer": "d",
+    "explanations": {
+      "a": "Incorrect. This is one method, but there are others listed.",
+      "b": "Incorrect. This is one method, but there are others listed.",
+      "c": "Incorrect. This is one method, but there are others listed.",
+      "d": "Correct. Scientific investigation is a broad process that includes making observations, conducting controlled experiments, and performing research (which involves reviewing existing literature and data)."
+    },
+    "hints": [
+      "Think about the different ways a scientist can gather information and test ideas.",
+      "Are the listed options mutually exclusive, or can they all be part of a scientific investigation?"
+    ],
+    "metadata": {
+      "question_id": "PHY09-CH09-MCQ0077",
+      "chapter_name": "Nature of Science",
+      "chapter_number": 9,
+      "difficulty_level": "Easy",
+      "reasoning": "Tests the understanding of the broad scope of scientific investigation methods.",
+      "question_type": "multiple_choice",
+      "source": "Physics Textbook 9th Grade",
+      "language": "English",
+      "organizer": "Huzaifa Altaf",
+      "created_date": "2025-10-05",
+      "grade": "9th",
+      "subject": "Physics",
+      "tags": [
+        "Scientific Method",
+        "Scientific Inquiry"
+      ]
+    }
+  },
+  {
+    "question": "A hypothesis:",
+    "options": {
+      "a": "may or may not be testable",
+      "b": "is supported by evidence",
+      "c": "is a possible answer to a question",
+      "d": "all of these"
+    },
+    "answer": "c",
+    "explanations": {
+      "a": "Incorrect. A key characteristic of a scientific hypothesis is that it must be testable and falsifiable.",
+      "b": "Incorrect. A hypothesis is proposed *before* it is supported by evidence. It becomes a theory once it is widely supported by evidence.",
+      "c": "Correct. A hypothesis is a tentative, testable statement or a proposed explanation for an observed phenomenon. It's an educated guess that can be tested through experimentation.",
+      "d": "Incorrect. Since options 'a' and 'b' are incorrect, this cannot be the answer."
+    },
+    "hints": [
+      "What is the very first step after making an observation and asking a question in the scientific method?",
+      "Is a hypothesis a final conclusion or an initial proposal?"
+    ],
+    "metadata": {
+      "question_id": "PHY09-CH09-MCQ0078",
+      "chapter_name": "Nature of Science",
+      "chapter_number": 9,
+      "difficulty_level": "Easy",
+      "reasoning": "Tests the precise definition of a hypothesis in the scientific method.",
+      "question_type": "multiple_choice",
+      "source": "Physics Textbook 9th Grade",
+      "language": "English",
+      "organizer": "Huzaifa Altaf",
+      "created_date": "2025-10-05",
+      "grade": "9th",
+      "subject": "Physics",
+      "tags": [
+        "Scientific Method",
+        "Hypothesis"
+      ]
+    }
+  },
+  {
+    "question": "A graph of an organized data is an example of:",
+    "options": {
+      "a": "collecting data",
+      "b": "forming a hypothesis",
+      "c": "asking a question",
+      "d": "analyzing data"
+    },
+    "answer": "d",
+    "explanations": {
+      "a": "Incorrect. Collecting data is the process of gathering the raw information, for example, by writing down measurements in a table.",
+      "b": "Incorrect. A hypothesis is formed before data is collected and analyzed.",
+      "c": "Incorrect. A question initiates the investigation.",
+      "d": "Correct. Creating a graph is a key step in data analysis. It allows scientists to visualize the data, identify patterns, trends, and relationships between variables, which helps in drawing a conclusion."
+    },
+    "hints": [
+      "What is the purpose of creating a graph from a set of numbers?",
+      "Is graphing part of the gathering phase or the interpretation phase of an experiment?"
+    ],
+    "metadata": {
+      "question_id": "PHY09-CH09-MCQ0079",
+      "chapter_name": "Nature of Science",
+      "chapter_number": 9,
+      "difficulty_level": "Easy",
+      "reasoning": "Requires identifying the purpose of graphing as a tool for data analysis within the scientific method.",
+      "question_type": "multiple_choice",
+      "source": "Physics Textbook 9th Grade",
+      "language": "English",
+      "organizer": "Huzaifa Altaf",
+      "created_date": "2025-10-05",
+      "grade": "9th",
+      "subject": "Physics",
+      "tags": [
+        "Scientific Method",
+        "Scientific Inquiry"
+      ]
+    }
+  },
+  {
+    "question": "The colour of a door is brown. It is an example of:",
+    "options": {
+      "a": "observation",
+      "b": "hypothesis",
+      "c": "prediction",
+      "d": "law"
+    },
+    "answer": "a",
+    "explanations": {
+      "a": "Correct. An observation is the act of gathering information using one's senses. Stating the color of a door is a direct observation.",
+      "b": "Incorrect. A hypothesis would be an explanation for why the door is brown (e.g., 'The door is brown because it is made of wood').",
+      "c": "Incorrect. A prediction would state a future outcome (e.g., 'If I paint the door, it will no longer be brown').",
+      "d": "Incorrect. A law is a universally applicable principle, not a description of a single object."
+    },
+    "hints": [
+      "Is this statement explaining something, predicting something, or simply stating a fact gathered through the senses?",
+      "Which step of the scientific method involves noticing the world around you?"
+    ],
+    "metadata": {
+      "question_id": "PHY09-CH09-MCQ0080",
+      "chapter_name": "Nature of Science",
+      "chapter_number": 9,
+      "difficulty_level": "Easy",
+      "reasoning": "A simple example to test the understanding of what constitutes a scientific observation.",
+      "question_type": "multiple_choice",
+      "source": "Physics Textbook 9th Grade",
+      "language": "English",
+      "organizer": "Huzaifa Altaf",
+      "created_date": "2025-10-05",
+      "grade": "9th",
+      "subject": "Physics",
+      "tags": [
+        "Scientific Method",
+        "Scientific Inquiry"
+      ]
+    }
+  }
+]

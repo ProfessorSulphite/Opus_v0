@@ -1,0 +1,187 @@
+2025-10-05 17:18:25.128 | ERROR    | app.api.questions:get_chapters:255 - Get chapters error: Function.__init__() got an unexpected keyword argument 'else_'
+2025-10-05 17:20:17.407 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 0
+2025-10-05 17:20:17.407 | ERROR    | app.api.questions:get_chapters:261 - Get chapters error: Function.__init__() got an unexpected keyword argument 'else_'
+2025-10-05 17:20:17.408 | ERROR    | app.api.questions:get_chapters:263 - Traceback: Traceback (most recent call last):
+  File "/home/ufuq_kamal/Opus/Opus_v0/backend/app/api/questions.py", line 256, in get_chapters
+    chapters = get_chapter_summary(db)
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ufuq_kamal/Opus/Opus_v0/backend/app/crud/question.py", line 114, in get_chapter_summary
+    func.case(
+  File "/home/ufuq_kamal/miniconda3/envs/edutheo-311/lib/python3.11/site-packages/sqlalchemy/sql/functions.py", line 909, in __call__
+    return Function(
+           ^^^^^^^^^
+TypeError: Function.__init__() got an unexpected keyword argument 'else_'
+
+2025-10-05 17:24:08.076 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 0
+2025-10-05 17:24:08.076 | ERROR    | app.api.questions:get_chapters:261 - Get chapters error: Function.__init__() got an unexpected keyword argument 'else_'
+2025-10-05 17:24:08.077 | ERROR    | app.api.questions:get_chapters:263 - Traceback: Traceback (most recent call last):
+  File "/home/ufuq_kamal/Opus/Opus_v0/backend/app/api/questions.py", line 256, in get_chapters
+    chapters = get_chapter_summary(db)
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ufuq_kamal/Opus/Opus_v0/backend/app/crud/question.py", line 114, in get_chapter_summary
+    func.case(
+  File "/home/ufuq_kamal/miniconda3/envs/edutheo-311/lib/python3.11/site-packages/sqlalchemy/sql/functions.py", line 909, in __call__
+    return Function(
+           ^^^^^^^^^
+TypeError: Function.__init__() got an unexpected keyword argument 'else_'
+
+2025-10-05 17:24:16.095 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 0
+2025-10-05 17:24:16.095 | ERROR    | app.api.questions:get_chapters:261 - Get chapters error: Function.__init__() got an unexpected keyword argument 'else_'
+2025-10-05 17:24:16.096 | ERROR    | app.api.questions:get_chapters:263 - Traceback: Traceback (most recent call last):
+  File "/home/ufuq_kamal/Opus/Opus_v0/backend/app/api/questions.py", line 256, in get_chapters
+    chapters = get_chapter_summary(db)
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ufuq_kamal/Opus/Opus_v0/backend/app/crud/question.py", line 114, in get_chapter_summary
+    func.case(
+  File "/home/ufuq_kamal/miniconda3/envs/edutheo-311/lib/python3.11/site-packages/sqlalchemy/sql/functions.py", line 909, in __call__
+    return Function(
+           ^^^^^^^^^
+TypeError: Function.__init__() got an unexpected keyword argument 'else_'
+
+2025-10-05 17:24:34.094 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 0
+2025-10-05 17:24:34.095 | ERROR    | app.api.questions:get_chapters:261 - Get chapters error: Function.__init__() got an unexpected keyword argument 'else_'
+2025-10-05 17:24:34.095 | ERROR    | app.api.questions:get_chapters:263 - Traceback: Traceback (most recent call last):
+  File "/home/ufuq_kamal/Opus/Opus_v0/backend/app/api/questions.py", line 256, in get_chapters
+    chapters = get_chapter_summary(db)
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ufuq_kamal/Opus/Opus_v0/backend/app/crud/question.py", line 114, in get_chapter_summary
+    func.case(
+  File "/home/ufuq_kamal/miniconda3/envs/edutheo-311/lib/python3.11/site-packages/sqlalchemy/sql/functions.py", line 909, in __call__
+    return Function(
+           ^^^^^^^^^
+TypeError: Function.__init__() got an unexpected keyword argument 'else_'
+
+2025-10-05 17:26:49.121 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 0
+2025-10-05 17:26:49.122 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 0
+2025-10-05 17:29:01.674 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 0
+2025-10-05 17:29:01.675 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 0
+2025-10-05 17:45:34.890 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 0
+2025-10-05 17:45:34.893 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 0
+2025-10-05 17:51:41.460 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
+2025-10-05 17:51:41.463 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
+2025-10-05 18:12:13.569 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
+2025-10-05 18:12:13.572 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
+2025-10-05 18:12:41.435 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
+2025-10-05 18:12:41.438 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
+2025-10-05 18:20:59.619 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
+2025-10-05 18:20:59.621 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
+2025-10-05 18:22:07.429 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
+2025-10-05 18:22:07.433 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
+2025-10-05 18:23:27.467 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
+2025-10-05 18:23:27.469 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
+2025-10-05 18:25:08.063 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
+2025-10-05 18:25:08.064 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
+2025-10-05 18:27:50.657 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
+2025-10-05 18:27:50.662 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
+2025-10-05 18:29:27.731 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
+2025-10-05 18:29:27.734 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
+2025-10-05 18:30:59.712 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
+2025-10-05 18:30:59.714 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
+2025-10-05 18:32:06.528 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
+2025-10-05 18:32:06.536 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
+2025-10-05 18:34:21.163 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
+2025-10-05 18:34:21.165 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
+2025-10-05 18:35:53.127 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
+2025-10-05 18:35:53.130 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
+2025-10-05 18:48:08.745 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
+2025-10-05 18:48:08.746 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
+2025-10-05 18:49:00.262 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
+2025-10-05 18:49:00.264 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
+2025-10-05 18:49:47.983 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
+2025-10-05 18:49:47.985 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
+2025-10-05 18:50:02.474 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
+2025-10-05 18:50:02.475 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
+2025-10-05 18:50:56.236 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
+2025-10-05 18:50:56.238 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
+2025-10-05 18:52:05.814 | INFO     | app.api.auth:login:105 - User logged in: demo
+2025-10-05 18:52:13.999 | INFO     | app.api.auth:login:105 - User logged in: demo
+2025-10-05 18:54:45.415 | INFO     | app.api.auth:login:105 - User logged in: demo
+2025-10-05 18:55:41.154 | INFO     | app.api.auth:register:73 - New user registered: Sulphite
+2025-10-05 18:55:51.005 | INFO     | app.api.auth:login:105 - User logged in: Sulphite
+2025-10-05 18:55:56.269 | INFO     | app.api.auth:login:105 - User logged in: Sulphite
+2025-10-05 18:56:16.250 | INFO     | app.api.auth:login:105 - User logged in: Sulphite
+2025-10-05 18:59:08.484 | INFO     | app.api.auth:login:105 - User logged in: demo
+2025-10-05 18:59:43.507 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
+2025-10-05 18:59:43.510 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
+2025-10-05 19:00:27.864 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
+2025-10-05 19:00:27.865 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
+2025-10-05 19:05:39.884 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
+2025-10-05 19:05:39.886 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
+2025-10-05 19:06:57.199 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
+2025-10-05 19:06:57.201 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
+2025-10-05 19:07:06.291 | INFO     | app.api.auth:login:105 - User logged in: demo
+2025-10-05 19:08:11.624 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
+2025-10-05 19:08:11.627 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
+2025-10-05 19:13:31.360 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
+2025-10-05 19:13:31.364 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
+2025-10-05 19:20:33.669 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
+2025-10-05 19:20:33.672 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
+2025-10-05 19:26:34.160 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
+2025-10-05 19:26:34.163 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
+2025-10-05 19:30:18.213 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
+2025-10-05 19:30:18.215 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
+2025-10-05 19:30:22.894 | INFO     | app.api.auth:login:105 - User logged in: demo
+2025-10-05 19:35:58.088 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
+2025-10-05 19:35:58.090 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
+2025-10-05 19:36:16.270 | INFO     | app.api.auth:login:105 - User logged in: demo
+2025-10-05 19:36:45.092 | INFO     | app.api.auth:login:105 - User logged in: demo
+2025-10-05 19:38:11.221 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
+2025-10-05 19:38:11.223 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
+2025-10-05 19:46:45.965 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
+2025-10-05 19:46:45.967 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
+2025-10-05 19:49:51.880 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
+2025-10-05 19:49:51.883 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
+2025-10-05 20:04:08.102 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
+2025-10-05 20:04:08.103 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
+2025-10-05 20:39:26.899 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
+2025-10-05 20:39:26.900 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
+2025-10-05 20:46:01.280 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
+2025-10-05 20:46:01.283 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
+2025-10-05 20:46:13.203 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
+2025-10-05 20:46:13.206 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
+2025-10-05 20:46:28.909 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
+2025-10-05 20:46:28.911 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
+2025-10-05 20:46:35.584 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
+2025-10-05 20:46:35.585 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
+2025-10-05 20:51:31.194 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
+2025-10-05 20:51:31.195 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
+2025-10-05 20:51:38.431 | INFO     | app.api.auth:login:105 - User logged in: testuser
+2025-10-05 20:52:05.378 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
+2025-10-05 20:52:05.379 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
+2025-10-05 20:52:17.733 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
+2025-10-05 20:52:17.735 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
+2025-10-05 20:56:11.763 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
+2025-10-05 20:56:11.764 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
+2025-10-05 21:03:35.276 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
+2025-10-05 21:03:35.277 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
+2025-10-05 21:03:47.754 | INFO     | app.api.questions:check_answer:150 - Answer checked for user testuser: question PHY09-CH01-MCQ0004, correct: True
+2025-10-05 21:03:59.171 | INFO     | app.api.questions:check_answer:150 - Answer checked for user testuser: question PHY09-CH05-MCQ0043, correct: True
+2025-10-05 21:04:07.758 | INFO     | app.api.questions:check_answer:150 - Answer checked for user testuser: question PHY09-CH05-MCQ0040, correct: False
+2025-10-05 21:04:30.279 | INFO     | app.api.questions:check_answer:150 - Answer checked for user testuser: question PHY09-CH03-MCQ0028, correct: False
+2025-10-05 21:06:13.237 | INFO     | app.api.questions:check_answer:150 - Answer checked for user testuser: question PHY09-CH02-MCQ0014, correct: True
+2025-10-05 21:06:19.932 | INFO     | app.api.questions:check_answer:150 - Answer checked for user testuser: question PHY09-CH02-MCQ0012, correct: True
+2025-10-05 21:06:28.660 | INFO     | app.api.questions:check_answer:150 - Answer checked for user testuser: question PHY09-CH02-MCQ0016, correct: False
+2025-10-05 21:08:42.460 | INFO     | app.api.questions:check_answer:150 - Answer checked for user testuser: question PHY09-CH02-MCQ0019, correct: True
+2025-10-05 21:13:52.038 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
+2025-10-05 21:13:52.043 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
+2025-10-05 21:39:57.853 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
+2025-10-05 21:39:57.856 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
+2025-10-05 21:40:04.936 | INFO     | app.api.auth:login:105 - User logged in: testuser
+2025-10-05 21:40:07.350 | INFO     | app.api.analytics:get_user_analytics:35 - Analytics requested by user: testuser
+2025-10-05 21:40:22.743 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
+2025-10-05 21:40:22.746 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
+2025-10-05 21:40:25.274 | INFO     | app.api.analytics:get_user_analytics:35 - Analytics requested by user: testuser
+2025-10-05 21:40:37.701 | INFO     | app.api.analytics:get_user_analytics:35 - Analytics requested by user: testuser
+2025-10-05 21:40:42.833 | INFO     | app.api.analytics:get_user_analytics:35 - Analytics requested by user: testuser
+2025-10-05 21:40:45.864 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
+2025-10-05 21:40:45.866 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
+2025-10-05 21:40:50.554 | INFO     | app.api.auth:login:105 - User logged in: testuser
+2025-10-05 21:40:54.953 | INFO     | app.api.analytics:get_user_analytics:35 - Analytics requested by user: testuser
+2025-10-05 21:44:21.445 | INFO     | app.api.analytics:get_user_analytics:35 - Analytics requested by user: testuser
+2025-10-05 21:44:23.794 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
+2025-10-05 21:44:23.795 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
+2025-10-05 21:44:30.584 | INFO     | app.api.analytics:get_user_analytics:35 - Analytics requested by user: testuser
+2025-10-06 09:30:06.918 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
+2025-10-06 09:30:06.922 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
+2025-10-06 09:30:21.599 | INFO     | app.api.auth:login:105 - User logged in: Sulphite
+2025-10-06 09:30:34.298 | INFO     | app.api.analytics:get_user_analytics:35 - Analytics requested by user: Sulphite

@@ -1,0 +1,15 @@
+2025-10-05 20:26:08.642 | INFO     | app.api.auth:register:73 - New user registered: testuser
+2025-10-05 20:26:19.056 | INFO     | app.api.auth:login:105 - User logged in: testuser
+2025-10-05 20:27:07.801 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
+2025-10-05 20:27:07.802 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
+2025-10-05 20:27:20.045 | INFO     | app.api.auth:login:105 - User logged in: demo
+2025-10-05 20:27:57.893 | INFO     | app.api.questions:check_answer:150 - Answer checked for user testuser: question PHY09-CH01-MCQ0001, correct: True
+2025-10-05 20:29:58.111 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
+2025-10-05 20:29:58.112 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
+2025-10-05 20:32:37.004 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
+2025-10-05 20:32:37.005 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
+2025-10-05 20:33:17.360 | INFO     | app.api.auth:login:105 - User logged in: testuser
+2025-10-05 20:34:16.411 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
+2025-10-05 20:34:16.412 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
+2025-10-05 20:34:20.708 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
+2025-10-05 20:34:20.709 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9

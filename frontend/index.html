@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduTheo - Physics MCQ Practice</title>
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/components.css">
+    <link rel="stylesheet" href="styles/pages.css">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body>
+    <div id="app">
+        <!-- Loading Screen -->
+        <div id="loading-screen" class="loading-screen">
+            <div class="loading-spinner"></div>
+            <p>Loading EduTheo...</p>
+        </div>
+
+        <!-- Login Page -->
+        <div id="login-page" class="page active">
+            <div class="login-container">
+                <!-- Animated background -->
+                <div class="bg-animation">
+                    <div class="bg-circle bg-circle-1"></div>
+                    <div class="bg-circle bg-circle-2"></div>
+                    <div class="bg-circle bg-circle-3"></div>
+                </div>
+
+                <div class="login-card card">
+                    <div class="card-header text-center">
+                        <div class="logo">
+                            <i data-lucide="book-open"></i>
+                            <h1>EduTheo</h1>
+                        </div>
+                        <p class="tagline">Master Physics with AI-Powered MCQ Practice</p>
+                        
+                        <div class="features-preview">
+                            <div class="feature">
+                                <i data-lucide="zap"></i>
+                                <span>Smart Practice</span>
+                            </div>
+                            <div class="feature">
+                                <i data-lucide="trending-up"></i>
+                                <span>Progress Tracking</span>
+                            </div>
+                            <div class="feature">
+                                <i data-lucide="brain"></i>
+                                <span>Adaptive Learning</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-content">
+                        <div class="auth-tabs">
+                            <button class="tab-btn active" data-tab="login">Login</button>
+                            <button class="tab-btn" data-tab="signup">Sign Up</button>
+                        </div>
+
+                        <!-- Login Form -->
+                        <form id="login-form" class="auth-form active">
+                            <div class="form-group">
+                                <label for="login-username">Username or Email</label>
+                                <input type="text" id="login-username" name="username" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="login-password">Password</label>
+                                <div class="password-input">
+                                    <input type="password" id="login-password" name="password" required>
+                                    <button type="button" class="password-toggle" data-target="login-password">
+                                        <i data-lucide="eye"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            
+                            <div class="form-options">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="remember-me">
+                                    <span class="checkmark"></span>
+                                    Remember me
+                                </label>
+                                <a href="#" class="forgot-password">Forgot password?</a>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-full">Login</button>
+                        </form>
+
+                        <!-- Signup Form -->
+                        <form id="signup-form" class="auth-form">
+                            <div class="form-group">
+                                <label for="signup-name">Full Name</label>
+                                <input type="text" id="signup-name" name="full_name">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="signup-username">Username</label>
+                                <input type="text" id="signup-username" name="username" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="signup-email">Email</label>
+                                <input type="email" id="signup-email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="signup-password">Password</label>
+                                <div class="password-input">
+                                    <input type="password" id="signup-password" name="password" required>
+                                    <button type="button" class="password-toggle" data-target="signup-password">
+                                        <i data-lucide="eye"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="signup-confirm-password">Confirm Password</label>
+                                <div class="password-input">
+                                    <input type="password" id="signup-confirm-password" name="confirm_password" required>
+                                    <button type="button" class="password-toggle" data-target="signup-confirm-password">
+                                        <i data-lucide="eye"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-full">Sign Up</button>
+                        </form>
+
+                        <div class="demo-access">
+                            <div class="divider">
+                                <span>or</span>
+                            </div>
+                            <button class="btn btn-secondary btn-full" id="demo-login">
+                                <i data-lucide="play-circle"></i>
+                                Try Demo Account
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Dashboard Page -->
+        <div id="dashboard-page" class="page">
+            <div class="dashboard-container">
+                <!-- Header -->
+                <header class="dashboard-header">
+                    <div class="header-left">
+                        <div class="logo">
+                            <i data-lucide="book-open"></i>
+                            <span>EduTheo</span>
+                        </div>
+                        <nav class="nav-links">
+                            <a href="#" data-page="dashboard" class="nav-link active">Dashboard</a>
+                            <a href="#" data-page="practice" class="nav-link">Practice</a>
+                            <a href="#" data-page="analytics" class="nav-link">Analytics</a>
+                        </nav>
+                    </div>
+                    
+                    <div class="header-right">
+                        <div class="user-menu">
+                            <button class="user-button">
+                                <div class="avatar">
+                                    <span id="user-initials">DU</span>
+                                </div>
+                                <span id="user-name">Demo User</span>
+                                <i data-lucide="chevron-down"></i>
+                            </button>
+                            <div class="user-dropdown">
+                                <a href="#" class="dropdown-item">
+                                    <i data-lucide="settings"></i>
+                                    Settings
+                                </a>
+                                <a href="#" class="dropdown-item" id="logout-btn">
+                                    <i data-lucide="log-out"></i>
+                                    Logout
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+
+                <!-- Main Content -->
+                <main class="dashboard-main">
+                    <div class="welcome-section">
+                        <h1 class="dashboard-title">Welcome back, <span id="dashboard-user-name">Demo User</span>!</h1>
+                        <p class="dashboard-subtitle">Ready to continue your physics journey?</p>
+                    </div>
+
+                    <!-- Quick Stats -->
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i data-lucide="target"></i>
+                            </div>
+                            <div class="stat-content">
+                                <div class="stat-value" id="questions-solved">0</div>
+                                <div class="stat-label">Questions Solved</div>
+                            </div>
+                        </div>
+                        
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i data-lucide="trending-up"></i>
+                            </div>
+                            <div class="stat-content">
+                                <div class="stat-value" id="accuracy-rate">0%</div>
+                                <div class="stat-label">Accuracy Rate</div>
+                            </div>
+                        </div>
+                        
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i data-lucide="zap"></i>
+                            </div>
+                            <div class="stat-content">
+                                <div class="stat-value" id="study-streak">0 days</div>
+                                <div class="stat-label">Study Streak</div>
+                            </div>
+                        </div>
+                        
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i data-lucide="clock"></i>
+                            </div>
+                            <div class="stat-content">
+                                <div class="stat-value" id="time-spent">0h</div>
+                                <div class="stat-label">Time Spent</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Navigation Cards -->
+                    <div class="nav-cards-grid">
+                        <div class="nav-card" data-page="practice">
+                            <div class="nav-card-icon">
+                                <i data-lucide="book-open"></i>
+                            </div>
+                            <div class="nav-card-content">
+                                <h3>Practice MCQs</h3>
+                                <p>Solve physics questions and improve your understanding</p>
+                                <div class="nav-card-stats">150+ questions available</div>
+                            </div>
+                            <div class="nav-card-arrow">
+                                <i data-lucide="chevron-right"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="nav-card" data-page="analytics">
+                            <div class="nav-card-icon">
+                                <i data-lucide="bar-chart-3"></i>
+                            </div>
+                            <div class="nav-card-content">
+                                <h3>View Analytics</h3>
+                                <p>Track your progress and identify weak areas</p>
+                                <div class="nav-card-stats">Detailed insights</div>
+                            </div>
+                            <div class="nav-card-arrow">
+                                <i data-lucide="chevron-right"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Recent Progress -->
+                    <div class="progress-section">
+                        <h2>Chapter Progress</h2>
+                        <div class="progress-cards" id="chapter-progress">
+                            <!-- Chapter progress cards will be loaded dynamically -->
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+
+        <!-- Practice Page -->
+        <div id="practice-page" class="page">
+            <div class="practice-container">
+                <header class="practice-header">
+                    <div class="practice-nav">
+                        <a href="#" data-page="dashboard" class="back-button btn btn-ghost">
+                            <i data-lucide="arrow-left"></i>
+                            <span>Dashboard</span>
+                        </a>
+                        <h2 class="practice-title">Physics Practice</h2>
+                    </div>
+                    <div class="practice-progress">
+                        <span id="progress-text">0/0</span>
+                        <button id="toggle-filters" class="btn btn-ghost btn-sm">
+                            <i data-lucide="filter"></i>
+                            <span>Filters</span>
+                            <i data-lucide="chevron-down" class="chevron"></i>
+                        </button>
+                    </div>
+                </header>
+
+                <div id="progress-bar-container" class="progress-bar-container">
+                    <div id="progress-bar" class="progress-bar"></div>
+                </div>
+
+                <main class="practice-main">
+                    <aside id="filters-section" class="filters-section card">
+                        <form id="filter-form">
+                            <div class="form-group">
+                                <label for="chapter-filter">Chapter</label>
+                                <select id="chapter-filter" name="chapter"></select>
+                            </div>
+                            <div class="form-group">
+                                <label for="difficulty-filter">Difficulty</label>
+                                <select id="difficulty-filter" name="difficulty">
+                                    <option value="">All Difficulties</option>
+                                    <option value="Easy">Easy</option>
+                                    <option value="Medium">Medium</option>
+                                    <option value="Hard">Hard</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="topic-filter">Topic/Tag</label>
+                                <select id="topic-filter" name="topic"></select>
+                            </div>
+                            <div class="filter-actions">
+                                <button type="button" id="apply-filters" class="btn btn-primary btn-sm">Apply</button>
+                                <button type="button" id="clear-filters" class="btn btn-ghost btn-sm">Clear</button>
+                            </div>
+                        </form>
+                    </aside>
+
+                    <div id="question-container" class="question-area">
+                        <!-- Questions will be loaded here -->
+                    </div>
+                </main>
+            </div>
+        </div>
+
+        <!-- Analytics Page -->
+        <div id="analytics-page" class="page">
+            <div class="analytics-container">
+                <header class="practice-header"> <!-- Reusing practice-header style -->
+                    <div class="practice-nav">
+                        <a href="#" data-page="dashboard" class="back-button btn btn-ghost">
+                            <i data-lucide="arrow-left"></i>
+                            <span>Dashboard</span>
+                        </a>
+                        <h2 class="practice-title">Performance Analytics</h2>
+                    </div>
+                    <div class="header-actions">
+                        <button id="refresh-analytics" class="btn btn-ghost btn-sm">
+                            <i data-lucide="refresh-cw"></i>
+                            <span>Refresh</span>
+                        </button>
+                        <button id="export-analytics" class="btn btn-ghost btn-sm">
+                            <i data-lucide="download"></i>
+                            <span>Export</span>
+                        </button>
+                    </div>
+                </header>
+
+                <div class="analytics-tabs-container">
+                    <div class="tabs-list" id="analytics-tabs">
+                        <button class="tabs-trigger active analytics-tab" data-view="overview">Overview</button>
+                        <button class="tabs-trigger analytics-tab" data-view="progress">Progress</button>
+                        <button class="tabs-trigger analytics-tab" data-view="performance">Performance</button>
+                        <button class="tabs-trigger analytics-tab" data-view="accuracy">Accuracy</button>
+                        <button class="tabs-trigger analytics-tab" data-view="time">Time Analysis</button>
+                    </div>
+                </div>
+
+                <main id="analytics-content" class="analytics-main">
+                    <!-- Analytics content will be loaded here -->
+                </main>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Container -->
+    <div id="toast-container" class="toast-container"></div>
+
+    <!-- Scripts -->
+    <script src="js/utils.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/dashboard.js"></script>
+    <script src="js/practice.js"></script>
+    <script src="js/analytics.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

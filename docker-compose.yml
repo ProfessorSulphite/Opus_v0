@@ -1,0 +1,74 @@
+# Docker configuration for EduTheo
+version: '3.8'
+
+services:
+  # Backend API service
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile.backend
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_URL=sqlite:///./edutheo.db
+      - SECRET_KEY=your-super-secret-key-change-this-in-production
+      - ALGORITHM=HS256
+      - ACCESS_TOKEN_EXPIRE_MINUTES=30
+      - DEBUG=False
+      - CORS_ORIGINS=["http://localhost:3000", "http://127.0.0.1:3000"]
+    volumes:
+      - ./backend:/app
+      - ./scripts:/app/scripts
+      - ./raw_data:/app/raw_data
+      - backend_data:/app/data
+    command: >
+      sh -c "
+        alembic upgrade head &&
+        python scripts/import_questions.py &&
+        uvicorn main:app --host 0.0.0.0 --port 8000 --reload
+      "
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    networks:
+      - edutheo-network
+
+  # Frontend service
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend
+    ports:
+      - "3000:80"
+    volumes:
+      - ./frontend:/usr/share/nginx/html
+    depends_on:
+      - backend
+    networks:
+      - edutheo-network
+
+  # Optional: Database service (if you want to use PostgreSQL instead of SQLite)
+  # database:
+  #   image: postgres:15-alpine
+  #   environment:
+  #     POSTGRES_DB: edutheo
+  #     POSTGRES_USER: edutheo
+  #     POSTGRES_PASSWORD: edutheo123
+  #   volumes:
+  #     - postgres_data:/var/lib/postgresql/data
+  #   ports:
+  #     - "5432:5432"
+  #   networks:
+  #     - edutheo-network
+
+# Named volumes for data persistence
+volumes:
+  backend_data:
+  # postgres_data:
+
+# Custom network for service communication
+networks:
+  edutheo-network:
+    driver: bridge
