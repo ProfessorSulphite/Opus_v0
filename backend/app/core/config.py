@@ -32,10 +32,14 @@ class Settings(BaseSettings):
     
     # Import data source
     source_mcq_file: str = "../raw_data/9th_physics_mcqs.json"
+
+    # AI Configuration
+    gemini_api_key: Optional[str] = os.getenv("GEMINI_API_KEY", "AIzaSyALo0aZdonQIVdzkNcrZYHuv6d0d20B8LE")
     
-    class Config:
-        env_file = ".env"
-        case_sensitive = False
+    model_config = {
+        "env_file": ".env",
+        "case_sensitive": False
+    }
 
 
 settings = Settings()

@@ -2,7 +2,7 @@
 SQLAlchemy models for EduTheo application
 """
 
-from sqlalchemy import Column, Integer, String, Text, DateTime, Boolean, ForeignKey, JSON
+from sqlalchemy import Column, Integer, String, Text, DateTime, Boolean, ForeignKey, JSON, Date
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import relationship
 from sqlalchemy.sql import func
@@ -24,6 +24,11 @@ class User(Base):
     is_superuser = Column(Boolean, default=False)
     created_at = Column(DateTime(timezone=True), server_default=func.now())
     updated_at = Column(DateTime(timezone=True), onupdate=func.now())
+
+    # Subscription and AI usage
+    subscription_tier = Column(String(20), default="base", nullable=False) # e.g., 'base', 'pro'
+    ai_queries_today = Column(Integer, default=0, nullable=False)
+    last_ai_query_date = Column(Date, nullable=True)
     
     # Relationships
     activities = relationship("UserActivity", back_populates="user")

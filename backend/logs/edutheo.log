@@ -1,463 +1,185 @@
-2025-10-05 17:18:25.128 | ERROR    | app.api.questions:get_chapters:255 - Get chapters error: Function.__init__() got an unexpected keyword argument 'else_'
-2025-10-05 17:20:17.407 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 0
-2025-10-05 17:20:17.407 | ERROR    | app.api.questions:get_chapters:261 - Get chapters error: Function.__init__() got an unexpected keyword argument 'else_'
-2025-10-05 17:20:17.408 | ERROR    | app.api.questions:get_chapters:263 - Traceback: Traceback (most recent call last):
-  File "/home/ufuq_kamal/Opus/Opus_v0/backend/app/api/questions.py", line 256, in get_chapters
-    chapters = get_chapter_summary(db)
-               ^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ufuq_kamal/Opus/Opus_v0/backend/app/crud/question.py", line 114, in get_chapter_summary
-    func.case(
-  File "/home/ufuq_kamal/miniconda3/envs/edutheo-311/lib/python3.11/site-packages/sqlalchemy/sql/functions.py", line 909, in __call__
-    return Function(
-           ^^^^^^^^^
-TypeError: Function.__init__() got an unexpected keyword argument 'else_'
-
-2025-10-05 17:24:08.076 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 0
-2025-10-05 17:24:08.076 | ERROR    | app.api.questions:get_chapters:261 - Get chapters error: Function.__init__() got an unexpected keyword argument 'else_'
-2025-10-05 17:24:08.077 | ERROR    | app.api.questions:get_chapters:263 - Traceback: Traceback (most recent call last):
-  File "/home/ufuq_kamal/Opus/Opus_v0/backend/app/api/questions.py", line 256, in get_chapters
-    chapters = get_chapter_summary(db)
-               ^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ufuq_kamal/Opus/Opus_v0/backend/app/crud/question.py", line 114, in get_chapter_summary
-    func.case(
-  File "/home/ufuq_kamal/miniconda3/envs/edutheo-311/lib/python3.11/site-packages/sqlalchemy/sql/functions.py", line 909, in __call__
-    return Function(
-           ^^^^^^^^^
-TypeError: Function.__init__() got an unexpected keyword argument 'else_'
-
-2025-10-05 17:24:16.095 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 0
-2025-10-05 17:24:16.095 | ERROR    | app.api.questions:get_chapters:261 - Get chapters error: Function.__init__() got an unexpected keyword argument 'else_'
-2025-10-05 17:24:16.096 | ERROR    | app.api.questions:get_chapters:263 - Traceback: Traceback (most recent call last):
-  File "/home/ufuq_kamal/Opus/Opus_v0/backend/app/api/questions.py", line 256, in get_chapters
-    chapters = get_chapter_summary(db)
-               ^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ufuq_kamal/Opus/Opus_v0/backend/app/crud/question.py", line 114, in get_chapter_summary
-    func.case(
-  File "/home/ufuq_kamal/miniconda3/envs/edutheo-311/lib/python3.11/site-packages/sqlalchemy/sql/functions.py", line 909, in __call__
-    return Function(
-           ^^^^^^^^^
-TypeError: Function.__init__() got an unexpected keyword argument 'else_'
-
-2025-10-05 17:24:34.094 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 0
-2025-10-05 17:24:34.095 | ERROR    | app.api.questions:get_chapters:261 - Get chapters error: Function.__init__() got an unexpected keyword argument 'else_'
-2025-10-05 17:24:34.095 | ERROR    | app.api.questions:get_chapters:263 - Traceback: Traceback (most recent call last):
-  File "/home/ufuq_kamal/Opus/Opus_v0/backend/app/api/questions.py", line 256, in get_chapters
-    chapters = get_chapter_summary(db)
-               ^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/ufuq_kamal/Opus/Opus_v0/backend/app/crud/question.py", line 114, in get_chapter_summary
-    func.case(
-  File "/home/ufuq_kamal/miniconda3/envs/edutheo-311/lib/python3.11/site-packages/sqlalchemy/sql/functions.py", line 909, in __call__
-    return Function(
-           ^^^^^^^^^
-TypeError: Function.__init__() got an unexpected keyword argument 'else_'
-
-2025-10-05 17:26:49.121 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 0
-2025-10-05 17:26:49.122 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 0
-2025-10-05 17:29:01.674 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 0
-2025-10-05 17:29:01.675 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 0
-2025-10-05 17:45:34.890 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 0
-2025-10-05 17:45:34.893 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 0
-2025-10-05 17:51:41.460 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
-2025-10-05 17:51:41.463 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
-2025-10-05 18:12:13.569 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
-2025-10-05 18:12:13.572 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
-2025-10-05 18:12:41.435 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
-2025-10-05 18:12:41.438 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
-2025-10-05 18:20:59.619 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
-2025-10-05 18:20:59.621 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
-2025-10-05 18:22:07.429 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
-2025-10-05 18:22:07.433 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
-2025-10-05 18:23:27.467 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
-2025-10-05 18:23:27.469 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
-2025-10-05 18:25:08.063 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
-2025-10-05 18:25:08.064 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
-2025-10-05 18:27:50.657 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
-2025-10-05 18:27:50.662 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
-2025-10-05 18:29:27.731 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
-2025-10-05 18:29:27.734 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
-2025-10-05 18:30:59.712 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
-2025-10-05 18:30:59.714 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
-2025-10-05 18:32:06.528 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
-2025-10-05 18:32:06.536 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
-2025-10-05 18:34:21.163 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
-2025-10-05 18:34:21.165 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
-2025-10-05 18:35:53.127 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
-2025-10-05 18:35:53.130 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
-2025-10-05 18:48:08.745 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
-2025-10-05 18:48:08.746 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
-2025-10-05 18:49:00.262 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
-2025-10-05 18:49:00.264 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
-2025-10-05 18:49:47.983 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
-2025-10-05 18:49:47.985 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
-2025-10-05 18:50:02.474 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
-2025-10-05 18:50:02.475 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
-2025-10-05 18:50:56.236 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
-2025-10-05 18:50:56.238 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
-2025-10-05 18:52:05.814 | INFO     | app.api.auth:login:105 - User logged in: demo
-2025-10-05 18:52:13.999 | INFO     | app.api.auth:login:105 - User logged in: demo
-2025-10-05 18:54:45.415 | INFO     | app.api.auth:login:105 - User logged in: demo
-2025-10-05 18:55:41.154 | INFO     | app.api.auth:register:73 - New user registered: Sulphite
-2025-10-05 18:55:51.005 | INFO     | app.api.auth:login:105 - User logged in: Sulphite
-2025-10-05 18:55:56.269 | INFO     | app.api.auth:login:105 - User logged in: Sulphite
-2025-10-05 18:56:16.250 | INFO     | app.api.auth:login:105 - User logged in: Sulphite
-2025-10-05 18:59:08.484 | INFO     | app.api.auth:login:105 - User logged in: demo
-2025-10-05 18:59:43.507 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
-2025-10-05 18:59:43.510 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
-2025-10-05 19:00:27.864 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
-2025-10-05 19:00:27.865 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
-2025-10-05 19:05:39.884 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
-2025-10-05 19:05:39.886 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
-2025-10-05 19:06:57.199 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
-2025-10-05 19:06:57.201 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
-2025-10-05 19:07:06.291 | INFO     | app.api.auth:login:105 - User logged in: demo
-2025-10-05 19:08:11.624 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
-2025-10-05 19:08:11.627 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
-2025-10-05 19:13:31.360 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
-2025-10-05 19:13:31.364 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
-2025-10-05 19:20:33.669 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
-2025-10-05 19:20:33.672 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
-2025-10-05 19:26:34.160 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
-2025-10-05 19:26:34.163 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
-2025-10-05 19:30:18.213 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
-2025-10-05 19:30:18.215 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
-2025-10-05 19:30:22.894 | INFO     | app.api.auth:login:105 - User logged in: demo
-2025-10-05 19:35:58.088 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
-2025-10-05 19:35:58.090 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
-2025-10-05 19:36:16.270 | INFO     | app.api.auth:login:105 - User logged in: demo
-2025-10-05 19:36:45.092 | INFO     | app.api.auth:login:105 - User logged in: demo
-2025-10-05 19:38:11.221 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
-2025-10-05 19:38:11.223 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
-2025-10-05 19:46:45.965 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
-2025-10-05 19:46:45.967 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
-2025-10-05 19:49:51.880 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
-2025-10-05 19:49:51.883 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
-2025-10-05 20:04:08.102 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
-2025-10-05 20:04:08.103 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
-2025-10-05 20:39:26.899 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
-2025-10-05 20:39:26.900 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
-2025-10-05 20:46:01.280 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
-2025-10-05 20:46:01.283 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
-2025-10-05 20:46:13.203 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
-2025-10-05 20:46:13.206 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
-2025-10-05 20:46:28.909 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
-2025-10-05 20:46:28.911 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
-2025-10-05 20:46:35.584 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
-2025-10-05 20:46:35.585 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
-2025-10-05 20:51:31.194 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
-2025-10-05 20:51:31.195 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
-2025-10-05 20:51:38.431 | INFO     | app.api.auth:login:105 - User logged in: testuser
-2025-10-05 20:52:05.378 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
-2025-10-05 20:52:05.379 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
-2025-10-05 20:52:17.733 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
-2025-10-05 20:52:17.735 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
-2025-10-05 20:56:11.763 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
-2025-10-05 20:56:11.764 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
-2025-10-05 21:03:35.276 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
-2025-10-05 21:03:35.277 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
-2025-10-05 21:03:47.754 | INFO     | app.api.questions:check_answer:150 - Answer checked for user testuser: question PHY09-CH01-MCQ0004, correct: True
-2025-10-05 21:03:59.171 | INFO     | app.api.questions:check_answer:150 - Answer checked for user testuser: question PHY09-CH05-MCQ0043, correct: True
-2025-10-05 21:04:07.758 | INFO     | app.api.questions:check_answer:150 - Answer checked for user testuser: question PHY09-CH05-MCQ0040, correct: False
-2025-10-05 21:04:30.279 | INFO     | app.api.questions:check_answer:150 - Answer checked for user testuser: question PHY09-CH03-MCQ0028, correct: False
-2025-10-05 21:06:13.237 | INFO     | app.api.questions:check_answer:150 - Answer checked for user testuser: question PHY09-CH02-MCQ0014, correct: True
-2025-10-05 21:06:19.932 | INFO     | app.api.questions:check_answer:150 - Answer checked for user testuser: question PHY09-CH02-MCQ0012, correct: True
-2025-10-05 21:06:28.660 | INFO     | app.api.questions:check_answer:150 - Answer checked for user testuser: question PHY09-CH02-MCQ0016, correct: False
-2025-10-05 21:08:42.460 | INFO     | app.api.questions:check_answer:150 - Answer checked for user testuser: question PHY09-CH02-MCQ0019, correct: True
-2025-10-05 21:13:52.038 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
-2025-10-05 21:13:52.043 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
-2025-10-05 21:39:57.853 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
-2025-10-05 21:39:57.856 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
-2025-10-05 21:40:04.936 | INFO     | app.api.auth:login:105 - User logged in: testuser
-2025-10-05 21:40:07.350 | INFO     | app.api.analytics:get_user_analytics:35 - Analytics requested by user: testuser
-2025-10-05 21:40:22.743 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
-2025-10-05 21:40:22.746 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
-2025-10-05 21:40:25.274 | INFO     | app.api.analytics:get_user_analytics:35 - Analytics requested by user: testuser
-2025-10-05 21:40:37.701 | INFO     | app.api.analytics:get_user_analytics:35 - Analytics requested by user: testuser
-2025-10-05 21:40:42.833 | INFO     | app.api.analytics:get_user_analytics:35 - Analytics requested by user: testuser
-2025-10-05 21:40:45.864 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
-2025-10-05 21:40:45.866 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
-2025-10-05 21:40:50.554 | INFO     | app.api.auth:login:105 - User logged in: testuser
-2025-10-05 21:40:54.953 | INFO     | app.api.analytics:get_user_analytics:35 - Analytics requested by user: testuser
-2025-10-05 21:44:21.445 | INFO     | app.api.analytics:get_user_analytics:35 - Analytics requested by user: testuser
-2025-10-05 21:44:23.794 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
-2025-10-05 21:44:23.795 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
-2025-10-05 21:44:30.584 | INFO     | app.api.analytics:get_user_analytics:35 - Analytics requested by user: testuser
-2025-10-06 09:30:06.918 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
-2025-10-06 09:30:06.922 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
-2025-10-06 09:30:21.599 | INFO     | app.api.auth:login:105 - User logged in: Sulphite
-2025-10-06 09:30:34.298 | INFO     | app.api.analytics:get_user_analytics:35 - Analytics requested by user: Sulphite
-2025-10-06 09:50:27.111 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
-2025-10-06 09:50:27.114 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
-2025-10-06 09:50:38.258 | INFO     | app.api.analytics:get_user_analytics:89 - Analytics requested by user: Sulphite
-2025-10-06 09:51:03.414 | INFO     | app.api.questions:check_answer:150 - Answer checked for user Sulphite: question PHY09-CH03-MCQ0028, correct: False
-2025-10-06 09:51:10.762 | INFO     | app.api.questions:check_answer:150 - Answer checked for user Sulphite: question PHY09-CH01-MCQ0001, correct: False
-2025-10-06 09:51:17.958 | INFO     | app.api.questions:check_answer:150 - Answer checked for user Sulphite: question PHY09-CH05-MCQ0040, correct: True
-2025-10-06 09:51:30.677 | INFO     | app.api.questions:check_answer:150 - Answer checked for user Sulphite: question PHY09-CH03-MCQ0023, correct: True
-2025-10-06 09:51:38.977 | INFO     | app.api.questions:check_answer:150 - Answer checked for user Sulphite: question PHY09-CH01-MCQ0004, correct: True
-2025-10-06 09:51:49.560 | INFO     | app.api.questions:check_answer:150 - Answer checked for user Sulphite: question PHY09-CH05-MCQ0044, correct: True
-2025-10-06 09:51:59.014 | INFO     | app.api.analytics:get_user_analytics:89 - Analytics requested by user: Sulphite
-2025-10-06 09:52:11.737 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
-2025-10-06 09:52:11.738 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
-2025-10-06 09:52:24.664 | INFO     | app.api.analytics:get_user_analytics:89 - Analytics requested by user: Sulphite
-2025-10-06 09:52:35.393 | INFO     | app.api.analytics:get_user_analytics:89 - Analytics requested by user: Sulphite
-2025-10-06 09:52:42.736 | INFO     | app.api.questions:check_answer:150 - Answer checked for user Sulphite: question PHY09-CH05-MCQ0039, correct: True
-2025-10-06 09:53:07.960 | INFO     | app.api.questions:check_answer:150 - Answer checked for user Sulphite: question PHY09-CH08-MCQ0069, correct: True
-2025-10-06 09:53:17.817 | INFO     | app.api.questions:check_answer:150 - Answer checked for user Sulphite: question PHY09-CH08-MCQ0070, correct: True
-2025-10-06 09:53:32.082 | INFO     | app.api.questions:check_answer:150 - Answer checked for user Sulphite: question PHY09-CH08-MCQ0067, correct: True
-2025-10-06 09:53:41.699 | INFO     | app.api.questions:check_answer:150 - Answer checked for user Sulphite: question PHY09-CH08-MCQ0068, correct: False
-2025-10-06 09:53:51.423 | INFO     | app.api.questions:check_answer:150 - Answer checked for user Sulphite: question PHY09-CH08-MCQ0066, correct: False
-2025-10-06 09:54:00.963 | INFO     | app.api.analytics:get_user_analytics:89 - Analytics requested by user: Sulphite
-2025-10-06 09:54:04.131 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
-2025-10-06 09:54:04.157 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
-2025-10-06 09:54:07.836 | INFO     | app.api.analytics:get_user_analytics:89 - Analytics requested by user: Sulphite
-2025-10-06 09:56:39.628 | INFO     | app.api.analytics:get_user_analytics:89 - Analytics requested by user: Sulphite
-2025-10-06 10:11:45.048 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
-2025-10-06 10:11:45.051 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
-2025-10-06 10:11:49.652 | INFO     | app.api.auth:login:105 - User logged in: testuser
-2025-10-06 10:12:04.838 | INFO     | app.api.analytics:get_user_analytics:89 - Analytics requested by user: testuser
-2025-10-06 10:12:10.914 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
-2025-10-06 10:12:10.916 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
-2025-10-06 10:12:31.209 | INFO     | app.api.analytics:get_user_analytics:89 - Analytics requested by user: testuser
-2025-10-06 10:13:36.378 | INFO     | app.api.analytics:get_user_analytics:89 - Analytics requested by user: testuser
-2025-10-06 10:13:41.148 | INFO     | app.api.analytics:get_user_analytics:89 - Analytics requested by user: testuser
-2025-10-06 10:13:54.911 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
-2025-10-06 10:13:54.912 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
-2025-10-06 10:14:12.016 | INFO     | app.api.auth:login:105 - User logged in: Sulphite
-2025-10-06 10:14:29.827 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
-2025-10-06 10:14:29.829 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
-2025-10-06 10:14:36.962 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
-2025-10-06 10:14:36.964 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
-2025-10-06 10:14:43.131 | INFO     | app.api.analytics:get_user_analytics:89 - Analytics requested by user: Sulphite
-2025-10-06 10:14:46.210 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
-2025-10-06 10:14:46.213 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
-2025-10-06 10:18:17.665 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
-2025-10-06 10:18:17.667 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
-2025-10-06 10:18:20.647 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
-2025-10-06 10:18:20.649 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
-2025-10-06 10:18:24.491 | INFO     | app.api.analytics:get_user_analytics:89 - Analytics requested by user: Sulphite
-2025-10-06 10:19:53.830 | INFO     | app.api.analytics:get_user_analytics:89 - Analytics requested by user: Sulphite
-2025-10-06 10:19:55.678 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
-2025-10-06 10:19:55.680 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
-2025-10-06 10:19:58.319 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
-2025-10-06 10:19:58.322 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
-2025-10-06 10:19:59.277 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
-2025-10-06 10:19:59.280 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
-2025-10-06 10:19:59.894 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
-2025-10-06 10:19:59.897 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
-2025-10-06 10:21:11.181 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
-2025-10-06 10:21:11.184 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
-2025-10-06 10:21:24.713 | INFO     | app.api.analytics:get_user_analytics:89 - Analytics requested by user: Sulphite
-2025-10-06 10:21:40.924 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
-2025-10-06 10:21:40.927 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
-2025-10-06 10:21:44.374 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
-2025-10-06 10:21:44.376 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
-2025-10-06 10:21:45.054 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
-2025-10-06 10:21:45.058 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
-2025-10-06 11:04:11.877 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
-2025-10-06 11:04:11.878 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
-2025-10-06 11:04:20.842 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
-2025-10-06 11:04:20.843 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
-2025-10-06 12:18:35.154 | INFO     | app.api.auth:login:105 - User logged in: Sulphite
-2025-10-06 12:18:35.200 | INFO     | app.api.analytics:get_user_analytics:89 - Analytics requested by user: Sulphite
-2025-10-06 12:18:47.913 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
-2025-10-06 12:18:47.916 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
-2025-10-06 12:19:35.454 | INFO     | app.api.questions:check_answer:150 - Answer checked for user Sulphite: question PHY09-CH01-MCQ0001, correct: True
-2025-10-06 12:19:43.195 | INFO     | app.api.questions:check_answer:150 - Answer checked for user Sulphite: question PHY09-CH01-MCQ0002, correct: False
-2025-10-06 12:21:06.900 | INFO     | app.api.questions:check_answer:150 - Answer checked for user Sulphite: question PHY09-CH01-MCQ0003, correct: True
-2025-10-06 12:21:15.812 | INFO     | app.api.questions:check_answer:150 - Answer checked for user Sulphite: question PHY09-CH01-MCQ0004, correct: False
-2025-10-06 12:24:23.045 | INFO     | app.api.auth:login:105 - User logged in: Sulphite
-2025-10-06 12:24:23.069 | INFO     | app.api.analytics:get_user_analytics:89 - Analytics requested by user: Sulphite
-2025-10-06 12:53:33.740 | INFO     | app.api.analytics:get_user_analytics:89 - Analytics requested by user: Sulphite
-2025-10-06 12:53:42.195 | INFO     | app.api.analytics:get_user_analytics:89 - Analytics requested by user: Sulphite
-2025-10-06 12:53:43.815 | INFO     | app.api.analytics:get_user_analytics:89 - Analytics requested by user: Sulphite
-2025-10-06 12:53:44.523 | INFO     | app.api.analytics:get_user_analytics:89 - Analytics requested by user: Sulphite
-2025-10-06 12:53:45.160 | INFO     | app.api.analytics:get_user_analytics:89 - Analytics requested by user: Sulphite
-2025-10-06 12:53:45.910 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
-2025-10-06 12:53:45.943 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
-2025-10-06 12:53:48.073 | INFO     | app.api.analytics:get_user_analytics:89 - Analytics requested by user: Sulphite
-2025-10-06 12:53:50.243 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
-2025-10-06 12:53:50.245 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
-2025-10-06 12:54:00.835 | INFO     | app.api.analytics:get_user_analytics:89 - Analytics requested by user: Sulphite
-2025-10-06 12:54:01.810 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
-2025-10-06 12:54:01.812 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
-2025-10-06 12:54:05.597 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
-2025-10-06 12:54:05.634 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
-2025-10-06 12:54:20.409 | INFO     | app.api.questions:check_answer:150 - Answer checked for user Sulphite: question PHY09-CH01-MCQ0001, correct: True
-2025-10-06 12:57:18.033 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
-2025-10-06 12:57:18.034 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
-2025-10-06 12:57:20.017 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
-2025-10-06 12:57:20.018 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
-2025-10-06 13:00:34.529 | INFO     | app.api.auth:login:105 - User logged in: Sulphite
-2025-10-06 13:00:34.550 | INFO     | app.api.analytics:get_user_analytics:89 - Analytics requested by user: Sulphite
-2025-10-06 13:00:37.488 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
-2025-10-06 13:00:37.490 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
-2025-10-06 13:03:01.699 | INFO     | app.api.analytics:get_user_analytics:89 - Analytics requested by user: Sulphite
-2025-10-06 13:03:04.934 | INFO     | app.api.questions:get_chapters:254 - Total questions in DB: 80
-2025-10-06 13:03:04.935 | INFO     | app.api.questions:get_chapters:257 - Chapters retrieved: 9
-2025-10-06 13:05:57.161 | ERROR    | app.api.analytics:get_user_analytics:66 - Analytics error: The "whens" argument to case(), when referring to a sequence of items, is now passed as a series of positional elements, rather than as a list. 
-2025-10-06 13:06:01.605 | INFO     | app.api.questions:get_chapters:264 - Total questions in DB: 80
-2025-10-06 13:06:01.608 | INFO     | app.api.questions:get_chapters:267 - Chapters retrieved: 9
-2025-10-06 13:06:02.833 | ERROR    | app.api.analytics:get_detailed_analytics_endpoint:129 - Detailed analytics error: The "whens" argument to case(), when referring to a sequence of items, is now passed as a series of positional elements, rather than as a list. 
-2025-10-06 13:06:05.115 | ERROR    | app.api.analytics:get_detailed_analytics_endpoint:129 - Detailed analytics error: The "whens" argument to case(), when referring to a sequence of items, is now passed as a series of positional elements, rather than as a list. 
-2025-10-06 13:12:31.263 | ERROR    | app.api.analytics:get_user_analytics:66 - Analytics error: The "whens" argument to case(), when referring to a sequence of items, is now passed as a series of positional elements, rather than as a list. 
-2025-10-06 13:12:33.233 | INFO     | app.api.questions:get_chapters:264 - Total questions in DB: 80
-2025-10-06 13:12:33.234 | INFO     | app.api.questions:get_chapters:267 - Chapters retrieved: 9
-2025-10-06 13:12:34.153 | ERROR    | app.api.analytics:get_detailed_analytics_endpoint:129 - Detailed analytics error: The "whens" argument to case(), when referring to a sequence of items, is now passed as a series of positional elements, rather than as a list. 
-2025-10-06 13:31:24.560 | INFO     | app.api.auth:login:105 - User logged in: Sulphite
-2025-10-06 13:31:24.610 | INFO     | app.api.analytics:get_user_analytics:57 - Analytics requested by user: Sulphite
-2025-10-06 13:31:26.759 | INFO     | app.api.questions:get_chapters:264 - Total questions in DB: 80
-2025-10-06 13:31:26.762 | INFO     | app.api.questions:get_chapters:267 - Chapters retrieved: 9
-2025-10-06 13:31:27.857 | ERROR    | app.api.analytics:get_detailed_analytics_endpoint:129 - Detailed analytics error: 'str' object has no attribute 'isoformat'
-2025-10-06 13:31:29.816 | ERROR    | app.api.analytics:get_detailed_analytics_endpoint:129 - Detailed analytics error: 'str' object has no attribute 'isoformat'
-2025-10-06 13:31:38.951 | ERROR    | app.api.analytics:get_detailed_analytics_endpoint:129 - Detailed analytics error: 'str' object has no attribute 'isoformat'
-2025-10-06 13:52:09.051 | INFO     | app.api.analytics:get_user_analytics:57 - Analytics requested by user: Sulphite
-2025-10-06 13:52:33.768 | INFO     | app.api.questions:get_chapters:264 - Total questions in DB: 80
-2025-10-06 13:52:33.770 | INFO     | app.api.questions:get_chapters:267 - Chapters retrieved: 9
-2025-10-06 13:52:35.397 | INFO     | app.api.analytics:get_user_analytics:57 - Analytics requested by user: Sulphite
-2025-10-06 13:53:29.327 | INFO     | app.api.analytics:get_user_analytics:57 - Analytics requested by user: Sulphite
-2025-10-06 13:53:30.995 | INFO     | app.api.questions:get_chapters:264 - Total questions in DB: 80
-2025-10-06 13:53:30.996 | INFO     | app.api.questions:get_chapters:267 - Chapters retrieved: 9
-2025-10-06 13:53:42.509 | INFO     | app.api.questions:check_answer:160 - Answer checked for user Sulphite: question PHY09-CH08-MCQ0066, correct: True
-2025-10-06 13:53:50.499 | INFO     | app.api.questions:check_answer:160 - Answer checked for user Sulphite: question PHY09-CH08-MCQ0067, correct: True
-2025-10-06 13:53:55.512 | INFO     | app.api.questions:check_answer:160 - Answer checked for user Sulphite: question PHY09-CH08-MCQ0068, correct: True
-2025-10-06 13:54:03.069 | INFO     | app.api.questions:check_answer:160 - Answer checked for user Sulphite: question PHY09-CH08-MCQ0069, correct: True
-2025-10-06 13:54:09.961 | INFO     | app.api.questions:check_answer:160 - Answer checked for user Sulphite: question PHY09-CH08-MCQ0070, correct: True
-2025-10-06 13:54:16.353 | INFO     | app.api.analytics:get_user_analytics:57 - Analytics requested by user: Sulphite
-2025-10-06 13:54:38.868 | INFO     | app.api.questions:get_chapters:264 - Total questions in DB: 80
-2025-10-06 13:54:38.870 | INFO     | app.api.questions:get_chapters:267 - Chapters retrieved: 9
-2025-10-06 13:54:46.840 | INFO     | app.api.questions:check_answer:160 - Answer checked for user Sulphite: question PHY09-CH01-MCQ0001, correct: True
-2025-10-06 13:54:51.474 | INFO     | app.api.questions:check_answer:160 - Answer checked for user Sulphite: question PHY09-CH01-MCQ0002, correct: True
-2025-10-06 13:54:56.166 | INFO     | app.api.questions:check_answer:160 - Answer checked for user Sulphite: question PHY09-CH01-MCQ0003, correct: True
-2025-10-06 13:55:00.967 | INFO     | app.api.questions:check_answer:160 - Answer checked for user Sulphite: question PHY09-CH01-MCQ0004, correct: True
-2025-10-06 13:55:23.328 | INFO     | app.api.questions:check_answer:160 - Answer checked for user Sulphite: question PHY09-CH01-MCQ0005, correct: False
-2025-10-06 13:55:33.488 | INFO     | app.api.questions:check_answer:160 - Answer checked for user Sulphite: question PHY09-CH01-MCQ0006, correct: False
-2025-10-06 13:55:50.661 | INFO     | app.api.questions:check_answer:160 - Answer checked for user Sulphite: question PHY09-CH01-MCQ0007, correct: True
-2025-10-06 13:55:56.831 | INFO     | app.api.questions:check_answer:160 - Answer checked for user Sulphite: question PHY09-CH01-MCQ0008, correct: False
-2025-10-06 13:56:01.195 | INFO     | app.api.questions:check_answer:160 - Answer checked for user Sulphite: question PHY09-CH01-MCQ0009, correct: False
-2025-10-06 13:56:04.979 | INFO     | app.api.questions:check_answer:160 - Answer checked for user Sulphite: question PHY09-CH01-MCQ0010, correct: False
-2025-10-06 13:56:08.511 | INFO     | app.api.analytics:get_user_analytics:57 - Analytics requested by user: Sulphite
-2025-10-06 13:56:12.089 | INFO     | app.api.questions:get_chapters:264 - Total questions in DB: 80
-2025-10-06 13:56:12.091 | INFO     | app.api.questions:get_chapters:267 - Chapters retrieved: 9
-2025-10-06 14:06:33.962 | INFO     | app.api.auth:login:105 - User logged in: Sulphite
-2025-10-06 14:06:33.986 | INFO     | app.api.analytics:get_user_analytics:57 - Analytics requested by user: Sulphite
-2025-10-06 14:08:07.140 | INFO     | app.api.questions:get_chapters:264 - Total questions in DB: 80
-2025-10-06 14:08:07.141 | INFO     | app.api.questions:get_chapters:267 - Chapters retrieved: 9
-2025-10-06 14:08:29.574 | INFO     | app.api.questions:check_answer:160 - Answer checked for user Sulphite: question PHY09-CH08-MCQ0066, correct: False
-2025-10-06 14:08:41.145 | INFO     | app.api.questions:check_answer:160 - Answer checked for user Sulphite: question PHY09-CH08-MCQ0067, correct: False
-2025-10-06 14:08:56.418 | INFO     | app.api.questions:check_answer:160 - Answer checked for user Sulphite: question PHY09-CH08-MCQ0068, correct: False
-2025-10-06 14:09:06.881 | INFO     | app.api.questions:check_answer:160 - Answer checked for user Sulphite: question PHY09-CH08-MCQ0069, correct: True
-2025-10-06 14:10:39.665 | INFO     | app.api.analytics:get_user_analytics:57 - Analytics requested by user: Sulphite
-2025-10-06 14:13:16.502 | INFO     | app.api.analytics:get_user_analytics:57 - Analytics requested by user: Sulphite
-2025-10-06 14:13:36.584 | INFO     | app.api.analytics:get_user_analytics:60 - Analytics requested by user: Sulphite
-2025-10-06 14:13:41.312 | INFO     | app.api.questions:get_chapters:264 - Total questions in DB: 80
-2025-10-06 14:13:41.315 | INFO     | app.api.questions:get_chapters:267 - Chapters retrieved: 9
-2025-10-06 14:13:48.232 | INFO     | app.api.analytics:reset_analytics:229 - Analytics reset for user Sulphite. 36 activities deleted.
-2025-10-06 14:13:48.257 | INFO     | app.api.analytics:get_user_analytics:60 - Analytics requested by user: Sulphite
-2025-10-06 14:13:48.278 | INFO     | app.api.analytics:get_user_analytics:60 - Analytics requested by user: Sulphite
-2025-10-06 14:13:49.979 | INFO     | app.api.analytics:get_user_analytics:60 - Analytics requested by user: Sulphite
-2025-10-06 14:13:53.568 | INFO     | app.api.questions:get_chapters:264 - Total questions in DB: 80
-2025-10-06 14:13:53.569 | INFO     | app.api.questions:get_chapters:267 - Chapters retrieved: 9
-2025-10-06 14:13:54.344 | INFO     | app.api.analytics:get_user_analytics:60 - Analytics requested by user: Sulphite
-2025-10-06 14:13:55.948 | INFO     | app.api.questions:get_chapters:264 - Total questions in DB: 80
-2025-10-06 14:13:55.949 | INFO     | app.api.questions:get_chapters:267 - Chapters retrieved: 9
-2025-10-06 14:14:04.589 | INFO     | app.api.questions:check_answer:160 - Answer checked for user Sulphite: question PHY09-CH08-MCQ0066, correct: True
-2025-10-06 14:14:09.500 | INFO     | app.api.questions:check_answer:160 - Answer checked for user Sulphite: question PHY09-CH08-MCQ0067, correct: True
-2025-10-06 14:14:14.551 | INFO     | app.api.questions:check_answer:160 - Answer checked for user Sulphite: question PHY09-CH08-MCQ0068, correct: True
-2025-10-06 14:14:30.482 | INFO     | app.api.questions:check_answer:160 - Answer checked for user Sulphite: question PHY09-CH08-MCQ0069, correct: True
-2025-10-06 14:14:36.238 | INFO     | app.api.questions:check_answer:160 - Answer checked for user Sulphite: question PHY09-CH08-MCQ0070, correct: False
-2025-10-06 14:14:39.976 | INFO     | app.api.analytics:get_user_analytics:60 - Analytics requested by user: Sulphite
-2025-10-06 14:14:52.613 | INFO     | app.api.questions:get_chapters:264 - Total questions in DB: 80
-2025-10-06 14:14:52.615 | INFO     | app.api.questions:get_chapters:267 - Chapters retrieved: 9
-2025-10-06 14:14:59.872 | INFO     | app.api.analytics:get_user_analytics:60 - Analytics requested by user: Sulphite
-2025-10-06 14:15:08.335 | INFO     | app.api.questions:get_chapters:264 - Total questions in DB: 80
-2025-10-06 14:15:08.337 | INFO     | app.api.questions:get_chapters:267 - Chapters retrieved: 9
-2025-10-06 14:27:32.468 | INFO     | app.api.analytics:get_user_analytics:60 - Analytics requested by user: Sulphite
-2025-10-06 14:27:55.393 | INFO     | app.api.questions:get_chapters:267 - Total questions in DB: 80
-2025-10-06 14:27:55.394 | INFO     | app.api.questions:get_chapters:270 - Chapters retrieved: 9
-2025-10-06 14:28:30.367 | INFO     | app.api.questions:check_answer:163 - Answer checked for user Sulphite: question PHY09-CH06-MCQ0049, correct: False
-2025-10-06 14:29:09.731 | INFO     | app.api.questions:check_answer:163 - Answer checked for user Sulphite: question PHY09-CH06-MCQ0050, correct: False
-2025-10-06 14:29:19.426 | INFO     | app.api.questions:check_answer:163 - Answer checked for user Sulphite: question PHY09-CH06-MCQ0051, correct: True
-2025-10-06 14:29:27.368 | INFO     | app.api.questions:check_answer:163 - Answer checked for user Sulphite: question PHY09-CH06-MCQ0052, correct: True
-2025-10-06 14:29:52.628 | INFO     | app.api.questions:check_answer:163 - Answer checked for user Sulphite: question PHY09-CH06-MCQ0053, correct: True
-2025-10-06 14:30:06.226 | INFO     | app.api.analytics:get_user_analytics:60 - Analytics requested by user: Sulphite
-2025-10-06 14:31:12.228 | INFO     | app.api.questions:get_chapters:267 - Total questions in DB: 80
-2025-10-06 14:31:12.228 | INFO     | app.api.questions:get_chapters:270 - Chapters retrieved: 9
-2025-10-06 14:31:58.532 | INFO     | app.api.questions:check_answer:163 - Answer checked for user Sulphite: question PHY09-CH01-MCQ0001, correct: False
-2025-10-06 14:32:55.140 | INFO     | app.api.questions:check_answer:163 - Answer checked for user Sulphite: question PHY09-CH01-MCQ0002, correct: True
-2025-10-06 14:33:17.303 | INFO     | app.api.questions:check_answer:163 - Answer checked for user Sulphite: question PHY09-CH01-MCQ0003, correct: True
-2025-10-06 14:33:28.885 | INFO     | app.api.questions:check_answer:163 - Answer checked for user Sulphite: question PHY09-CH01-MCQ0004, correct: False
-2025-10-06 14:34:06.384 | INFO     | app.api.questions:check_answer:163 - Answer checked for user Sulphite: question PHY09-CH01-MCQ0005, correct: False
-2025-10-06 14:34:18.440 | INFO     | app.api.analytics:get_user_analytics:60 - Analytics requested by user: Sulphite
-2025-10-06 14:36:10.081 | INFO     | app.api.analytics:get_user_analytics:60 - Analytics requested by user: Sulphite
-2025-10-06 14:36:33.208 | INFO     | app.api.questions:get_chapters:267 - Total questions in DB: 80
-2025-10-06 14:36:33.209 | INFO     | app.api.questions:get_chapters:270 - Chapters retrieved: 9
-2025-10-06 14:36:50.352 | INFO     | app.api.auth:login:105 - User logged in: Sulphite
-2025-10-06 14:36:50.374 | INFO     | app.api.analytics:get_user_analytics:60 - Analytics requested by user: Sulphite
-2025-10-06 14:36:52.237 | INFO     | app.api.questions:get_chapters:267 - Total questions in DB: 80
-2025-10-06 14:36:52.239 | INFO     | app.api.questions:get_chapters:270 - Chapters retrieved: 9
-2025-10-06 14:37:21.891 | INFO     | app.api.questions:check_answer:163 - Answer checked for user Sulphite: question PHY09-CH01-MCQ0001, correct: False
-2025-10-06 14:38:13.368 | INFO     | app.api.analytics:reset_analytics:229 - Analytics reset for user Sulphite. 16 activities deleted.
-2025-10-06 14:38:13.412 | INFO     | app.api.analytics:get_user_analytics:60 - Analytics requested by user: Sulphite
-2025-10-06 14:38:14.916 | INFO     | app.api.analytics:get_user_analytics:60 - Analytics requested by user: Sulphite
-2025-10-06 14:38:16.416 | INFO     | app.api.analytics:get_user_analytics:60 - Analytics requested by user: Sulphite
-2025-10-06 14:38:19.141 | INFO     | app.api.questions:get_chapters:267 - Total questions in DB: 80
-2025-10-06 14:38:19.143 | INFO     | app.api.questions:get_chapters:270 - Chapters retrieved: 9
-2025-10-06 15:08:06.194 | INFO     | app.api.auth:login:105 - User logged in: Sulphite
-2025-10-06 15:08:06.218 | INFO     | app.api.analytics:get_user_analytics:60 - Analytics requested by user: Sulphite
-2025-10-06 15:10:40.218 | INFO     | app.api.analytics:get_user_analytics:60 - Analytics requested by user: Sulphite
-2025-10-06 15:10:42.476 | INFO     | app.api.questions:get_chapters:267 - Total questions in DB: 80
-2025-10-06 15:10:42.478 | INFO     | app.api.questions:get_chapters:270 - Chapters retrieved: 9
-2025-10-06 15:10:45.011 | INFO     | app.api.analytics:get_user_analytics:60 - Analytics requested by user: Sulphite
-2025-10-06 15:22:04.902 | INFO     | app.api.analytics:get_user_analytics:60 - Analytics requested by user: Sulphite
-2025-10-06 15:22:06.865 | INFO     | app.api.questions:get_chapters:267 - Total questions in DB: 80
-2025-10-06 15:22:06.866 | INFO     | app.api.questions:get_chapters:270 - Chapters retrieved: 9
-2025-10-06 15:24:39.963 | INFO     | app.api.analytics:get_user_analytics:60 - Analytics requested by user: Sulphite
-2025-10-06 15:24:44.783 | INFO     | app.api.questions:get_chapters:267 - Total questions in DB: 80
-2025-10-06 15:24:44.786 | INFO     | app.api.questions:get_chapters:270 - Chapters retrieved: 9
-2025-10-06 15:25:06.117 | INFO     | app.api.questions:get_chapters:267 - Total questions in DB: 80
-2025-10-06 15:25:06.119 | INFO     | app.api.questions:get_chapters:270 - Chapters retrieved: 9
-2025-10-06 15:25:07.102 | INFO     | app.api.analytics:get_user_analytics:60 - Analytics requested by user: Sulphite
-2025-10-06 15:25:32.866 | INFO     | app.api.auth:login:119 - User logged in: Sulphite
-2025-10-06 15:25:32.887 | INFO     | app.api.analytics:get_user_analytics:60 - Analytics requested by user: Sulphite
-2025-10-06 15:25:35.881 | INFO     | app.api.questions:get_chapters:267 - Total questions in DB: 80
-2025-10-06 15:25:35.882 | INFO     | app.api.questions:get_chapters:270 - Chapters retrieved: 9
-2025-10-06 15:25:52.428 | INFO     | app.api.analytics:get_user_analytics:60 - Analytics requested by user: Sulphite
-2025-10-06 15:26:10.256 | INFO     | app.api.questions:get_chapters:267 - Total questions in DB: 80
-2025-10-06 15:26:10.258 | INFO     | app.api.questions:get_chapters:270 - Chapters retrieved: 9
-2025-10-06 15:26:17.524 | INFO     | app.api.questions:check_answer:163 - Answer checked for user Sulphite: question PHY09-CH08-MCQ0066, correct: False
-2025-10-06 15:26:26.877 | INFO     | app.api.questions:check_answer:163 - Answer checked for user Sulphite: question PHY09-CH08-MCQ0067, correct: True
-2025-10-06 15:26:29.970 | INFO     | app.api.questions:check_answer:163 - Answer checked for user Sulphite: question PHY09-CH08-MCQ0068, correct: True
-2025-10-06 15:26:33.959 | INFO     | app.api.questions:check_answer:163 - Answer checked for user Sulphite: question PHY09-CH08-MCQ0069, correct: True
-2025-10-06 15:26:37.966 | INFO     | app.api.questions:check_answer:163 - Answer checked for user Sulphite: question PHY09-CH08-MCQ0070, correct: True
-2025-10-06 15:26:50.034 | INFO     | app.api.analytics:get_user_analytics:60 - Analytics requested by user: Sulphite
-2025-10-06 15:26:55.866 | INFO     | app.api.questions:get_chapters:267 - Total questions in DB: 80
-2025-10-06 15:26:55.868 | INFO     | app.api.questions:get_chapters:270 - Chapters retrieved: 9
-2025-10-06 15:27:02.355 | INFO     | app.api.questions:check_answer:163 - Answer checked for user Sulphite: question PHY09-CH08-MCQ0066, correct: False
-2025-10-06 15:32:03.812 | INFO     | app.api.analytics:get_user_analytics:60 - Analytics requested by user: Sulphite
-2025-10-06 15:33:43.389 | INFO     | app.api.analytics:get_user_analytics:60 - Analytics requested by user: Sulphite
-2025-10-06 15:33:51.344 | INFO     | app.api.questions:get_chapters:267 - Total questions in DB: 80
-2025-10-06 15:33:51.346 | INFO     | app.api.questions:get_chapters:270 - Chapters retrieved: 9
-2025-10-06 15:33:56.287 | INFO     | app.api.questions:check_answer:163 - Answer checked for user Sulphite: question PHY09-CH08-MCQ0066, correct: True
-2025-10-06 15:34:18.149 | INFO     | app.api.analytics:get_user_analytics:60 - Analytics requested by user: Sulphite
-2025-10-06 15:34:29.550 | INFO     | app.api.analytics:reset_analytics:229 - Analytics reset for user Sulphite. 7 activities deleted.
-2025-10-06 15:34:29.579 | INFO     | app.api.analytics:get_user_analytics:60 - Analytics requested by user: Sulphite
-2025-10-06 15:34:29.602 | INFO     | app.api.analytics:get_user_analytics:60 - Analytics requested by user: Sulphite
-2025-10-06 15:34:29.621 | INFO     | app.api.analytics:get_user_analytics:60 - Analytics requested by user: Sulphite
-2025-10-06 15:34:29.646 | INFO     | app.api.analytics:get_user_analytics:60 - Analytics requested by user: Sulphite
-2025-10-06 15:34:29.668 | INFO     | app.api.analytics:get_user_analytics:60 - Analytics requested by user: Sulphite
-2025-10-06 15:34:31.176 | INFO     | app.api.questions:get_chapters:267 - Total questions in DB: 80
-2025-10-06 15:34:31.178 | INFO     | app.api.questions:get_chapters:270 - Chapters retrieved: 9
-2025-10-06 15:34:41.426 | INFO     | app.api.questions:check_answer:163 - Answer checked for user Sulphite: question PHY09-CH08-MCQ0066, correct: True
-2025-10-06 15:34:48.344 | INFO     | app.api.questions:check_answer:163 - Answer checked for user Sulphite: question PHY09-CH08-MCQ0067, correct: False
-2025-10-06 15:34:57.591 | INFO     | app.api.questions:check_answer:163 - Answer checked for user Sulphite: question PHY09-CH08-MCQ0068, correct: True
-2025-10-06 15:35:02.802 | INFO     | app.api.questions:check_answer:163 - Answer checked for user Sulphite: question PHY09-CH08-MCQ0069, correct: True
-2025-10-06 15:35:06.972 | INFO     | app.api.questions:check_answer:163 - Answer checked for user Sulphite: question PHY09-CH08-MCQ0070, correct: True
-2025-10-06 15:46:52.170 | INFO     | app.api.analytics:get_user_analytics:60 - Analytics requested by user: Sulphite
-2025-10-06 15:46:55.851 | INFO     | app.api.questions:get_chapters:267 - Total questions in DB: 80
-2025-10-06 15:46:55.852 | INFO     | app.api.questions:get_chapters:270 - Chapters retrieved: 9
-2025-10-06 15:46:59.915 | INFO     | app.api.questions:get_chapters:267 - Total questions in DB: 80
-2025-10-06 15:46:59.916 | INFO     | app.api.questions:get_chapters:270 - Chapters retrieved: 9
-2025-10-06 15:47:04.732 | INFO     | app.api.questions:check_answer:163 - Answer checked for user Sulphite: question PHY09-CH08-MCQ0067, correct: True
-2025-10-06 15:47:16.503 | INFO     | app.api.questions:get_chapters:267 - Total questions in DB: 80
-2025-10-06 15:47:16.504 | INFO     | app.api.questions:get_chapters:270 - Chapters retrieved: 9
-2025-10-06 15:47:17.452 | INFO     | app.api.analytics:get_user_analytics:60 - Analytics requested by user: Sulphite
-2025-10-06 15:47:36.397 | INFO     | app.api.analytics:get_user_analytics:60 - Analytics requested by user: Sulphite
+2025-10-07 22:07:50.783 | INFO     | app.api.auth:login:119 - User logged in: Sulphite
+2025-10-07 22:07:50.888 | INFO     | app.api.analytics:get_user_analytics:60 - Analytics requested by user: Sulphite
+2025-10-07 22:07:57.190 | WARNING  | app.ai.service:_create_llm:37 - GEMINI_API_KEY is not set. AI Tutor cannot function.
+2025-10-07 22:08:04.567 | INFO     | app.api.ai:websocket_chat_endpoint:31 - Received AI chat message from user 2: Hello
+2025-10-07 22:08:04.568 | INFO     | app.ai.service:_check_query_limit:125 - New day for user Sulphite. Resetting AI query count.
+2025-10-07 22:08:04.615 | INFO     | app.ai.service:_check_query_limit:138 - User Sulphite query count for today: 1
+2025-10-07 22:08:26.223 | INFO     | app.api.ai:websocket_chat_endpoint:31 - Received AI chat message from user 2: Hi
+2025-10-07 22:08:26.232 | INFO     | app.ai.service:_check_query_limit:138 - User Sulphite query count for today: 2
+2025-10-07 22:09:16.989 | INFO     | app.api.ai:websocket_chat_endpoint:31 - Received AI chat message from user 2: Hi
+2025-10-07 22:09:17.033 | INFO     | app.ai.service:_check_query_limit:138 - User Sulphite query count for today: 3
+2025-10-07 22:09:32.836 | INFO     | app.api.ai:websocket_chat_endpoint:49 - User 2 disconnected from AI chat.
+2025-10-07 22:09:32.837 | INFO     | app.api.ai:websocket_chat_endpoint:54 - Database session closed for user 2 AI chat.
+2025-10-07 22:09:47.899 | INFO     | app.api.analytics:get_user_analytics:60 - Analytics requested by user: Sulphite
+2025-10-07 22:09:51.325 | WARNING  | app.ai.service:_create_llm:37 - GEMINI_API_KEY is not set. AI Tutor cannot function.
+2025-10-07 22:09:54.409 | INFO     | app.api.ai:websocket_chat_endpoint:31 - Received AI chat message from user 2: Hi
+2025-10-07 22:09:54.457 | INFO     | app.ai.service:_check_query_limit:138 - User Sulphite query count for today: 4
+2025-10-07 22:10:33.530 | INFO     | app.api.ai:websocket_chat_endpoint:31 - Received AI chat message from user 2: Hi
+2025-10-07 22:10:33.571 | INFO     | app.ai.service:_check_query_limit:138 - User Sulphite query count for today: 5
+2025-10-07 22:11:29.441 | INFO     | app.api.ai:websocket_chat_endpoint:31 - Received AI chat message from user 2: Hi
+2025-10-07 22:11:29.449 | INFO     | app.ai.service:_check_query_limit:138 - User Sulphite query count for today: 6
+2025-10-07 22:11:39.662 | INFO     | app.api.ai:websocket_chat_endpoint:49 - User 2 disconnected from AI chat.
+2025-10-07 22:11:39.663 | INFO     | app.api.ai:websocket_chat_endpoint:54 - Database session closed for user 2 AI chat.
+2025-10-07 22:21:07.942 | INFO     | app.api.auth:login:119 - User logged in: Sulphite
+2025-10-07 22:21:08.040 | INFO     | app.api.analytics:get_user_analytics:60 - Analytics requested by user: Sulphite
+2025-10-07 22:21:20.406 | ERROR    | app.api.ai:websocket_chat_endpoint:51 - Error in AI chat websocket for user 2: 1 validation error for ChatGoogleGenerativeAI
+__root__
+  Did not find google_api_key, please add an environment variable `GOOGLE_API_KEY` which contains it, or pass `google_api_key` as a named parameter. (type=value_error)
+2025-10-07 22:21:20.407 | INFO     | app.api.ai:websocket_chat_endpoint:54 - Database session closed for user 2 AI chat.
+2025-10-07 22:23:07.647 | INFO     | app.api.analytics:get_user_analytics:60 - Analytics requested by user: Sulphite
+2025-10-07 22:23:09.883 | ERROR    | app.api.ai:websocket_chat_endpoint:51 - Error in AI chat websocket for user 2: 1 validation error for ChatGoogleGenerativeAI
+__root__
+  Did not find google_api_key, please add an environment variable `GOOGLE_API_KEY` which contains it, or pass `google_api_key` as a named parameter. (type=value_error)
+2025-10-07 22:23:09.885 | INFO     | app.api.ai:websocket_chat_endpoint:54 - Database session closed for user 2 AI chat.
+2025-10-07 22:27:59.699 | INFO     | app.api.analytics:get_user_analytics:60 - Analytics requested by user: Sulphite
+2025-10-07 22:28:05.386 | ERROR    | app.api.ai:websocket_chat_endpoint:52 - Error in AI chat websocket for user 2: Prompt missing required variables: {'tool_names'}
+2025-10-07 22:28:05.388 | INFO     | app.api.ai:websocket_chat_endpoint:55 - Database session closed for user 2 AI chat.
+2025-10-07 22:30:30.242 | INFO     | app.api.analytics:get_user_analytics:60 - Analytics requested by user: Sulphite
+2025-10-07 22:30:36.554 | INFO     | app.api.ai:websocket_chat_endpoint:32 - Received AI chat message from user 2: Hi
+2025-10-07 22:30:38.736 | ERROR    | app.ai.service:get_ai_response:166 - Error during AI agent execution for user Sulphite: An output parsing error occurred. In order to pass this error back to the agent and have it try again, pass `handle_parsing_errors=True` to the AgentExecutor. This is the error: Could not parse LLM output: `Hi there! EduTheo here, ready to help you conquer the world of 9th-grade physics! How are you doing today? What physics puzzles are we tackling today? Let's get started! ✨
+`
+2025-10-07 22:33:19.318 | INFO     | app.api.ai:websocket_chat_endpoint:50 - User 2 disconnected from AI chat.
+2025-10-07 22:33:19.322 | INFO     | app.api.ai:websocket_chat_endpoint:55 - Database session closed for user 2 AI chat.
+2025-10-07 22:33:29.547 | INFO     | app.api.analytics:get_user_analytics:60 - Analytics requested by user: Sulphite
+2025-10-07 22:33:35.744 | INFO     | app.api.ai:websocket_chat_endpoint:32 - Received AI chat message from user 2: Hi
+2025-10-07 22:33:53.474 | INFO     | app.ai.service:get_ai_response:161 - User Sulphite query count for today: 7
+2025-10-07 22:37:23.280 | INFO     | app.api.ai:websocket_chat_endpoint:50 - User 2 disconnected from AI chat.
+2025-10-07 22:37:23.281 | INFO     | app.api.ai:websocket_chat_endpoint:55 - Database session closed for user 2 AI chat.
+2025-10-07 22:37:34.179 | INFO     | app.api.analytics:get_user_analytics:60 - Analytics requested by user: Sulphite
+2025-10-07 22:37:50.032 | INFO     | app.api.ai:websocket_chat_endpoint:32 - Received AI chat message from user 2: Hi
+2025-10-07 22:38:01.362 | INFO     | app.ai.service:get_ai_response:164 - User Sulphite query count for today: 8
+2025-10-07 22:39:56.729 | INFO     | app.api.ai:websocket_chat_endpoint:50 - User 2 disconnected from AI chat.
+2025-10-07 22:39:56.730 | INFO     | app.api.ai:websocket_chat_endpoint:55 - Database session closed for user 2 AI chat.
+2025-10-07 22:40:13.239 | INFO     | app.api.analytics:get_user_analytics:60 - Analytics requested by user: Sulphite
+2025-10-07 22:40:19.425 | INFO     | app.api.ai:websocket_chat_endpoint:32 - Received AI chat message from user 2: Hi
+2025-10-07 22:40:37.100 | INFO     | app.ai.service:get_ai_response:174 - User Sulphite query count for today: 9
+2025-10-07 22:44:36.353 | INFO     | app.api.ai:websocket_chat_endpoint:50 - User 2 disconnected from AI chat.
+2025-10-07 22:44:36.354 | INFO     | app.api.ai:websocket_chat_endpoint:55 - Database session closed for user 2 AI chat.
+2025-10-07 22:44:45.800 | INFO     | app.api.analytics:get_user_analytics:60 - Analytics requested by user: Sulphite
+2025-10-07 22:44:50.239 | INFO     | app.api.ai:websocket_chat_endpoint:32 - Received AI chat message from user 2: Hi
+2025-10-07 22:45:07.468 | INFO     | app.ai.service:get_ai_response:174 - User Sulphite query count for today: 10
+2025-10-07 22:47:56.054 | INFO     | app.api.ai:websocket_chat_endpoint:32 - Received AI chat message from user 2: Hi
+2025-10-07 22:47:58.843 | INFO     | app.ai.service:_get_analytics_report:48 - AI Tool: Getting analytics for user 2
+2025-10-07 22:48:27.031 | INFO     | app.ai.service:get_ai_response:174 - User Sulphite query count for today: 11
+2025-10-07 22:51:35.679 | INFO     | app.api.ai:websocket_chat_endpoint:50 - User 2 disconnected from AI chat.
+2025-10-07 22:51:35.684 | INFO     | app.api.ai:websocket_chat_endpoint:55 - Database session closed for user 2 AI chat.
+2025-10-07 22:51:53.492 | INFO     | app.api.auth:login:119 - User logged in: Sulphite
+2025-10-07 22:51:53.582 | INFO     | app.api.analytics:get_user_analytics:60 - Analytics requested by user: Sulphite
+2025-10-07 22:51:58.039 | INFO     | app.api.ai:websocket_chat_endpoint:32 - Received AI chat message from user 2: Hi
+2025-10-07 22:51:59.731 | INFO     | app.ai.service:_general_conversation:87 - AI Tool: Handling general conversation for user 2
+2025-10-07 22:52:00.712 | INFO     | app.ai.service:get_ai_response:222 - User Sulphite query count for today: 12
+2025-10-07 22:52:30.906 | INFO     | app.api.ai:websocket_chat_endpoint:32 - Received AI chat message from user 2: What are my analytics? Can you suggest tips based on that?
+2025-10-07 22:52:32.277 | INFO     | app.ai.service:_get_analytics_report:48 - AI Tool: Getting analytics for user 2
+2025-10-07 22:52:34.977 | INFO     | app.ai.service:_general_conversation:87 - AI Tool: Handling general conversation for user 2
+2025-10-07 22:52:36.926 | INFO     | app.ai.service:get_ai_response:222 - User Sulphite query count for today: 13
+2025-10-07 22:53:37.331 | INFO     | app.api.ai:websocket_chat_endpoint:32 - Received AI chat message from user 2: There is question that which of the following element is not magnet : aluminium, iron, and 2 mores and correct one is aluminium, why?
+2025-10-07 22:53:38.602 | INFO     | app.ai.service:_get_question_details:72 - AI Tool: Getting details for question aluminium, iron
+2025-10-07 22:53:40.342 | INFO     | app.ai.service:_general_conversation:87 - AI Tool: Handling general conversation for user 2
+2025-10-07 22:53:42.024 | INFO     | app.ai.service:_general_conversation:87 - AI Tool: Handling general conversation for user 2
+2025-10-07 22:53:43.518 | INFO     | app.ai.service:_general_conversation:87 - AI Tool: Handling general conversation for user 2
+2025-10-07 22:53:48.233 | INFO     | app.ai.service:_general_conversation:87 - AI Tool: Handling general conversation for user 2
+2025-10-07 22:53:48.233 | ERROR    | app.ai.service:get_ai_response:227 - Error during AI agent execution for user Sulphite: Got unsupported early_stopping_method `generate`
+2025-10-07 23:07:53.503 | INFO     | app.api.ai:websocket_chat_endpoint:50 - User 2 disconnected from AI chat.
+2025-10-07 23:07:53.504 | INFO     | app.api.ai:websocket_chat_endpoint:55 - Database session closed for user 2 AI chat.
+2025-10-07 23:08:04.567 | INFO     | app.api.analytics:get_user_analytics:60 - Analytics requested by user: Sulphite
+2025-10-07 23:08:11.438 | INFO     | app.api.ai:websocket_chat_endpoint:32 - Received AI chat message from user 2: Hi
+2025-10-07 23:08:13.360 | INFO     | app.ai.service:_general_conversation:85 - AI Tool: Handling general conversation for user 2
+2025-10-07 23:08:16.223 | INFO     | app.ai.service:_general_conversation:85 - AI Tool: Handling general conversation for user 2
+2025-10-07 23:08:18.791 | INFO     | app.ai.service:_general_conversation:85 - AI Tool: Handling general conversation for user 2
+2025-10-07 23:08:19.824 | INFO     | app.ai.service:get_ai_response:205 - User Sulphite query count for today: 14
+2025-10-07 23:11:40.577 | INFO     | app.api.ai:websocket_chat_endpoint:50 - User 2 disconnected from AI chat.
+2025-10-07 23:11:40.584 | INFO     | app.api.ai:websocket_chat_endpoint:55 - Database session closed for user 2 AI chat.
+2025-10-07 23:11:50.917 | INFO     | app.api.analytics:get_user_analytics:60 - Analytics requested by user: Sulphite
+2025-10-07 23:11:55.304 | INFO     | app.api.ai:websocket_chat_endpoint:32 - Received AI chat message from user 2: Hi
+2025-10-07 23:11:56.838 | INFO     | app.ai.service:_general_conversation:85 - AI Tool: Handling general conversation for user 2
+2025-10-07 23:11:59.359 | INFO     | app.ai.service:get_ai_response:202 - User Sulphite query count for today: 15
+2025-10-07 23:13:03.770 | INFO     | app.api.ai:websocket_chat_endpoint:32 - Received AI chat message from user 2: Can you fetch my analytics and give me tips?
+2025-10-07 23:13:04.780 | INFO     | app.ai.service:_get_analytics_report:50 - AI Tool: Getting analytics for user 2
+2025-10-07 23:13:06.798 | INFO     | app.ai.service:_general_conversation:85 - AI Tool: Handling general conversation for user 2
+2025-10-07 23:13:15.739 | INFO     | app.ai.service:get_ai_response:202 - User Sulphite query count for today: 16
+2025-10-07 23:14:30.346 | INFO     | app.api.ai:websocket_chat_endpoint:32 - Received AI chat message from user 2: There is a question i solved: Which of the following element is not magnet: aluminium, iron and two more, the answer is aluminium, why aluminium is not magnet?
+2025-10-07 23:14:31.409 | INFO     | app.ai.service:_general_conversation:85 - AI Tool: Handling general conversation for user 2
+2025-10-07 23:14:39.712 | INFO     | app.ai.service:get_ai_response:202 - User Sulphite query count for today: 17
+2025-10-07 23:21:16.646 | INFO     | app.api.ai:websocket_chat_endpoint:50 - User 2 disconnected from AI chat.
+2025-10-07 23:21:16.647 | INFO     | app.api.ai:websocket_chat_endpoint:55 - Database session closed for user 2 AI chat.
+2025-10-07 23:21:28.514 | INFO     | app.api.analytics:get_user_analytics:60 - Analytics requested by user: Sulphite
+2025-10-07 23:21:33.657 | ERROR    | app.api.ai:websocket_chat_endpoint:48 - Error in AI chat websocket for user 2: Prompt missing required variables: {'tools'}
+2025-10-07 23:21:33.661 | INFO     | app.api.ai:websocket_chat_endpoint:51 - Database session closed for user 2 AI chat.
+2025-10-07 23:24:39.033 | INFO     | app.api.auth:login:119 - User logged in: Sulphite
+2025-10-07 23:24:39.149 | INFO     | app.api.analytics:get_user_analytics:60 - Analytics requested by user: Sulphite
+2025-10-07 23:24:42.750 | ERROR    | app.api.ai:websocket_chat_endpoint:48 - Error in AI chat websocket for user 2: Prompt missing required variables: {'tools'}
+2025-10-07 23:24:42.755 | INFO     | app.api.ai:websocket_chat_endpoint:51 - Database session closed for user 2 AI chat.
+2025-10-07 23:25:28.337 | INFO     | app.api.analytics:get_user_analytics:60 - Analytics requested by user: Sulphite
+2025-10-07 23:25:30.600 | ERROR    | app.api.ai:websocket_chat_endpoint:48 - Error in AI chat websocket for user 2: Prompt missing required variables: {'tools'}
+2025-10-07 23:25:30.601 | INFO     | app.api.ai:websocket_chat_endpoint:51 - Database session closed for user 2 AI chat.
+2025-10-07 23:27:19.457 | INFO     | app.api.analytics:get_user_analytics:60 - Analytics requested by user: Sulphite
+2025-10-07 23:27:23.553 | INFO     | app.api.ai:websocket_chat_endpoint:27 - Received AI chat message from user 2: Hi
+2025-10-07 23:27:26.044 | INFO     | app.ai.service:_general_conversation:74 - AI Tool: Handling general conversation for user 2
+2025-10-07 23:27:31.114 | INFO     | app.ai.service:_general_conversation:74 - AI Tool: Handling general conversation for user 2
+2025-10-07 23:27:36.134 | INFO     | app.ai.service:_general_conversation:74 - AI Tool: Handling general conversation for user 2
+2025-10-07 23:27:40.435 | INFO     | app.ai.service:_general_conversation:74 - AI Tool: Handling general conversation for user 2
+2025-10-07 23:27:44.221 | INFO     | app.ai.service:_general_conversation:74 - AI Tool: Handling general conversation for user 2
+2025-10-07 23:27:48.519 | INFO     | app.api.ai:websocket_chat_endpoint:27 - Received AI chat message from user 2: Can you get my analytics?
+2025-10-07 23:27:49.211 | INFO     | app.ai.service:_get_analytics_report:52 - AI Tool: Getting analytics for user 2
+2025-10-07 23:27:57.230 | INFO     | app.ai.service:_general_conversation:74 - AI Tool: Handling general conversation for user 2
+2025-10-07 23:29:20.475 | INFO     | app.api.ai:websocket_chat_endpoint:27 - Received AI chat message from user 2: Can you get my analytics?
+2025-10-07 23:29:21.416 | INFO     | app.ai.service:_get_analytics_report:52 - AI Tool: Getting analytics for user 2
+2025-10-07 23:29:27.626 | INFO     | app.ai.service:_general_conversation:74 - AI Tool: Handling general conversation for user 2
+2025-10-07 23:29:39.734 | INFO     | app.ai.service:_general_conversation:74 - AI Tool: Handling general conversation for user 2
+2025-10-07 23:30:30.573 | INFO     | app.api.ai:websocket_chat_endpoint:46 - User 2 disconnected from AI chat.
+2025-10-07 23:30:30.574 | INFO     | app.api.ai:websocket_chat_endpoint:51 - Database session closed for user 2 AI chat.
+2025-10-07 23:30:39.594 | INFO     | app.api.analytics:get_user_analytics:60 - Analytics requested by user: Sulphite
+2025-10-07 23:30:45.386 | INFO     | app.api.ai:websocket_chat_endpoint:27 - Received AI chat message from user 2: Hi
+2025-10-07 23:30:47.325 | INFO     | app.ai.service:_general_conversation:74 - AI Tool: Handling general conversation for user 2
+2025-10-07 23:30:50.093 | INFO     | app.ai.service:_general_conversation:74 - AI Tool: Handling general conversation for user 2
+2025-10-07 23:30:57.068 | INFO     | app.ai.service:_general_conversation:74 - AI Tool: Handling general conversation for user 2
+2025-10-07 23:31:00.418 | INFO     | app.ai.service:_general_conversation:74 - AI Tool: Handling general conversation for user 2
+2025-10-07 23:31:06.182 | INFO     | app.ai.service:_general_conversation:74 - AI Tool: Handling general conversation for user 2
+2025-10-07 23:33:07.088 | INFO     | app.api.ai:websocket_chat_endpoint:46 - User 2 disconnected from AI chat.
+2025-10-07 23:33:07.089 | INFO     | app.api.ai:websocket_chat_endpoint:51 - Database session closed for user 2 AI chat.
+2025-10-07 23:33:16.799 | INFO     | app.api.analytics:get_user_analytics:60 - Analytics requested by user: Sulphite
+2025-10-07 23:39:44.868 | INFO     | app.api.analytics:get_user_analytics:60 - Analytics requested by user: Sulphite
+2025-10-07 23:40:03.553 | INFO     | app.api.analytics:get_user_analytics:60 - Analytics requested by user: Sulphite
+2025-10-07 23:42:46.396 | INFO     | app.api.analytics:get_user_analytics:60 - Analytics requested by user: Sulphite
+2025-10-07 23:43:09.378 | INFO     | app.api.analytics:get_user_analytics:60 - Analytics requested by user: Sulphite
+2025-10-07 23:46:37.840 | INFO     | app.api.analytics:get_user_analytics:60 - Analytics requested by user: Sulphite
+2025-10-07 23:46:43.246 | INFO     | app.api.ai:websocket_chat_endpoint:27 - Received AI chat message from user 2: Hi
+2025-10-07 23:46:45.176 | INFO     | app.ai.service:_general_conversation:74 - AI Tool: Handling general conversation for user 2
+2025-10-07 23:46:50.730 | INFO     | app.ai.service:_general_conversation:74 - AI Tool: Handling general conversation for user 2
+2025-10-07 23:46:58.706 | INFO     | app.ai.service:_general_conversation:74 - AI Tool: Handling general conversation for user 2
+2025-10-07 23:47:03.619 | INFO     | app.ai.service:_general_conversation:74 - AI Tool: Handling general conversation for user 2
+2025-10-07 23:47:13.244 | INFO     | app.ai.service:_general_conversation:74 - AI Tool: Handling general conversation for user 2
+2025-10-07 23:47:14.621 | INFO     | app.ai.service:get_ai_response_stream:156 - User Sulphite query count updated.
+2025-10-07 23:48:26.545 | INFO     | app.api.ai:websocket_chat_endpoint:45 - User 2 disconnected from AI chat.
+2025-10-07 23:48:26.546 | INFO     | app.api.ai:websocket_chat_endpoint:50 - Database session closed for user 2 AI chat.
+2025-10-07 23:48:37.251 | INFO     | app.api.analytics:get_user_analytics:60 - Analytics requested by user: Sulphite
+2025-10-07 23:48:41.711 | INFO     | app.api.ai:websocket_chat_endpoint:27 - Received AI chat message from user 2: Hi
+2025-10-07 23:48:41.712 | ERROR    | app.api.ai:websocket_chat_endpoint:40 - AI Chat Error for user 2: 'AIChatService' object has no attribute 'get_ai_response_stream'
+2025-10-07 23:49:01.434 | INFO     | app.api.ai:websocket_chat_endpoint:45 - User 2 disconnected from AI chat.
+2025-10-07 23:49:01.435 | INFO     | app.api.ai:websocket_chat_endpoint:50 - Database session closed for user 2 AI chat.
+2025-10-07 23:50:47.761 | INFO     | app.api.analytics:get_user_analytics:60 - Analytics requested by user: Sulphite
+2025-10-07 23:50:55.400 | INFO     | app.api.ai:websocket_chat_endpoint:27 - Received AI chat message from user 2: Hi
+2025-10-07 23:50:57.035 | INFO     | app.ai.service:_general_conversation:85 - AI Tool: Handling general conversation for user 2
+2025-10-07 23:50:59.031 | INFO     | app.ai.service:get_ai_response_stream:229 - User Sulphite query count for today: 19
+2025-10-07 23:55:48.090 | INFO     | app.api.auth:login:119 - User logged in: Sulphite
+2025-10-07 23:55:48.136 | INFO     | app.api.analytics:get_user_analytics:60 - Analytics requested by user: Sulphite
+2025-10-07 23:55:54.060 | INFO     | app.api.ai:websocket_chat_endpoint:45 - User 2 disconnected from AI chat.
+2025-10-07 23:55:54.061 | INFO     | app.api.ai:websocket_chat_endpoint:50 - Database session closed for user 2 AI chat.
+2025-10-07 23:55:59.006 | INFO     | app.api.ai:websocket_chat_endpoint:27 - Received AI chat message from user 2: Hi
+2025-10-07 23:55:59.994 | INFO     | app.ai.service:_general_conversation:85 - AI Tool: Handling general conversation for user 2
+2025-10-07 23:56:01.645 | INFO     | app.ai.service:get_ai_response_stream:229 - User Sulphite query count for today: 20
+2025-10-07 23:56:17.857 | INFO     | app.api.ai:websocket_chat_endpoint:27 - Received AI chat message from user 2: Can you fetch my analytics?
+2025-10-07 23:56:17.857 | WARNING  | app.ai.service:_verify_query_limit:182 - User Sulphite has reached their daily query limit.
+2025-10-07 23:56:17.860 | INFO     | app.api.ai:websocket_chat_endpoint:50 - Database session closed for user 2 AI chat.
+2025-10-07 23:57:01.426 | INFO     | app.api.analytics:get_user_analytics:60 - Analytics requested by user: Sulphite
+2025-10-07 23:57:09.928 | INFO     | app.api.ai:websocket_chat_endpoint:27 - Received AI chat message from user 2: Can you fetch my analytics?
+2025-10-07 23:57:09.928 | WARNING  | app.ai.service:_verify_query_limit:182 - User Sulphite has reached their daily query limit.
+2025-10-07 23:57:09.930 | INFO     | app.api.ai:websocket_chat_endpoint:50 - Database session closed for user 2 AI chat.
+2025-10-07 23:57:23.287 | INFO     | app.api.auth:login:119 - User logged in: Sulphite
+2025-10-07 23:57:23.394 | INFO     | app.api.analytics:get_user_analytics:60 - Analytics requested by user: Sulphite
+2025-10-07 23:57:27.082 | INFO     | app.api.ai:websocket_chat_endpoint:27 - Received AI chat message from user 2: Can you fetch my analytics?
+2025-10-07 23:57:28.873 | INFO     | app.ai.service:_get_analytics_report:50 - AI Tool: Getting analytics for user 2
+2025-10-07 23:57:33.909 | INFO     | app.ai.service:get_ai_response_stream:229 - User Sulphite query count for today: 21
+2025-10-07 23:58:13.022 | INFO     | app.api.ai:websocket_chat_endpoint:27 - Received AI chat message from user 2: Why aluminium is not magnet while iron, nickel are?
+2025-10-07 23:58:13.932 | INFO     | app.ai.service:_general_conversation:85 - AI Tool: Handling general conversation for user 2
+2025-10-07 23:58:22.761 | INFO     | app.ai.service:get_ai_response_stream:229 - User Sulphite query count for today: 22

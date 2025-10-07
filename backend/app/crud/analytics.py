@@ -53,27 +53,37 @@ def record_user_activity(
 
 
 def get_user_stats(db: Session, user_id: int) -> Dict[str, Any]:
-    """Get comprehensive user statistics"""
-    # Basic stats
-    total_activities = db.query(UserActivity).filter(
-        UserActivity.user_id == user_id
-    ).count()
+    """
+    Get comprehensive user statistics.
+    Accuracy-related stats are based on the user's first attempt at each question.
+    """
+    # Subquery to get the ID of the first attempt for each unique question by the user
+    first_attempt_sq = db.query(
+        UserActivity.question_id,
+        func.min(UserActivity.id).label('first_activity_id')
+    ).filter(UserActivity.user_id == user_id).group_by(UserActivity.question_id).subquery()
+
+    # Query to get the actual first attempt records
+    first_activities_query = db.query(UserActivity).join(
+        first_attempt_sq, UserActivity.id == first_attempt_sq.c.first_activity_id
+    )
+
+    # Total unique questions attempted
+    total_questions_attempted = first_activities_query.count()
     
-    correct_answers = db.query(UserActivity).filter(
-        and_(
-            UserActivity.user_id == user_id,
-            UserActivity.is_correct == True
-        )
-    ).count()
+    # Correct answers on the first attempt
+    correct_answers = first_activities_query.filter(UserActivity.is_correct == True).count()
     
+    # Total time spent across ALL attempts (not just first)
     total_time = db.query(func.sum(UserActivity.time_spent)).filter(
-        and_(
-            UserActivity.user_id == user_id,
-            UserActivity.time_spent.isnot(None)
-        )
+        UserActivity.user_id == user_id,
+        UserActivity.time_spent.isnot(None)
     ).scalar() or 0
     
-    # Questions by difficulty
+    # Total number of activities (all attempts)
+    total_activities_all_attempts = db.query(UserActivity).filter(UserActivity.user_id == user_id).count()
+
+    # Questions by difficulty (based on all attempts)
     difficulty_stats = db.query(
         Question.difficulty_level,
         func.count(UserActivity.id).label('count')
@@ -81,7 +91,7 @@ def get_user_stats(db: Session, user_id: int) -> Dict[str, Any]:
         UserActivity.user_id == user_id
     ).group_by(Question.difficulty_level).all()
     
-    # Questions by chapter
+    # Questions by chapter (based on all attempts)
     chapter_stats = db.query(
         Question.chapter_number,
         Question.chapter_name,
@@ -90,11 +100,13 @@ def get_user_stats(db: Session, user_id: int) -> Dict[str, Any]:
         UserActivity.user_id == user_id
     ).group_by(Question.chapter_number, Question.chapter_name).all()
     
-    accuracy = (correct_answers / total_activities * 100) if total_activities > 0 else 0
-    avg_time = (total_time / total_activities) if total_activities > 0 else 0
+    # Accuracy based on first attempts
+    accuracy = (correct_answers / total_questions_attempted * 100) if total_questions_attempted > 0 else 0
+    # Average time based on all attempts
+    avg_time = (total_time / total_activities_all_attempts) if total_activities_all_attempts > 0 else 0
     
     return {
-        'total_questions_attempted': total_activities,
+        'total_questions_attempted': total_questions_attempted,
         'correct_answers': correct_answers,
         'accuracy_percentage': round(accuracy, 2),
         'total_time_spent': total_time,

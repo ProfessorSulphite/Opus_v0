@@ -14,7 +14,7 @@ from pathlib import Path
 from app.core.config import settings
 from app.core.database import get_db, engine
 from app.models import models
-from app.api import auth, questions, analytics
+from app.api import auth, questions, analytics, ai
 
 # Create database tables
 models.Base.metadata.create_all(bind=engine)
@@ -49,6 +49,7 @@ logger.add(
 app.include_router(auth.router, prefix="/api/v1/auth", tags=["authentication"])
 app.include_router(questions.router, prefix="/api/v1/questions", tags=["questions"])
 app.include_router(analytics.router, prefix="/api/v1/analytics", tags=["analytics"])
+app.include_router(ai.router, prefix="/api/v1/ai", tags=["ai"])
 
 @app.get("/")
 async def root():

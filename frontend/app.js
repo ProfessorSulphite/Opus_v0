@@ -26,6 +26,8 @@ class EduTheoApp {
             filters: {}
         };
         this.ws = null;
+        this.aiChatWs = null;
+        this.currentAIMessageElement = null; // Track current streaming message
     }
 
     init() {
@@ -96,6 +98,7 @@ class EduTheoApp {
                 e.preventDefault();
                 this.showToast('Facebook login is not configured yet.', 'info');
             }
+            if (target.closest('#ai-chat-send-btn')) this.sendAIChatMessage();
         });
 
         this.root.addEventListener('submit', (e) => {
@@ -173,18 +176,22 @@ class EduTheoApp {
         };
 
         this.ws.onclose = () => {
-            console.log('WebSocket disconnected. Attempting to reconnect in 5 seconds...');
+            console.log('Analytics WebSocket disconnected. Attempting to reconnect in 5 seconds...');
             this.ws = null;
             setTimeout(() => this.connectWebSocket(), 5000);
         };
 
         this.ws.onerror = (error) => {
-            console.error('WebSocket error:', error);
+            console.error('Analytics WebSocket error:', error);
             this.ws.close();
         };
     }
 
     showPage(pageId) {
+        if (this.aiChatWs) {
+            this.aiChatWs.close();
+            this.aiChatWs = null;
+        }
         this.pages.forEach(page => {
             document.getElementById(page)?.classList.remove('active');
         });
@@ -207,6 +214,8 @@ class EduTheoApp {
             if (page === 'practice') this.initPracticePage();
             if (page === 'analytics') this.updateAnalyticsPage();
             if (page === 'review') this.updateReviewPage();
+            if (page === 'ai-tutor') this.initAIChat();
+            if (page === 'settings') this.updateSettingsPage();
         } else if (this.mainContent) {
             this.mainContent.innerHTML = `<div class="text-center p-8"><h2 class="text-2xl">Coming Soon</h2><p>${page} page is under construction.</p></div>`;
         }
@@ -255,7 +264,7 @@ class EduTheoApp {
                 body: JSON.stringify(data)
             });
             if (!response.ok) throw new Error((await response.json()).detail || 'Signup failed');
-            this.showToast('Signup successful! Please log in.', 'success');
+            this.showToast('Signup successful! Please verify your email (placeholder code: 123456).', 'success');
             this.switchAuthTab('login');
         } catch (error) {
             this.showToast(error.message, 'error');
@@ -269,9 +278,8 @@ class EduTheoApp {
     }
 
     logout() {
-        if (this.ws) {
-            this.ws.close();
-        }
+        if (this.ws) this.ws.close();
+        if (this.aiChatWs) this.aiChatWs.close();
         this.api.token = null;
         this.user = null;
         localStorage.removeItem('edutheo_token');
@@ -476,6 +484,7 @@ class EduTheoApp {
             });
             const data = await response.json();
             this.practice.questions = data.questions;
+            this.practice.questions.forEach(q => q.answered = false); // Initialize answered state
             this.practice.currentQuestionIndex = 0;
             this.renderPracticeQuestion();
         } catch (error) {
@@ -539,8 +548,20 @@ class EduTheoApp {
     }
     
     updateNavButtons() {
+        console.log('--- updateNavButtons ---');
+        const question = this.practice.questions[this.practice.currentQuestionIndex];
+        if (!question) {
+            console.log('No question found at index', this.practice.currentQuestionIndex);
+            return;
+        }
+        const isAnswered = question.answered;
+        console.log(`Index: ${this.practice.currentQuestionIndex}, TotalQ: ${this.practice.questions.length}, Answered: ${isAnswered}`);
+        
         document.getElementById('prev-question-btn').disabled = this.practice.currentQuestionIndex === 0;
-        document.getElementById('next-question-btn').disabled = !this.practice.questions[this.practice.currentQuestionIndex].answered;
+        
+        const nextBtn = document.getElementById('next-question-btn');
+        nextBtn.disabled = !isAnswered;
+        console.log(`Next button disabled: ${nextBtn.disabled}`);
     }
 
     navigatePractice(direction) {
@@ -611,10 +632,10 @@ class EduTheoApp {
                 const input = label.querySelector('input');
                 label.style.pointerEvents = 'none';
                 if(input.value.toLowerCase() === result.correct_answer.toLowerCase()) {
-                    label.classList.add('border-green-500', 'bg-green-100', 'dark:bg-green-900');
+                    label.classList.add('border-green-500', 'bg-green-100', 'dark:bg-green-900/50', 'text-green-800', 'dark:text-green-300');
                 }
                 if(input.value.toLowerCase() === answer.toLowerCase() && !result.is_correct) {
-                    label.classList.add('border-red-500', 'bg-red-100', 'dark:bg-red-900');
+                    label.classList.add('border-red-500', 'bg-red-100', 'dark:bg-red-900/50', 'text-red-800', 'dark:text-red-300');
                 }
             });
 
@@ -755,5 +776,136 @@ class EduTheoApp {
             toast.classList.add('animate-fade-out-down');
             toast.addEventListener('animationend', () => toast.remove());
         }, 3000);
+    }
+
+    updateSettingsPage() {
+        const subInfo = document.getElementById('subscription-info');
+        if (!subInfo || !this.user) return;
+
+        const tier = this.user.subscription_tier;
+        const queries = this.user.ai_queries_today;
+        const limit = (tier === 'pro') ? 'Unlimited' : '10';
+
+        subInfo.innerHTML = `
+            <div class="flex items-center justify-between">
+                <div>
+                    <p class="font-medium text-foreground-light dark:text-foreground-dark">Current Plan</p>
+                    <p class="text-2xl font-bold text-primary">${tier.charAt(0).toUpperCase() + tier.slice(1)}</p>
+                </div>
+                ${tier === 'base' ? '<button id="upgrade-btn" class="px-4 py-2 rounded-lg text-sm font-bold bg-primary text-slate-900">Upgrade to Pro (₹200/mo)</button>' : ''}
+            </div>
+            <div class="mt-4">
+                <p class="font-medium text-foreground-light dark:text-foreground-dark">Daily AI Queries</p>
+                <p class="text-sm text-subtle-light dark:text-subtle-dark">You have used ${queries} of your ${limit} daily queries.</p>
+                <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mt-2">
+                    <div class="bg-primary h-2.5 rounded-full" style="width: ${tier === 'base' ? (queries/10)*100 : 100}%"></div>
+                </div>
+            </div>
+        `;
+    }
+
+    initAIChat() {
+        if (!this.user) return;
+        const proto = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
+        this.aiChatWs = new WebSocket(`${proto}//localhost:8000/api/v1/ai/chat/${this.user.id}`);
+        const chatHistory = document.getElementById('ai-chat-history');
+        const chatInput = document.getElementById('ai-chat-input');
+        
+        // Reset current message element
+        this.currentAIMessageElement = null;
+
+        this.aiChatWs.onopen = () => {
+            this.appendAIChatMessage('AI Tutor', 'Hello! How can I help you with your physics questions today?');
+        };
+
+        this.aiChatWs.onmessage = (event) => {
+            let message = event.data;
+            
+            // Check if it's an error message
+            try {
+                const parsed = JSON.parse(message);
+                if (parsed.type === 'error') {
+                    this.showToast(parsed.detail, 'error');
+                    this.appendAIChatMessage('AI Tutor', `Error: ${parsed.detail}`);
+                    this.currentAIMessageElement = null;
+                    return;
+                }
+            } catch (e) {
+                // Not JSON, it's a streaming text chunk
+            }
+            
+            // Handle streaming text
+            if (!this.currentAIMessageElement) {
+                // Create a new message bubble for AI response
+                this.currentAIMessageElement = this.createAIChatMessageElement('AI Tutor', '', 'ai');
+                chatHistory.appendChild(this.currentAIMessageElement);
+            }
+            
+            // Append the chunk to the current message
+            const messageTextElement = this.currentAIMessageElement.querySelector('.message-text');
+            if (messageTextElement) {
+                messageTextElement.textContent += message;
+                chatHistory.scrollTop = chatHistory.scrollHeight;
+            }
+        };
+
+        this.aiChatWs.onclose = () => {
+            this.appendAIChatMessage('System', 'Connection closed.', 'system');
+            this.currentAIMessageElement = null;
+        };
+
+        this.aiChatWs.onerror = (error) => {
+            console.error('AI Chat WebSocket error:', error);
+            this.appendAIChatMessage('System', 'An error occurred with the connection.', 'system');
+            this.currentAIMessageElement = null;
+        };
+
+        chatInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                this.sendAIChatMessage();
+            }
+        });
+    }
+
+    sendAIChatMessage() {
+        const chatInput = document.getElementById('ai-chat-input');
+        const message = chatInput.value;
+        if (message.trim() && this.aiChatWs && this.aiChatWs.readyState === WebSocket.OPEN) {
+            this.appendAIChatMessage('You', message, 'user');
+            this.aiChatWs.send(message);
+            chatInput.value = '';
+            // Reset current AI message element for new response
+            this.currentAIMessageElement = null;
+        }
+    }
+
+    createAIChatMessageElement(sender, message, type = 'ai') {
+        const messageEl = document.createElement('div');
+        let senderClass = 'font-bold text-primary';
+        let messageClass = 'bg-gray-100 dark:bg-gray-800';
+
+        if (type === 'user') {
+            senderClass = 'font-bold text-blue-500';
+            messageClass = 'bg-blue-100 dark:bg-blue-900/50';
+        } else if (type === 'system') {
+            senderClass = 'font-bold text-gray-500';
+            messageClass = 'bg-transparent';
+        }
+
+        messageEl.innerHTML = `
+            <div class="p-3 rounded-lg ${messageClass}">
+                <p class="${senderClass}">${sender}</p>
+                <p class="text-gray-800 dark:text-gray-200 message-text">${message}</p>
+            </div>
+        `;
+        
+        return messageEl;
+    }
+
+    appendAIChatMessage(sender, message, type = 'ai') {
+        const chatHistory = document.getElementById('ai-chat-history');
+        const messageEl = this.createAIChatMessageElement(sender, message, type);
+        chatHistory.appendChild(messageEl);
+        chatHistory.scrollTop = chatHistory.scrollHeight;
     }
 }

@@ -33,6 +33,8 @@ class UserResponse(UserBase):
     id: int
     is_active: bool
     created_at: datetime
+    subscription_tier: str
+    ai_queries_today: int
     
     class Config:
         from_attributes = True
