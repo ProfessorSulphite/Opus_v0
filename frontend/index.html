@@ -6,7 +6,7 @@
     <title>EduTheo</title>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries,typography"></script>
     <script>
         tailwind.config = {
             darkMode: "class",
@@ -57,7 +57,167 @@
             from { opacity: 1; transform: translateY(0); }
             to { opacity: 0; transform: translateY(20px); }
         }
+        @keyframes typing-blink {
+            0%, 50% { opacity: 1; }
+            51%, 100% { opacity: 0; }
+        }
+        @keyframes typing-wave {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-2px); }
+        }
+        @keyframes pulse-gentle {
+            0%, 100% { opacity: 0.8; }
+            50% { opacity: 1; }
+        }
+        
         .animate-fade-in-up { animation: fade-in-up 0.3s ease-out forwards; }
+        .animate-fade-out-down { animation: fade-out-down 0.3s ease-in forwards; }
+        
+        /* AI Chat Animations */
+        .typing-cursor::after {
+            content: '▊';
+            color: #52d411;
+            animation: typing-blink 1s infinite;
+        }
+        
+        .typing-animation {
+            animation: typing-wave 0.1s ease-in-out;
+        }
+        
+        .message-container {
+            transition: all 0.3s ease-out;
+        }
+        
+        .message-container:hover {
+            transform: translateY(-1px);
+        }
+        
+        /* Enhanced scrollbar for chat */
+        #ai-chat-history::-webkit-scrollbar {
+            width: 6px;
+        }
+        
+        #ai-chat-history::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        
+        #ai-chat-history::-webkit-scrollbar-thumb {
+            background: rgba(156, 163, 175, 0.3);
+            border-radius: 3px;
+        }
+        
+        #ai-chat-history::-webkit-scrollbar-thumb:hover {
+            background: rgba(156, 163, 175, 0.5);
+        }
+        
+        /* Dark mode scrollbar */
+        .dark #ai-chat-history::-webkit-scrollbar-thumb {
+            background: rgba(75, 85, 99, 0.3);
+        }
+        
+        .dark #ai-chat-history::-webkit-scrollbar-thumb:hover {
+            background: rgba(75, 85, 99, 0.5);
+        }
+        
+        /* Textarea auto-resize */
+        #ai-chat-input {
+            font-family: inherit;
+            line-height: 1.5;
+        }
+        
+        /* Message text styling */
+        .message-text {
+            word-wrap: break-word;
+            white-space: pre-wrap;
+        }
+        
+        /* Enhanced markdown styling for AI messages */
+        .message-text h1, .message-text h2, .message-text h3 {
+            font-weight: 700;
+            margin: 0.75rem 0 0.5rem 0;
+            color: #1f2937;
+        }
+        .dark .message-text h1, .dark .message-text h2, .dark .message-text h3 {
+            color: #f9fafb;
+        }
+        
+        .message-text h2 {
+            font-size: 1.125rem;
+            border-bottom: 2px solid #52d411;
+            padding-bottom: 0.25rem;
+            margin-bottom: 0.75rem;
+        }
+        
+        .message-text h3 {
+            font-size: 1rem;
+            color: #52d411;
+        }
+        
+        .message-text p {
+            margin: 0.5rem 0;
+            line-height: 1.6;
+        }
+        
+        .message-text strong {
+            font-weight: 600;
+            color: #52d411;
+        }
+        
+        .message-text ul, .message-text ol {
+            margin: 0.5rem 0;
+            padding-left: 1.5rem;
+        }
+        
+        .message-text li {
+            margin: 0.25rem 0;
+        }
+        
+        .message-text code {
+            background: #f3f4f6;
+            color: #52d411;
+            padding: 0.125rem 0.375rem;
+            border-radius: 0.25rem;
+            font-size: 0.875rem;
+            font-family: 'Courier New', monospace;
+        }
+        .dark .message-text code {
+            background: #374151;
+        }
+        
+        .message-text pre {
+            background: #f8fafc;
+            border: 1px solid #e5e7eb;
+            border-radius: 0.5rem;
+            padding: 1rem;
+            margin: 1rem 0;
+            overflow-x: auto;
+        }
+        .dark .message-text pre {
+            background: #1f2937;
+            border-color: #4b5563;
+        }
+        
+        .message-text blockquote {
+            border-left: 4px solid #52d411;
+            padding-left: 1rem;
+            margin: 1rem 0;
+            font-style: italic;
+            color: #6b7280;
+        }
+        .dark .message-text blockquote {
+            color: #9ca3af;
+        }
+        
+        /* Gradient background animation */
+        .bg-gradient-to-br {
+            background-size: 400% 400%;
+            animation: gradient-shift 10s ease infinite;
+        }
+        
+        @keyframes gradient-shift {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
         .animate-fade-out-down { animation: fade-out-down 0.3s ease-in forwards; }
     </style>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -357,12 +517,54 @@
     </template>
 
     <template id="ai-tutor-content-template">
-        <main class="h-full flex flex-col">
-            <div class="flex-grow flex flex-col p-4 overflow-y-auto" id="ai-chat-history"></div>
-            <div class="p-4 border-t border-gray-200 dark:border-gray-700">
-                <div class="flex items-center gap-2">
-                    <input type="text" id="ai-chat-input" class="w-full px-4 py-2 border rounded-lg dark:bg-gray-800 dark:border-gray-600" placeholder="Ask the AI Tutor anything...">
-                    <button id="ai-chat-send-btn" class="px-4 py-2 rounded-lg font-bold bg-primary text-slate-900">Send</button>
+        <main class="h-full flex flex-col bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800">
+            <!-- Chat Header -->
+            <div class="flex-shrink-0 bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-700 p-4 shadow-sm">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-full bg-gradient-to-r from-primary to-green-400 flex items-center justify-center">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <h2 class="font-bold text-gray-900 dark:text-white">AI Physics Tutor</h2>
+                        <p class="text-sm text-gray-500 dark:text-gray-400" id="ai-status">Ready to help with your physics questions</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Chat Messages Area -->
+            <div class="flex-grow flex flex-col overflow-hidden">
+                <div class="flex-grow overflow-y-auto px-4 py-6 space-y-6" id="ai-chat-history">
+                    <!-- Messages will be added here -->
+                </div>
+            </div>
+            
+            <!-- Chat Input Area -->
+            <div class="flex-shrink-0 bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700 p-4">
+                <div class="max-w-4xl mx-auto">
+                    <div class="flex items-end gap-3">
+                        <div class="flex-grow relative">
+                            <textarea 
+                                id="ai-chat-input" 
+                                rows="1"
+                                class="w-full px-4 py-3 pr-12 resize-none border border-gray-300 dark:border-gray-600 rounded-2xl bg-gray-50 dark:bg-gray-800 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-200"
+                                placeholder="Ask me anything about physics..."
+                                style="min-height: 44px; max-height: 120px;"
+                            ></textarea>
+                            <div class="absolute right-3 bottom-3">
+                                <button id="ai-chat-send-btn" class="w-8 h-8 rounded-full bg-primary hover:bg-primary/90 text-white flex items-center justify-center transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-center mt-2 text-xs text-gray-500 dark:text-gray-400">
+                        <span>Press Enter to send, Shift+Enter for new line</span>
+                        <span id="typing-indicator" class="opacity-0 transition-opacity duration-300">AI is thinking...</span>
+                    </div>
                 </div>
             </div>
         </main>
@@ -372,11 +574,13 @@
         <main class="flex-1 p-8 overflow-y-auto">
             <div class="max-w-4xl mx-auto">
                 <h1 class="text-4xl font-bold mb-8 text-foreground-light dark:text-foreground-dark">Settings</h1>
-                <div class="space-y-10">
+                <div class="space-y-50">
                     <section>
                         <h2 class="text-2xl font-bold mb-4 border-b border-border-light dark:border-border-dark pb-2">Subscription</h2>
                         <div id="subscription-info" class="p-4 rounded-lg bg-card-light dark:bg-card-dark">
-                            <!-- Subscription info will be loaded here -->
+                            <p class="text-foreground-light dark:text-foreground-dark">You are currently on the <span id="subscription-plan" class="font-bold">Free Plan</span>.</p>
+                            <p class="text-sm text-subtle-light dark:text-subtle-dark mt-1">Upgrade to Pro for more features and unlimited access.</p>
+                            <button id="upgrade-btn" class="mt-4 px-4 py-2 rounded-lg text-sm font-bold bg-primary text-slate-900 hover:bg-primary/90 transition-colors">Upgrade to Pro</button>
                         </div>
                     </section>
                     <section>
@@ -437,7 +641,7 @@
         </main>
     </template>
 
-    <script src="./app.js"></script>
+    <script src="./app.js?v=2.1"></script>
     <div id="toast-container" class="fixed bottom-5 right-5 z-50 space-y-2"></div>
 </body>
 </html>

@@ -20,6 +20,7 @@ package-lock.json
 logs/
 import_report.json
 debugging_log.md
+changes_log.md
 
 # IDE/Editor specific
 .vscode/

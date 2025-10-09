@@ -85,7 +85,22 @@ class AIAgentFactory:
         logger.info(f"AI Tool: Handling general conversation for user {self.user_id}")
         
         # Use a simple, non-agentic prompt to generate a direct conversational response
-        prompt = f"You are EduTheo, a friendly and helpful physics tutor. The user said: '{user_input}'. Respond in a friendly, conversational, and helpful manner."
+        prompt = f"""You are EduTheo, a friendly and helpful physics tutor for 9th grade students. 
+
+RESPONSE GUIDELINES:
+- Keep responses concise (2-3 paragraphs maximum, 100-150 words)
+- Use simple, clear language appropriate for 9th graders
+- Structure your response with markdown formatting:
+  * Use ## for main headings
+  * Use **bold** for key concepts
+  * Use bullet points for lists
+  * Use code blocks for formulas when needed
+- Focus on the most important points
+- Encourage further questions
+
+User's question: '{user_input}'
+
+Provide a helpful, well-structured response using markdown formatting."""
         
         response = self.llm.invoke(prompt)
         return response.content
@@ -210,8 +225,10 @@ class AIChatService:
     async def get_ai_response_stream(self, message: str):
         """
         Processes the user's message, checks limits, and streams the response from the AI agent.
-        Yields chunks of text as they become available.
+        Yields chunks of text as they become available with controlled speed.
         """
+        import asyncio
+        
         self._verify_query_limit()
         
         if not self.agent_executor:
@@ -228,13 +245,18 @@ class AIChatService:
             self.db.commit()
             logger.info(f"User {self.user.username} query count for today: {self.user.ai_queries_today}")
 
-            # Stream the response word by word for a better user experience
-            words = output_text.split()
-            for i, word in enumerate(words):
-                if i == 0:
-                    yield word
+            # Stream the response character by character with controlled speed
+            for i, char in enumerate(output_text):
+                yield char
+                # Add small delay for natural typing effect (faster for spaces, slower for punctuation)
+                if char in '.!?':
+                    await asyncio.sleep(0.1)  # Pause at sentence endings
+                elif char in ',;:':
+                    await asyncio.sleep(0.05)  # Small pause at commas
+                elif char == ' ':
+                    await asyncio.sleep(0.02)  # Quick for spaces
                 else:
-                    yield " " + word
+                    await asyncio.sleep(0.01)  # Normal typing speed
                     
         except Exception as e:
             logger.error(f"Error during AI agent execution for user {self.user_id}: {e}")

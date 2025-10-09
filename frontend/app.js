@@ -779,12 +779,25 @@ class EduTheoApp {
     }
 
     updateSettingsPage() {
+        console.log('updateSettingsPage called'); // Debug log
         const subInfo = document.getElementById('subscription-info');
-        if (!subInfo || !this.user) return;
+        if (!subInfo || !this.user) {
+            console.log('No subInfo or user:', { subInfo: !!subInfo, user: !!this.user }); // Debug log
+            return;
+        }
 
         const tier = this.user.subscription_tier;
-        const queries = this.user.ai_queries_today;
-        const limit = (tier === 'pro') ? 'Unlimited' : '10';
+        const queries = this.user.ai_queries_today || 0;
+        const dailyLimit = (tier === 'pro') ? null : 50; // Changed back to 50 as requested
+        const limit = (tier === 'pro') ? 'Unlimited' : dailyLimit;
+        
+        console.log('Settings page data:', { tier, queries, dailyLimit, limit }); // Debug log
+        
+        // Calculate progress percentage safely
+        let progressPercentage = 100;
+        if (tier === 'base' && dailyLimit > 0) {
+            progressPercentage = Math.min((queries / dailyLimit) * 100, 100);
+        }
 
         subInfo.innerHTML = `
             <div class="flex items-center justify-between">
@@ -792,13 +805,13 @@ class EduTheoApp {
                     <p class="font-medium text-foreground-light dark:text-foreground-dark">Current Plan</p>
                     <p class="text-2xl font-bold text-primary">${tier.charAt(0).toUpperCase() + tier.slice(1)}</p>
                 </div>
-                ${tier === 'base' ? '<button id="upgrade-btn" class="px-4 py-2 rounded-lg text-sm font-bold bg-primary text-slate-900">Upgrade to Pro (₹200/mo)</button>' : ''}
+                ${tier === 'base' ? '<button id="upgrade-btn" class="px-4 py-2 rounded-lg text-sm font-bold bg-primary text-slate-900">Upgrade to Pro (PKR 200/mo)</button>' : ''}
             </div>
             <div class="mt-4">
                 <p class="font-medium text-foreground-light dark:text-foreground-dark">Daily AI Queries</p>
                 <p class="text-sm text-subtle-light dark:text-subtle-dark">You have used ${queries} of your ${limit} daily queries.</p>
                 <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mt-2">
-                    <div class="bg-primary h-2.5 rounded-full" style="width: ${tier === 'base' ? (queries/10)*100 : 100}%"></div>
+                    <div class="bg-primary h-2.5 rounded-full" style="width: ${progressPercentage}%"></div>
                 </div>
             </div>
         `;
@@ -810,12 +823,32 @@ class EduTheoApp {
         this.aiChatWs = new WebSocket(`${proto}//localhost:8000/api/v1/ai/chat/${this.user.id}`);
         const chatHistory = document.getElementById('ai-chat-history');
         const chatInput = document.getElementById('ai-chat-input');
+        const sendBtn = document.getElementById('ai-chat-send-btn');
+        const typingIndicator = document.getElementById('typing-indicator');
+        
+        // Initialize markdown converter
+        this.markdownConverter = new showdown.Converter({
+            tables: true,
+            strikethrough: true,
+            tasklists: true,
+            smoothLivePreview: true,
+            headerLevelStart: 2
+        });
         
         // Reset current message element
         this.currentAIMessageElement = null;
+        this.isAITyping = false;
+        this.aiMessageBuffer = ''; // Buffer to accumulate AI message text
+
+        // Auto-resize textarea
+        this.setupTextareaAutoResize(chatInput);
 
         this.aiChatWs.onopen = () => {
-            this.appendAIChatMessage('AI Tutor', 'Hello! How can I help you with your physics questions today?');
+            this.appendAIChatMessage('AI Tutor', '## Welcome! 👋\n\nHello! How can I help you with your **physics questions** today? 🧪⚡\n\nFeel free to ask me about any physics concepts!', 'ai', true);
+        };
+
+        this.aiChatWs.onopen = () => {
+            this.appendAIChatMessage('AI Tutor', 'Hello! How can I help you with your physics questions today? 🧪⚡', 'ai', true);
         };
 
         this.aiChatWs.onmessage = (event) => {
@@ -826,8 +859,9 @@ class EduTheoApp {
                 const parsed = JSON.parse(message);
                 if (parsed.type === 'error') {
                     this.showToast(parsed.detail, 'error');
-                    this.appendAIChatMessage('AI Tutor', `Error: ${parsed.detail}`);
+                    this.appendAIChatMessage('AI Tutor', `## ❌ Error\n\n${parsed.detail}`, 'ai', true);
                     this.currentAIMessageElement = null;
+                    this.setAITyping(false);
                     return;
                 }
             } catch (e) {
@@ -837,75 +871,207 @@ class EduTheoApp {
             // Handle streaming text
             if (!this.currentAIMessageElement) {
                 // Create a new message bubble for AI response
-                this.currentAIMessageElement = this.createAIChatMessageElement('AI Tutor', '', 'ai');
+                this.setAITyping(true);
+                this.aiMessageBuffer = ''; // Reset buffer
+                this.currentAIMessageElement = this.createAIChatMessageElement('AI Tutor', '', 'ai', false);
+                const chatHistory = document.getElementById('ai-chat-history');
                 chatHistory.appendChild(this.currentAIMessageElement);
+                this.scrollToBottom();
             }
             
-            // Append the chunk to the current message
+            // Append the chunk to the buffer
+            this.aiMessageBuffer += message;
+            
+            // Update the message element with rendered markdown
             const messageTextElement = this.currentAIMessageElement.querySelector('.message-text');
             if (messageTextElement) {
-                messageTextElement.textContent += message;
-                chatHistory.scrollTop = chatHistory.scrollHeight;
+                // Check if this is the end of stream (empty message or specific end marker)
+                if (message.trim() === '' || message === '[END]') {
+                    // Remove typing cursor and mark as complete
+                    messageTextElement.classList.remove('typing-cursor');
+                    this.setAITyping(false);
+                    this.currentAIMessageElement = null;
+                    return;
+                }
+                
+                // Render markdown for the accumulated text
+                const htmlContent = this.markdownConverter.makeHtml(this.aiMessageBuffer);
+                messageTextElement.innerHTML = htmlContent;
+                this.scrollToBottom();
+                
+                // Add typing effect
+                messageTextElement.classList.add('typing-animation');
+                setTimeout(() => {
+                    messageTextElement.classList.remove('typing-animation');
+                }, 100);
             }
         };
 
         this.aiChatWs.onclose = () => {
-            this.appendAIChatMessage('System', 'Connection closed.', 'system');
+            this.appendAIChatMessage('System', '🔌 Connection closed. Please refresh to reconnect.', 'system', true);
             this.currentAIMessageElement = null;
+            this.setAITyping(false);
         };
 
         this.aiChatWs.onerror = (error) => {
             console.error('AI Chat WebSocket error:', error);
-            this.appendAIChatMessage('System', 'An error occurred with the connection.', 'system');
+            this.appendAIChatMessage('System', '⚠️ Connection error occurred. Please try again.', 'system', true);
             this.currentAIMessageElement = null;
+            this.setAITyping(false);
         };
 
-        chatInput.addEventListener('keypress', (e) => {
-            if (e.key === 'Enter') {
+        // Enhanced input handling
+        chatInput.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' && !e.shiftKey) {
+                e.preventDefault();
                 this.sendAIChatMessage();
             }
         });
+
+        chatInput.addEventListener('input', () => {
+            const hasText = chatInput.value.trim().length > 0;
+            sendBtn.disabled = !hasText || this.isAITyping;
+            sendBtn.classList.toggle('opacity-50', !hasText || this.isAITyping);
+        });
+
+        sendBtn.addEventListener('click', () => {
+            this.sendAIChatMessage();
+        });
+    }
+
+    setupTextareaAutoResize(textarea) {
+        textarea.addEventListener('input', () => {
+            textarea.style.height = 'auto';
+            const newHeight = Math.min(textarea.scrollHeight, 120);
+            textarea.style.height = newHeight + 'px';
+        });
+    }
+
+    setAITyping(isTyping) {
+        this.isAITyping = isTyping;
+        const typingIndicator = document.getElementById('typing-indicator');
+        const sendBtn = document.getElementById('ai-chat-send-btn');
+        const statusElement = document.getElementById('ai-status');
+        
+        if (typingIndicator) {
+            typingIndicator.style.opacity = isTyping ? '1' : '0';
+        }
+        
+        if (sendBtn) {
+            sendBtn.disabled = isTyping;
+            sendBtn.classList.toggle('opacity-50', isTyping);
+        }
+        
+        if (statusElement) {
+            statusElement.textContent = isTyping ? 'Thinking...' : 'Ready to help with your physics questions';
+        }
+    }
+
+    scrollToBottom() {
+        const chatHistory = document.getElementById('ai-chat-history');
+        if (chatHistory) {
+            chatHistory.scrollTop = chatHistory.scrollHeight;
+        }
     }
 
     sendAIChatMessage() {
         const chatInput = document.getElementById('ai-chat-input');
-        const message = chatInput.value;
-        if (message.trim() && this.aiChatWs && this.aiChatWs.readyState === WebSocket.OPEN) {
-            this.appendAIChatMessage('You', message, 'user');
+        const message = chatInput.value.trim();
+        
+        if (message && this.aiChatWs && this.aiChatWs.readyState === WebSocket.OPEN && !this.isAITyping) {
+            // Add user message with animation
+            this.appendAIChatMessage('You', message, 'user', true);
+            
+            // Send to WebSocket
             this.aiChatWs.send(message);
+            
+            // Clear input and reset height
             chatInput.value = '';
+            chatInput.style.height = 'auto';
+            
             // Reset current AI message element for new response
             this.currentAIMessageElement = null;
+            
+            // Update button state
+            const sendBtn = document.getElementById('ai-chat-send-btn');
+            if (sendBtn) {
+                sendBtn.disabled = true;
+                sendBtn.classList.add('opacity-50');
+            }
         }
     }
 
-    createAIChatMessageElement(sender, message, type = 'ai') {
+    createAIChatMessageElement(sender, message, type = 'ai', isComplete = false) {
         const messageEl = document.createElement('div');
-        let senderClass = 'font-bold text-primary';
-        let messageClass = 'bg-gray-100 dark:bg-gray-800';
-
+        messageEl.className = 'message-container opacity-0 transform translate-y-4';
+        
+        let avatarContent, bubbleClasses, textClasses, containerClasses;
+        
         if (type === 'user') {
-            senderClass = 'font-bold text-blue-500';
-            messageClass = 'bg-blue-100 dark:bg-blue-900/50';
+            avatarContent = `<div class="w-8 h-8 rounded-full bg-blue-500 flex items-center justify-center text-white font-bold text-sm">You</div>`;
+            bubbleClasses = 'bg-blue-500 text-white rounded-2xl rounded-br-md';
+            textClasses = 'text-white';
+            containerClasses = 'flex flex-row-reverse gap-3 items-end';
         } else if (type === 'system') {
-            senderClass = 'font-bold text-gray-500';
-            messageClass = 'bg-transparent';
+            avatarContent = `<div class="w-8 h-8 rounded-full bg-gray-500 flex items-center justify-center">
+                <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M10 2L3 7v11a1 1 0 001 1h12a1 1 0 001-1V7l-7-5z"/>
+                </svg>
+            </div>`;
+            bubbleClasses = 'bg-gray-100 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-2xl';
+            textClasses = 'text-gray-600 dark:text-gray-400 text-sm';
+            containerClasses = 'flex gap-3 items-end justify-center';
+        } else {
+            avatarContent = `<div class="w-8 h-8 rounded-full bg-gradient-to-r from-primary to-green-400 flex items-center justify-center">
+                <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                </svg>
+            </div>`;
+            bubbleClasses = 'bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-2xl rounded-bl-md shadow-sm';
+            textClasses = 'text-gray-800 dark:text-gray-200 prose prose-sm max-w-none prose-headings:text-gray-900 dark:prose-headings:text-gray-100 prose-p:text-gray-800 dark:prose-p:text-gray-200 prose-strong:text-gray-900 dark:prose-strong:text-gray-100 prose-code:text-primary prose-code:bg-gray-100 dark:prose-code:bg-gray-700 prose-code:px-1 prose-code:py-0.5 prose-code:rounded';
+            containerClasses = 'flex gap-3 items-end';
         }
 
+        const cursorClass = (!isComplete && type === 'ai') ? 'typing-cursor' : '';
+        
+        // For AI messages, render markdown if it's complete, otherwise show raw text with cursor
+        let displayMessage = message;
+        if (type === 'ai' && isComplete && message) {
+            displayMessage = this.markdownConverter.makeHtml(message);
+        }
+        
         messageEl.innerHTML = `
-            <div class="p-3 rounded-lg ${messageClass}">
-                <p class="${senderClass}">${sender}</p>
-                <p class="text-gray-800 dark:text-gray-200 message-text">${message}</p>
+            <div class="${containerClasses}">
+                ${avatarContent}
+                <div class="max-w-xs sm:max-w-md lg:max-w-lg xl:max-w-xl">
+                    <div class="px-4 py-3 ${bubbleClasses}">
+                        <div class="message-text ${textClasses} ${cursorClass} leading-relaxed">${displayMessage}</div>
+                    </div>
+                    <div class="text-xs text-gray-500 mt-1 px-2">
+                        ${new Date().toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'})}
+                    </div>
+                </div>
             </div>
         `;
+        
+        // Add entrance animation
+        setTimeout(() => {
+            messageEl.classList.remove('opacity-0', 'transform', 'translate-y-4');
+            messageEl.classList.add('transition-all', 'duration-300', 'ease-out');
+        }, 50);
         
         return messageEl;
     }
 
-    appendAIChatMessage(sender, message, type = 'ai') {
+    appendAIChatMessage(sender, message, type = 'ai', isComplete = true) {
         const chatHistory = document.getElementById('ai-chat-history');
-        const messageEl = this.createAIChatMessageElement(sender, message, type);
+        const messageEl = this.createAIChatMessageElement(sender, message, type, isComplete);
         chatHistory.appendChild(messageEl);
-        chatHistory.scrollTop = chatHistory.scrollHeight;
+        this.scrollToBottom();
+        
+        if (type === 'ai' && isComplete) {
+            this.setAITyping(false);
+            this.currentAIMessageElement = null;
+        }
     }
 }

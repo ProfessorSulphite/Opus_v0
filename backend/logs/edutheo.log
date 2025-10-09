@@ -183,3 +183,37 @@ __root__
 2025-10-07 23:58:13.022 | INFO     | app.api.ai:websocket_chat_endpoint:27 - Received AI chat message from user 2: Why aluminium is not magnet while iron, nickel are?
 2025-10-07 23:58:13.932 | INFO     | app.ai.service:_general_conversation:85 - AI Tool: Handling general conversation for user 2
 2025-10-07 23:58:22.761 | INFO     | app.ai.service:get_ai_response_stream:229 - User Sulphite query count for today: 22
+2025-10-09 16:52:31.731 | INFO     | app.api.auth:login:119 - User logged in: Sulphite
+2025-10-09 16:52:31.834 | INFO     | app.api.analytics:get_user_analytics:60 - Analytics requested by user: Sulphite
+2025-10-09 16:54:56.089 | INFO     | app.api.analytics:get_user_analytics:60 - Analytics requested by user: Sulphite
+2025-10-09 16:56:25.739 | INFO     | app.api.auth:login:119 - User logged in: Sulphite
+2025-10-09 16:56:25.871 | INFO     | app.api.analytics:get_user_analytics:60 - Analytics requested by user: Sulphite
+2025-10-09 16:56:34.965 | INFO     | app.api.analytics:get_user_analytics:60 - Analytics requested by user: Sulphite
+2025-10-09 16:57:50.725 | INFO     | app.api.analytics:get_user_analytics:60 - Analytics requested by user: Sulphite
+2025-10-09 16:59:27.127 | INFO     | app.api.analytics:get_user_analytics:60 - Analytics requested by user: Sulphite
+2025-10-09 16:59:31.785 | INFO     | app.api.analytics:get_user_analytics:60 - Analytics requested by user: Sulphite
+2025-10-09 17:00:47.212 | INFO     | app.api.analytics:get_user_analytics:60 - Analytics requested by user: Sulphite
+2025-10-09 17:06:16.671 | INFO     | app.api.analytics:get_user_analytics:60 - Analytics requested by user: Sulphite
+2025-10-09 17:08:29.973 | INFO     | app.api.analytics:get_user_analytics:60 - Analytics requested by user: Sulphite
+2025-10-09 17:08:52.042 | INFO     | app.api.analytics:get_user_analytics:60 - Analytics requested by user: Sulphite
+2025-10-09 17:10:15.437 | INFO     | app.api.analytics:get_user_analytics:60 - Analytics requested by user: Sulphite
+2025-10-09 17:11:19.430 | INFO     | app.api.ai:websocket_chat_endpoint:27 - Received AI chat message from user 2: Hi
+2025-10-09 17:11:19.431 | INFO     | app.ai.service:_verify_query_limit:176 - New day for user Sulphite. Resetting AI query count.
+2025-10-09 17:11:21.512 | INFO     | app.ai.service:_general_conversation:85 - AI Tool: Handling general conversation for user 2
+2025-10-09 17:11:23.977 | INFO     | app.ai.service:get_ai_response_stream:229 - User Sulphite query count for today: 1
+2025-10-09 17:11:39.354 | INFO     | app.api.ai:websocket_chat_endpoint:27 - Received AI chat message from user 2: Why aluminium is not magnet while iron, nickel, cobalt are?
+2025-10-09 17:11:40.398 | INFO     | app.ai.service:_general_conversation:85 - AI Tool: Handling general conversation for user 2
+2025-10-09 17:11:49.265 | INFO     | app.ai.service:get_ai_response_stream:229 - User Sulphite query count for today: 2
+2025-10-09 17:24:16.089 | INFO     | app.api.ai:websocket_chat_endpoint:45 - User 2 disconnected from AI chat.
+2025-10-09 17:24:16.089 | INFO     | app.api.ai:websocket_chat_endpoint:50 - Database session closed for user 2 AI chat.
+2025-10-09 17:24:17.769 | INFO     | app.api.analytics:get_user_analytics:60 - Analytics requested by user: Sulphite
+2025-10-09 17:24:50.652 | INFO     | app.api.ai:websocket_chat_endpoint:27 - Received AI chat message from user 2: Why Aluminium is not magnet while Nickel, Cobalt, Iron are?
+2025-10-09 17:24:52.330 | INFO     | app.ai.service:_general_conversation:85 - AI Tool: Handling general conversation for user 2
+2025-10-09 17:25:03.666 | INFO     | app.ai.service:get_ai_response_stream:229 - User Sulphite query count for today: 3
+2025-10-09 17:31:07.433 | INFO     | app.api.ai:websocket_chat_endpoint:45 - User 2 disconnected from AI chat.
+2025-10-09 17:31:07.433 | INFO     | app.api.ai:websocket_chat_endpoint:50 - Database session closed for user 2 AI chat.
+2025-10-09 17:31:14.107 | INFO     | app.api.auth:login:119 - User logged in: Sulphite
+2025-10-09 17:31:14.126 | INFO     | app.api.analytics:get_user_analytics:60 - Analytics requested by user: Sulphite
+2025-10-09 17:31:20.260 | INFO     | app.api.ai:websocket_chat_endpoint:27 - Received AI chat message from user 2: Why Aluminium is not magnet while Nickel, Cobalt, Iron are?
+2025-10-09 17:31:21.719 | INFO     | app.ai.service:_general_conversation:85 - AI Tool: Handling general conversation for user 2
+2025-10-09 17:31:31.755 | INFO     | app.ai.service:get_ai_response_stream:229 - User Sulphite query count for today: 4
